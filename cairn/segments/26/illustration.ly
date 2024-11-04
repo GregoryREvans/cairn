@@ -259,7 +259,7 @@
                                 ^ \p
                                 - \markup pizz.
                                 ^ \markup \italic "spatial notation"
-                                [
+                                ^ [
 
                                 \once \change Staff = "cello staff"
                                 a,16 * 592/784
@@ -550,7 +550,7 @@
                                 c'16 * 592/392
 
                                 \once \change Staff = "cello staff"
-                                a16 * 7696/1568
+                                a'16 * 7696/1568
 
                                 \once \change Staff = "back staff"
                                 c'16 * 1776/784
@@ -1315,7 +1315,7 @@
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        a1 * 481/1568
+                                        a'1 * 481/1568
                                           %! abjad.glissando(7)
                                         - \abjad-zero-padding-glissando
                                           %! abjad.glissando(7)
@@ -1333,7 +1333,7 @@
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
                                         \tweak transparent ##t
-                                        b1 * 111/784
+                                        b'1 * 111/784
 
                                     }
 

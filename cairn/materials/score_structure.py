@@ -6,9 +6,19 @@ score = abjad.Score(
         abjad.StaffGroup(
             [
                 abjad.Staff(
-                    [abjad.Voice(name="string voice")],
+                    [
+                        abjad.Voice(name="string voice"),
+                        # abjad.Voice(name="string voice 2"),
+                    ],
                     name="string staff",
                     lilypond_type="VanishingStringStaff",
+                ),
+                abjad.Staff(
+                    [
+                        abjad.Voice(name="battuto voice"),
+                    ],
+                    name="battuto staff",
+                    lilypond_type="VanishingBattutoStaff",
                 ),
                 abjad.Staff(
                     [abjad.Voice(name="bow voice")],

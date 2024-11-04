@@ -16,6 +16,26 @@
 afterGraceFraction = #(cons 15 16)
 %{ \pointAndClickOff %}
 
+string-contact-clef-markup = \markup {
+        \rotate #180
+      \general-align #Y #-0.2
+      \epsfile #Y #10 #"gfx/behind-bridge-clef.eps"
+  }
+
+swap-clefs = #(lambda (grob)
+   (let* ((sz (ly:grob-property grob 'font-size 0))
+          (mlt (magstep sz))
+          (glyph (ly:grob-property grob 'glyph-name)))
+           (cond
+               ((equal? glyph "clefs.varpercussion")
+                  (ly:stencil-scale (grob-interpret-markup grob string-contact-clef-markup) (* 1 mlt) (* 1 mlt))
+                  )
+               ((equal? glyph "clefs.varpercussion_change")
+               (ly:stencil-scale (grob-interpret-markup grob string-contact-clef-markup) (* .7 mlt) (* .7 mlt))
+                )
+            (else (ly:clef::print grob)))))
+
+
 %%%%%
 #(define (lists-map function ls)
   "Apply @var{function} to @var{ls} and all of it sublists.
@@ -421,6 +441,7 @@ dashedStaffSymbolLines =
         \accepts VanishingStaff
 		\accepts VanishingVoiceStaff
 		\accepts VanishingStringStaff
+        \accepts VanishingBattutoStaff
         \accepts VanishingChangeStaff
         \accepts VanishingBowStaff
         \accepts VanishingRhythmicStaff
@@ -486,6 +507,29 @@ dashedStaffSymbolLines =
         \override BarLine.bar-extent = #'(-1.5 . 1.5)
 	}
 	\context {
+		\Staff
+		\name VanishingBattutoStaff
+		\type Engraver_group
+		\alias Staff
+		\remove Time_signature_engraver
+		\remove Metronome_mark_engraver
+        \remove Bar_number_engraver
+		\remove Mark_engraver
+		fontSize = #-1
+        \override Glissando.bound-details.left.padding = #0.5
+        \override Glissando.bound-details.right.padding = #0.5
+        \override Glissando.thickness = #4
+        \override StaffSymbol.line-positions = #'(-8.2 -8 8 8.2)
+		\RemoveAllEmptyStaves
+        \override LedgerLineSpanner.transparent = ##t
+        \override Clef.stencil = \swap-clefs
+        \clef varpercussion
+		\override Accidental.stencil = ##f
+		\override AccidentalCautionary.stencil = ##f
+        \override BarLine.bar-extent = #'(-4 . 4)
+
+	}
+    \context {
 		\Staff
 		\name VanishingStringStaff
 		\type Engraver_group

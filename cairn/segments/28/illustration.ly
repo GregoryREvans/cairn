@@ -188,7 +188,6 @@
                                 % [front voice measure 1]
                                 \my-hack-slash
                                 \once \change Staff = "front staff"
-                                \override Stem.direction = #up
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Davanti" }
                                   %! applying staff names and clefs
@@ -197,7 +196,7 @@
                                 c'16 * 80/36
                                 ^ \mp
                                 - \markup pizz.
-                                [
+                                ^ [
                                 ^ \<
 
                                 \once \change Staff = "cello staff"
@@ -298,7 +297,6 @@
                                 c'16 * 80/72
                                 ^ \fff
                                 ]
-                                \revert Stem.direction
 
                             }
 

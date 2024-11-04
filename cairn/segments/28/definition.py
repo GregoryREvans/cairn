@@ -110,6 +110,7 @@ maker = evans.SegmentMaker(
     instruments=cairn.instruments,
     names=[
         '"SCP"',
+        '"SCP"',
         '"BCP"',
         '"Mano Destra"',
         '"Mano Sinestra"',
@@ -120,6 +121,7 @@ maker = evans.SegmentMaker(
         '"Archi"',
     ],
     abbreviations=[
+        '"SCP"',
         '"SCP"',
         '"BCP"',
         '"mn dst"',
@@ -331,7 +333,7 @@ maker = evans.SegmentMaker(
                     0,
                 ],
             ),
-            abjad.beam,
+            lambda _: abjad.beam(_, direction=abjad.UP),
             lambda _: beam_position(_, 5),
             evans.staff_changes(
                 reservoir=["front staff", "cello staff", "back staff"],
@@ -400,14 +402,6 @@ maker = evans.SegmentMaker(
                 abjad.Dynamic("fff"),
                 selector=lambda _: abjad.select.leaf(_, -1),
                 direction=abjad.UP,
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r"\override Stem.direction = #up", site="before"),
-                selector=lambda _: abjad.select.leaf(_, 0),
-            ),
-            evans.Attachment(
-                abjad.LilyPondLiteral(r"\revert Stem.direction", site="after"),
-                selector=lambda _: abjad.select.leaf(_, -1),
             ),
         ),
         evans.MusicCommand(

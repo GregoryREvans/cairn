@@ -98,15 +98,15 @@ pitch_sequence = [
     -7 + 13,
     -10 + 13,
     #
-    -5 + 2,
+    -5 + 2 + 12,
     -4 + 2,
-    -3 + 2,
+    -3 + 2 + 12,
     -2 + 2,
     -1 + 2,
     0 + 2,
-    1 + 2,
-    2 + 2,
-    3 + 2,
+    4 + 2,
+    4 + 2,
+    6 + 2,
 ]
 
 cyc_staves = evans.CyclicList(
@@ -216,6 +216,7 @@ maker = evans.SegmentMaker(
     instruments=cairn.instruments,
     names=[
         '"SCP"',
+        '"SCP"',
         '"BCP"',
         '"Mano Destra"',
         '"Mano Sinestra"',
@@ -226,6 +227,7 @@ maker = evans.SegmentMaker(
         '"Archi"',
     ],
     abbreviations=[
+        '"SCP"',
         '"SCP"',
         '"BCP"',
         '"mn dst"',
@@ -555,7 +557,7 @@ maker = evans.SegmentMaker(
                     0,
                 ],
             ),
-            abjad.beam,
+            lambda _: abjad.beam(_, direction=abjad.UP),
             lambda _: beam_position(_, 5),
             evans.staff_changes(
                 reservoir=["front staff", "cello staff", "back staff"],

@@ -13,6 +13,7 @@ maker = evans.SegmentMaker(
     instruments=cairn.instruments,
     names=[
         '"SCP"',
+        '"SCP"',
         '"BCP"',
         '"Mano Destra"',
         '"Mano Sinestra"',
@@ -23,6 +24,7 @@ maker = evans.SegmentMaker(
         '"Archi"',
     ],
     abbreviations=[
+        '"SCP"',
         '"SCP"',
         '"BCP"',
         '"mn dst"',

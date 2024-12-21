@@ -9,14 +9,18 @@ from abjadext import rmakers
 
 import cairn
 
+lorca_pitch = evans.PitchHandler(cairn.k_net_sequence, forget=False)
+
+morse_pitch = evans.PitchHandler(evans.Sequence(cairn.morse_k_net).stutter([4, 4, 4]), forget=False)
+
 maker = evans.SegmentMaker(
     instruments=cairn.instruments,
     names=[
         '"SCP"',
         '"SCP"',
         '"BCP"',
-        '"Mano Destra"',
         '"Mano Sinestra"',
+        '"Mano Destra"',
         '"Davanti"',
         '" "',
         '" "',
@@ -27,8 +31,8 @@ maker = evans.SegmentMaker(
         '"SCP"',
         '"SCP"',
         '"BCP"',
-        '"mn dst"',
         '"man sin"',
+        '"mn dst"',
         '"davanti"',
         '" "',
         '" "',
@@ -162,144 +166,217 @@ maker = evans.SegmentMaker(
             selector=lambda _: abjad.select.leaf(_, 0),
         ),
         #### MUSIC
+        evans.MusicCommand(
+            ("cello voice", [0, 1, 2, 3, 4, 5, 6]), # trem
+            evans.note(),
+            abjad.LilyPondLiteral(r'\all-color-music #(universal-color "bluegreen")', site="before"),
+            evans.PitchHandler(
+                [_ - 12 for _ in [-10, -9, -7, -4, -6, -3]],
+                forget=False,
+            ),
+            evans.ArticulationHandler(["accent"]),
+            evans.zero_padding_glissando,
+            evans.ArticulationHandler(["tremolo"]),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r"\half-diamond-notehead-markup"),
+                        style=r"dashed-line-with-hook",
+                        command=r"\startTextSpanOne",
+                    ),
+                    r"- \tweak staff-padding 8",
+                    r"- \tweak bound-details.right.padding 1.25",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(command=r"\stopTextSpanOne",),
+                selector=lambda _: abjad.get.leaf(abjad.select.leaf(_, -1), 1),
+            ),
+            abjad.StartHairpin("o<"),
+            evans.Attachment(
+                abjad.Dynamic("f"),
+                selector=lambda _: abjad.select.note(_, -1),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r"\markup \upright XT"),
+                        style=r"dashed-line-with-hook",
+                    ),
+                    r"- \tweak staff-padding 6",
+                    r"- \tweak bound-details.right.padding 1.25",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(),
+                selector=lambda _: abjad.select.leaf(_, 2),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r"\markup \upright MP"),
+                        style=r"solid-line-with-arrow",
+                    ),
+                    r"- \tweak staff-padding 6"
+                ),
+                selector=lambda _: abjad.select.leaf(_, 2),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(),
+                selector=lambda _: abjad.select.leaf(_, 3),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r"\markup \upright T"),
+                        style=r"dashed-line-with-hook",
+                    ),
+                    r"- \tweak staff-padding 6",
+                    r"- \tweak bound-details.right.padding 1.25",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 3),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(),
+                selector=lambda _: abjad.select.leaf(_, 4),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r"\markup \upright MP"),
+                        style=r"solid-line-with-arrow",
+                    ),
+                    r"- \tweak staff-padding 6"
+                ),
+                selector=lambda _: abjad.select.leaf(_, 4),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r"\markup \upright MT"),
+                        style=r"dashed-line-with-hook",
+                    ),
+                    r"- \tweak staff-padding 6",
+                    r"- \tweak bound-details.right.padding 1.25",
+                ),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(),
+                selector=lambda _: abjad.get.leaf(abjad.select.leaf(_, -1), 1),
+            ),
+        ),
+        evans.MusicCommand(
+            ("cello voice", [7]), # circle
+            evans.talea(
+                cairn.morse_durations[4].rotate(-4),
+                8,
+                extra_counts=[0, 1, -2, 3, -4, -3, 2, -1],
+                preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[2]),
+                pre_commands=None,
+                rewrite=-1,
+                treat_tuplets=True,
+            ),
+            morse_pitch,
+            lambda _: evans.contour(
+                _,
+                ([0, 1, 2], evans.Lapidary("up", "previous alteration", "centroid octave"),),
+                starting_range=abjad.PitchRange("[c,, c)"),
+            ),
+            evans.ArticulationHandler(["scrape-circular-clockwise"]),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r'\all-color-music #(universal-color "redpurple")', site="before"),
+                selector=lambda _: abjad.select.leaf(_, 0),
+            ),
+            abjad.Dynamic("f"),
+            abjad.StartHairpin(">"),
+            evans.Attachment(
+                abjad.Dynamic("p"),
+                selector=lambda _: abjad.select.note(_, -1),
+            ),
+        ),
+        evans.MusicCommand(
+            ("cello voice", [9]), # circle
+            evans.talea(
+                cairn.morse_durations[5].rotate(-6),
+                8,
+                extra_counts=[0, 1, -2, 3, -4, -3, 2, -1],
+                preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[2]),
+                pre_commands=None,
+                rewrite=-1,
+                treat_tuplets=True,
+            ),
+            morse_pitch,
+            lambda _: evans.contour(
+                _,
+                ([0, 1, 2], evans.Lapidary("up", "previous alteration", "centroid octave"),),
+                starting_range=abjad.PitchRange("[c, c')"),
+            ),
+            evans.ArticulationHandler(["scrape-circular-clockwise"]),
+            abjad.LilyPondLiteral(r'\all-color-music #(universal-color "redpurple")', site="before"),
+            abjad.Dynamic("mf"),
+            abjad.StartHairpin(">"),
+            evans.Attachment(
+                abjad.Dynamic("pp"),
+                selector=lambda _: abjad.select.note(_, -1),
+            ),
+        ),
+        evans.MusicCommand(
+            ("cello voice", [11, 12]), # circle
+            evans.talea(
+                cairn.morse_durations[6].rotate(-8),
+                4,
+                extra_counts=[0, 1, -2, 3, -4, -3, 2, -1],
+                preprocessor=evans.make_preprocessor(quarters=True, fuse_counts=[2]),
+                pre_commands=None,
+                rewrite=-1,
+                treat_tuplets=True,
+            ),
+            morse_pitch,
+            evans.ArticulationHandler(["scrape-circular-clockwise"]),
+            abjad.LilyPondLiteral(r'\all-color-music #(universal-color "redpurple")', site="before"),
+            abjad.Dynamic("mp"),
+            abjad.StartHairpin(">"),
+            evans.Attachment(
+                abjad.Dynamic("ppp"),
+                selector=lambda _: abjad.select.note(_, -1),
+            ),
+            abjad.Clef("tenor"),
+        ),
         #### Cleanup
-        # evans.call(
-        #     "score",
-        #     evans.SegmentMaker.beam_score_without_splitting,
-        #     lambda _: abjad.select.components(_, abjad.Score),
-        # ),
-        # evans.call(
-        #     "violin voice",
-        #     rmakers.unbeam,
-        #     evans.select_measures([_ for _ in range(2, 8)]),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     cairn.lib.mark_60,
-        #     lambda _: abjad.select.leaf(_, 0),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     cairn.lib.met_60,
-        #     lambda _: abjad.select.leaf(_, 0),
-        # ),
+        evans.call(
+            "score",
+            lambda _: evans.SegmentMaker.beam_score_without_splitting(_, better_tuplets=True),
+            lambda _: abjad.select.components(_, abjad.Score),
+        ),
+        evans.attach(
+            "Global Context",
+            cairn.lib.met_117,
+            lambda _: abjad.select.leaf(_, 0),
+        ),
         #### Fermati
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-        #     ),
-        #     evans.select_measures([1], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #     ),
-        #     evans.select_measures([8], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-        #     ),
-        #     evans.select_measures([14], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
-        #     ),
-        #     evans.select_measures([18], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #     ),
-        #     evans.select_measures([42], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #     ),
-        #     evans.select_measures([47], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #     ),
-        #     evans.select_measures([80], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-        #     ),
-        #     evans.select_measures([83], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #     ),
-        #     evans.select_measures([85], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-        #     ),
-        #     evans.select_measures([89], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
-        #     ),
-        #     evans.select_measures([99], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #     ),
-        #     evans.select_measures([103], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        ####
-        # evans.attach(
-        #     "violin voice",
-        #     abjad.Markup(r"\colophon"),
-        #     lambda _: abjad.select.leaf(_, -3),
-        #     direction=abjad.DOWN,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.BarLine("|."),
-        #     evans.select_measures([165], leaf=1),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-        #     ),
-        #     evans.select_measures([165], leaf=1),
-        #     direction=abjad.UP,
-        # ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
+            ),
+            evans.select_measures([8], leaf=1),
+            direction=abjad.UP,
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
+            ),
+            evans.select_measures([10], leaf=1),
+            direction=abjad.UP,
+        ),
     ],
     score_template=cairn.score,
     transpose_from_sounding_pitch=False,

@@ -19,6 +19,7 @@ from .lib import (
     cello_alternate_glissandi,
     cello_swell_dynamics,
     center_repeat,
+    center_swell,
     clef_whitespace,
     cyclic_trill_intervals,
     hairpin_cycles,
@@ -51,11 +52,17 @@ from .lib import (
     tenor_fingerings,
     trill_ties,
     triple_swell,
+    overlay_text,
+    reverse_swell,
+    slur_intermittent_accents,
 )
 from .materials.instruments import instruments
-from .materials.pitch import string_crossing_modules
-# from .materials.rhythm import (
-# )
+from .materials.pitch import k_net_sequence, morse_k_net
+from .materials.rhythm import (
+    morse_tuplets,
+    morse_durations,
+    rtms,
+)
 from .materials.score_structure import score
 from .materials.time_signatures import (
     all_signatures,
@@ -252,6 +259,7 @@ __all__ = [
     "fermata_measures_02",
     "reduced_signatures_02",
     "signatures_02",
+    "center_swell",
     "fermata_measures_03",
     "reduced_signatures_03",
     "signatures_03",
@@ -363,4 +371,8 @@ __all__ = [
     "fermata_measures_39",
     "reduced_signatures_39",
     "signatures_39",
+    "overlay_text",
+    "reverse_swell",
+    "slur_intermittent_accents",
+    "k_net_sequence",
 ]

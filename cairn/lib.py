@@ -5,6 +5,65 @@ import baca
 import evans
 from abjadext import rmakers
 
+
+def slur_intermittent_accents(group_counts=[2, 1, 3, 1], start_bowing=abjad.DOWN):
+    def returned_function(selections, group_counts=group_counts, start_bowing=start_bowing):
+        ties = abjad.select.logical_ties(selections, pitched=True)
+        partitions = abjad.select.partition_by_counts(ties, group_counts, cyclic=True, overhang=True)
+        for i, partition in enumerate(partitions):
+            if 1 < len(partition):
+                abjad.slur(partition)
+            if (i + 1) % 2 == 0:
+                if start_bowing is abjad.DOWN:
+                    bowing = abjad.Articulation("upbow")
+                else:
+                    bowing = abjad.Articulation("downbow")
+                abjad.attach(bowing, partition[0][0])
+                abjad.attach(abjad.Articulation("accent"), partition[0][0])
+            else:
+                if start_bowing is abjad.DOWN:
+                    bowing = abjad.Articulation("downbow")
+                else:
+                    bowing = abjad.Articulation("upbow")
+                abjad.attach(bowing, partition[0][0])
+    return returned_function
+
+def reverse_swell(selections, dyns=["sf", "p", "ff"]):
+    cyc_dyns = evans.CyclicList(dyns, forget=False)
+    runs = abjad.select.runs(selections)
+    for run in runs:
+        ties = abjad.select.logical_ties(run)
+        tie_count = len(ties)
+        abjad.attach(abjad.Dynamic(cyc_dyns(r=1)[0]), ties[0][0])
+        abjad.attach(abjad.StartHairpin("|>"), ties[0][0])
+        abjad.attach(abjad.Dynamic(cyc_dyns(r=1)[0]), ties[tie_count//2][0])
+        abjad.attach(abjad.StartHairpin("<"), ties[tie_count//2][0])
+        abjad.attach(abjad.Dynamic(cyc_dyns(r=1)[0]), ties[-1][-1])
+
+def center_swell(selections, dyns=["p", "f", "p"]):
+    cyc_dyns = evans.CyclicList(dyns, forget=False)
+    runs = abjad.select.runs(selections)
+    for run in runs:
+        ties = abjad.select.logical_ties(run)
+        tie_count = len(ties)
+        abjad.attach(abjad.Dynamic(cyc_dyns(r=1)[0]), ties[0][0])
+        abjad.attach(abjad.StartHairpin("<"), ties[0][0])
+        abjad.attach(abjad.Dynamic(cyc_dyns(r=1)[0]), ties[tie_count//2][0])
+        abjad.attach(abjad.StartHairpin(">"), ties[tie_count//2][0])
+        abjad.attach(abjad.Dynamic(cyc_dyns(r=1)[0]), ties[-1][-1])
+
+
+def overlay_text(selections, text, color, direction):
+    ties = abjad.select.logical_ties(selections)
+    relevant_leaves = [tie[0] for tie in ties]
+    words = text.split()
+    for word, leaf in zip(words, relevant_leaves):
+        bundle = abjad.bundle(
+            abjad.Markup(rf'\markup "{word}"'),
+            abjad.Tweak(rf"\tweak color {color}"),
+        )
+        abjad.attach(bundle, leaf, direction=direction)
+
 # lily met
 
 met_60 = abjad.MetronomeMark((1, 4), 60)  # for testing
@@ -18,6 +77,8 @@ met_78 = abjad.MetronomeMark((1, 4), 78)
 met_65 = abjad.MetronomeMark((1, 4), 65)
 
 met_52 = abjad.MetronomeMark((1, 4), 52)
+
+met_97 = abjad.MetronomeMark((1, 4), 97) # for rallantando
 
 # markup met
 

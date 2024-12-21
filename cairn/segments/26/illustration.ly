@@ -70,14 +70,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -104,6 +100,47 @@
                     }
 
                     \tag #'voice2
+                    {
+
+                        \context VanishingBattutoStaff = "battuto staff"
+                        {
+
+                            \context Voice = "battuto voice"
+                            {
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [battuto voice measure 1]
+                                  %! applying staff names and clefs
+                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
+                                  %! applying staff names and clefs
+                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
+                                r1
+
+                                r4
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [battuto voice measure 2]
+                                r2..
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [battuto voice measure 3]
+                                r1.
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [battuto voice measure 4]
+                                r1
+
+                            }
+
+                        }
+
+                    }
+
+                    \tag #'voice3
                     {
 
                         \context VanishingBowStaff = "bow staff"
@@ -144,52 +181,6 @@
 
                     }
 
-                    \tag #'voice3
-                    {
-
-                        \context VanishingChangeStaff = "right staff"
-                        {
-
-                            \context Voice = "right voice"
-                            {
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
-                                  %! applying staff names and clefs
-                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
-                                  %! applying staff names and clefs
-                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
-                                r1
-
-                                r4
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 2]
-                                r2..
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 3]
-                                r1.
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 4]
-                                r1
-
-                            }
-
-                        }
-
-                    }
-
                     \tag #'voice4
                     {
 
@@ -202,16 +193,12 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
+                                \bacaStopTextSpanBCP
 
                                 r4
 
@@ -239,6 +226,48 @@
                     \tag #'voice5
                     {
 
+                        \context VanishingChangeStaff = "right staff"
+                        {
+
+                            \context Voice = "right voice"
+                            {
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 1]
+                                  %! applying staff names and clefs
+                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
+                                  %! applying staff names and clefs
+                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
+                                r1
+                                \bacaStopTextSpanBCP
+
+                                r4
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 2]
+                                r2..
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 3]
+                                r1.
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 4]
+                                r1
+
+                            }
+
+                        }
+
+                    }
+
+                    \tag #'voice6
+                    {
+
                         \context VanishingRhythmicStaff = "front staff"
                         {
 
@@ -250,10 +279,13 @@
                                 % [front voice measure 1]
                                 \my-hack-slash
                                 \once \change Staff = "front staff"
+                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Davanti" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "davanti" }
+                                \startStaff
+                                \stopStaff
                                 \once \override Beam.positions = #'(5 . 5)
                                 c'16 * 1776/784
                                 ^ \p
@@ -573,10 +605,10 @@
                         \context InterruptiveStaffGroup = "Interruptive Group"
                         <<
 
-                            \tag #'voice6
+                            \tag #'voice7
                             {
 
-                                \context Staff = "cello staff"
+                                \context VanishingStaff = "cello staff"
                                 {
 
                                     \context Voice = "cello voice"
@@ -585,10 +617,13 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
+                                        \override Staff.StaffSymbol.transparent = ##f
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
+                                        \startStaff
+                                        \stopStaff
                                         \clef "bass"
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
@@ -1341,7 +1376,7 @@
 
                             }
 
-                            \tag #'voice7
+                            \tag #'voice8
                             {
 
                                 \context VanishingStaff = "temporary staff"
@@ -1386,7 +1421,7 @@
 
                     }
 
-                    \tag #'voice8
+                    \tag #'voice9
                     {
 
                         \context VanishingRhythmicStaff = "back staff"
@@ -1400,10 +1435,13 @@
                                 % [back voice measure 1]
                                 \override Staff.Rest.stencil = ##f
                                 \override Staff.Dots.stencil = ##f
+                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Dietro" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "dietro" }
+                                \startStaff
+                                \stopStaff
                                 r1
 
                                 r4
@@ -1429,7 +1467,7 @@
 
                     }
 
-                    \tag #'voice9
+                    \tag #'voice10
                     {
 
                         \context VanishingChangeStaff = "change staff"
@@ -1441,15 +1479,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4

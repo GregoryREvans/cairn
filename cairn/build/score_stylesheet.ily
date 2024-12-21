@@ -1,7 +1,7 @@
 \version "2.25.16" %2.23.6
 \language "english"
-#(set-default-paper-size "letterportrait")
-#(set-global-staff-size 17) % 20 is standard parts was 17
+#(set-default-paper-size "11x17landscape")
+#(set-global-staff-size 19) % 20 is standard part size
 
 %{ \include "/Users/gregoryevans/ekmelily/ly/ekmel-24.ily" % just trying this out %}
 %{ \ekmelicStyle evans-alt-one % just trying this out %}
@@ -14,7 +14,6 @@
 \include "evans-spanners.ily"
 
 afterGraceFraction = #(cons 15 16)
-%{ \pointAndClickOff %}
 
 string-contact-clef-markup = \markup {
         \rotate #180
@@ -240,14 +239,15 @@ dashedStaffSymbolLines =
 	breakbefore = ##t
 	%{ dedication = \markup \override #'(font-name . "Bell MT") \fontsize #5.4 \center-column { \line{to Steph Tamas}} %}
 	title =  \markup \center-column {
+            \override #'(font-name . "Bell MT")
+            \fontsize #-3
 			\line {
-				\override #'(font-name . "Bell MT")
-				\fontsize #-3 "t o   L i a m   B a t t l e"
+				t o \hspace #1.75 L i a m \hspace #1.75 B a t t l e \hspace #1.75
 			}
             \override #'(font-name . "Bell MT")
-            \fontsize #0.8
+            \fontsize #14
             \line {
-                \vspace #2
+                \vspace #4.5
                 \concat {
                 C
                 \hspace #3
@@ -260,17 +260,17 @@ dashedStaffSymbolLines =
                 N
                 }
             }
+            \override #'(font-name . "Bell MT")
+            \fontsize #-3
 			\line{
-                \override #'(font-name . "Bell MT")
-                \vspace #2.3
-                \fontsize #-3
-                "u n a c c o m p a n i e d   c o n c e r t o"
+                \vspace #1.3
+                n y c t i v o e \hspace #1.75 i n t e r l u d e \hspace #1.75 II \hspace #1.6
 			}
             \override #'(font-name . "Bell MT Italic")
             \fontsize #-3
             \line {
-                f o r \hspace #2.75
-                v i o l o n c e l l o \hspace #2.75
+                u n a c c o m p a n i e d \hspace #1.75 c o n c e r t o \hspace #1.75 f o r \hspace #1.75
+                v i o l o n c e l l o
             }
     }
 	composer = \markup \override #'(font-name . "Bell MT") \fontsize #1.5 {"Gregory Rowland Evans (*1995)"}
@@ -477,7 +477,7 @@ dashedStaffSymbolLines =
 		\name VanishingStaff
 		\type Engraver_group
 		\alias Staff
-		\remove Time_signature_engraver
+		%{ \remove Time_signature_engraver %}
 		\RemoveAllEmptyStaves
         \consists Duration_line_engraver
 		\numericTimeSignature
@@ -492,7 +492,7 @@ dashedStaffSymbolLines =
 		\name VanishingChangeStaff
 		\type Engraver_group
 		\alias Staff
-		\remove Time_signature_engraver
+		%{ \remove Time_signature_engraver %}
 		\remove Metronome_mark_engraver
         \remove Bar_number_engraver
 		\remove Mark_engraver

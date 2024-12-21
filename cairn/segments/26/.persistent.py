@@ -108,4 +108,16 @@ info = {
             directed=False,
         ),
     ],
+    "Voice 10": [
+        LilyPondLiteral(
+            argument="\\stopStaff \\once \\override Staff.StaffSymbol.line-count = #0 \\startStaff",
+            site="before",
+            directed=False,
+        ),
+        LilyPondLiteral(
+            argument="\\once \\override Rest.transparent = ##t",
+            site="before",
+            directed=False,
+        ),
+    ],
 }

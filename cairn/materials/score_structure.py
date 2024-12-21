@@ -26,13 +26,13 @@ score = abjad.Score(
                     lilypond_type="VanishingBowStaff",
                 ),
                 abjad.Staff(
-                    [abjad.Voice(name="right voice")],
-                    name="right staff",
+                    [abjad.Voice(name="left voice")],
+                    name="left staff",
                     lilypond_type="VanishingChangeStaff",
                 ),
                 abjad.Staff(
-                    [abjad.Voice(name="left voice")],
-                    name="left staff",
+                    [abjad.Voice(name="right voice")],
+                    name="right staff",
                     lilypond_type="VanishingChangeStaff",
                 ),
                 abjad.Staff(
@@ -45,6 +45,7 @@ score = abjad.Score(
                         abjad.Staff(
                             [abjad.Voice(name="cello voice")],
                             name="cello staff",
+                            lilypond_type="VanishingStaff",
                         ),
                         abjad.Staff(
                             [abjad.Voice(name="temporary voice")],

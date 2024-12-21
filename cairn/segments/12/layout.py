@@ -6,11 +6,13 @@ import cairn
 
 breaks = evans.Breaks(
     evans.Page(  # 1
-        evans.System(measures=5, lbsd=(10, "(8 10)"), x_offset=4),
-        evans.System(measures=5, lbsd=(60, "(8 10)"), x_offset=4),
+        evans.System(measures=3, lbsd=(10, "(8 10)"), x_offset=4),
+        evans.System(measures=3, lbsd=(10 + 50, "(8 10)"), x_offset=4),
+        evans.System(measures=3, lbsd=(10 + 50 + 50, "(8 10)"), x_offset=4),
     ),
     evans.Page(  # 2
-        evans.System(measures=5, lbsd=(10, "(8 10)"), x_offset=4),
+        evans.System(measures=3, lbsd=(10, "(8 10)"), x_offset=4),
+        evans.System(measures=3, lbsd=(10 + 50, "(8 10)"), x_offset=4),
     ),
     time_signatures=cairn.reduced_signatures_12,
     default_spacing=(1, 35),  # 42

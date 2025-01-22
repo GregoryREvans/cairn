@@ -67,14 +67,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -209,15 +205,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -260,15 +251,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -363,6 +349,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
+                                        \half-harmonic
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
                                           %! applying staff names and clefs
@@ -437,6 +424,7 @@
                                         <a,! bf,!>32
                                         \stopTextSpanOne
                                         ]
+                                        \revert-noteheads
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -588,123 +576,175 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
+                                        \clef "treble"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        b,8.
-                                        - \accent
+                                        g'32
                                         \f
                                         [
-                                        - \tweak staff-padding 3
-                                        - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \upright "non gridato" \hspace #0.5 }
-                                        \startTextSpan
+
+                                        af'32
+
+                                        a'32
+
+                                        bf'32
+
+                                        af'32
+
+                                        bf'32
+
+                                        b'32
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
+                                        c''32
                                         ]
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        b,8.
-                                        - \accent
+                                        cqs''32
                                         [
 
+                                        a'32
+
+                                        bf'32
+
+                                        b'32
+
+                                        c''32
+
+                                        bf'32
+
+                                        c''32
+
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
+                                        cs''32
                                         ]
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        b,8.
-                                        - \accent
+                                        d''32
                                         [
 
+                                        dqs''32
+
+                                        b'32
+
+                                        c''32
+
+                                        cs''32
+
+                                        d''32
+
+                                        c''32
+
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
+                                        d''32
                                         ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
+                                        \half-harmonic
+                                        \clef "bass"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        bqs,8.
-                                        - \accent
-                                        \stopTextSpan
+                                        <bf,! bf,!>8.
+                                        \ff
                                         [
-                                        - \tweak staff-padding 3
-                                        - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 gridato} \hspace #0.5 }
-                                        \startTextSpan
+                                        - \tweak staff-padding 6
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright { \fraction 1 2 P } \hspace #0.5 }
+                                        \startTextSpanOne
+                                        - \tweak stencil #constante-hairpin
+                                        \<
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        c16
-                                        - \accent
+                                        <a,! bf,!>16
                                         ]
                                         ~
 
+                                        \times 8/9
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <a, bf,>16.
+                                            [
+
+                                            <bf,! bf,!>32
+
+                                            <a,! bf,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <bf,! bf,!>8
+                                            ]
+
+                                        }
+
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c16
+                                        <btqf,! bf,!>32
                                         [
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        b,8.
-                                        - \accent
+                                        <a,! bf,!>8..
                                         ]
 
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
+                                        \times 4/5
+                                        {
 
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        b,8.
-                                        - \accent
-                                        ]
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <bf,! bf,!>32
+                                            [
 
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
+                                            <bf,! bqf,!>32
 
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        b,8.
-                                        - \accent
-                                        ]
+                                            <bf,! bf,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <a,! bf,!>8..
+                                            ]
+                                            ~
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
+                                        <a, bf,>32
                                         [
 
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        b,8.
-                                        - \accent
-                                        \stopTextSpan
-                                        ]
-                                        - \tweak staff-padding 3
-                                        - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright "molto gridato" \hspace #0.5 }
-                                        \startTextSpan
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        bqs,8
-                                        - \accent
-                                        [
+                                        <bf,! bf,!>8.
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        c8
-                                        - \accent
+                                        <a,! bf,!>32
                                         ]
                                         ~
 
+                                        \times 8/9
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <a, bf,>8
+                                            [
+
+                                            <bf,! bf,!>32
+
+                                            <a,! bf,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <bf,! bf,!>16.
+                                            ]
+                                            ~
+
+                                        }
+
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c16
+                                        <bf, bf,>32
                                         [
 
-                                        r16
+                                        <btqf,! bf,!>32
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        b,8
-                                        - \accent
-                                        \stopTextSpan
+                                        <a,! bf,!>8.
+                                        \stopTextSpanOne
                                         ]
+                                        \revert-noteheads
 
                                     }
 
@@ -820,15 +860,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4

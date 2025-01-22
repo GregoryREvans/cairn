@@ -3,9 +3,9 @@ colophon = \markup {
     \override #'(baseline-skip . 4)
     \right-column {
         \line {
-            Spring Valley, Oh. \hspace #0.75 – \hspace #0.75 Mason, Oh.
+            Iowa City, IA. \hspace #0.75 – \hspace #0.75 Mason, OH.
         }
-        \line { October 2024. }
+        \line { February 2024 \hspace #0.75 – \hspace #0.75 January 2025 }
         }
     }
 

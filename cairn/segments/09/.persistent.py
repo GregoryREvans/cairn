@@ -83,6 +83,7 @@ info = {
             site="before",
             directed=False,
         ),
+        StopHairpin(leak=False),
     ],
     "Voice 8": [
         LilyPondLiteral(

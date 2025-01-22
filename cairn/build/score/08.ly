@@ -95,14 +95,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -315,15 +311,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -392,15 +383,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -547,7 +533,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
-                                        \all-color-music #black
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
@@ -667,7 +653,7 @@
                                         <
                                             af
                                             \tweak NoteHead.style #'harmonic
-                                            cs'
+                                            df'
                                         >16
                                         \mp
                                         ]
@@ -679,7 +665,7 @@
                                         <
                                             af
                                             \tweak NoteHead.style #'harmonic
-                                            cs'
+                                            df'
                                         >8
                                         [
                                         ~
@@ -687,7 +673,7 @@
                                         <
                                             af
                                             \tweak NoteHead.style #'harmonic
-                                            cs'
+                                            df'
                                         >16
                                           %! abjad.glissando(7)
                                         \glissando
@@ -817,31 +803,23 @@
                                             c'32
                                             \sfp
                                             [
-                                            (
                                             - \tweak staff-padding 6
                                             - \abjad-solid-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \default-notehead-markup \hspace #0.5 }
                                             \startTextSpanOne
-                                            - \tweak staff-padding 8
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright "non gridato" \hspace #0.5 }
-                                            \startTextSpanTwo
                                             \(
                                             \<
 
                                             cs'32
 
                                             d'32
-                                            )
 
                                             cs'32
-                                            (
 
                                             dqf'32
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             eqf'32
-                                            )
                                             \)
                                             ]
 
@@ -850,30 +828,25 @@
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         cs'32
                                         [
-                                        (
                                         \(
 
                                         d'32
 
                                         ef'32
-                                        )
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         d'32
+                                        \)
                                         ]
-                                        (
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         dqs'32
                                         [
+                                        \(
 
                                         eqs'32
-                                        )
-                                        \)
 
                                         ef'32
-                                        (
-                                        \(
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         e'32
@@ -885,80 +858,68 @@
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             f'32
-                                            )
                                             [
 
                                             e'32
-                                            (
 
                                             eqs'32
-
-                                            gqf'32
-                                            )
                                             \)
 
-                                            d'32
-                                            (
+                                            gqf'32
                                             \(
+
+                                            d'32
 
                                             ef'32
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             e'32
-                                            )
                                             ]
 
                                         }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         ef'32
+                                        \)
                                         [
-                                        (
 
                                         eqf'32
+                                        \(
 
                                         fqs'32
-                                        )
-                                        \)
 
                                         f'32
-                                        (
-                                        \(
 
                                         fs'32
 
                                         g'32
-                                        )
 
                                         fs'32
-                                        (
+                                        \)
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         gqf'32
                                         ]
+                                        \(
 
                                         \times 4/5
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             aqf'32
-                                            )
-                                            \)
                                             [
 
                                             e'32
-                                            (
-                                            \(
 
                                             f'32
+                                            \)
 
                                             fs'32
-                                            )
+                                            \(
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             f'32
                                             ]
-                                            (
 
                                         }
 
@@ -973,38 +934,31 @@
                                             [
 
                                             gqs'32
-                                            )
-                                            \)
 
                                             f'32
-                                            (
-                                            \(
 
                                             fs'32
 
                                             g'32
-                                            )
+                                            \)
 
                                             fs'32
                                             \stopTextSpanOne
-                                            (
                                             - \tweak staff-padding 6
                                             - \abjad-solid-line-with-arrow
                                             - \tweak bound-details.left.text \markup \concat { \half-diamond-notehead-markup \hspace #0.5 }
                                             \startTextSpanOne
+                                            \(
 
                                             gqf'32
 
                                             aqf'32
-                                            )
-                                            \)
 
                                             g'32
-                                            (
-                                            \(
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             af'32
+                                            \)
                                             ]
 
                                         }
@@ -1015,59 +969,50 @@
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             a'32
-                                            )
                                             [
+                                            \(
 
                                             af'32
-                                            (
 
                                             aqf'32
 
                                             bqf'32
-                                            )
-                                            \)
 
                                             fs'32
-                                            (
-                                            \(
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             g'32
+                                            \)
                                             ]
 
                                         }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         af'32
-                                        )
                                         [
+                                        \(
 
                                         g'32
-                                        (
 
                                         gqs'32
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         aqs'32
-                                        )
                                         \)
                                         ]
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         a'32
                                         [
-                                        (
                                         \(
 
                                         bf'32
 
                                         b'32
-                                        )
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         bf'32
                                         ]
-                                        (
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -1078,20 +1023,16 @@
                                             [
 
                                             cqs''32
-                                            )
-                                            \)
 
                                             af'32
-                                            (
+                                            \)
+
+                                            a'32
                                             \(
 
-                                            a'32
-
                                             bf'32
-                                            )
 
                                             a'32
-                                            (
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             aqs'32
@@ -1101,41 +1042,30 @@
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         bqs'32
-                                        )
                                         \)
                                         [
 
                                         a'32
-                                        (
                                         \(
 
                                         bf'32
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         b'32
-                                        )
                                         ]
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         bf'32
                                         [
-                                        (
 
                                         bqf'32
 
                                         cqs''32
-                                        )
                                         \)
-                                        \stopTextSpanTwo
-                                        - \tweak staff-padding 8
-                                        - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright "molto gridato" \hspace #0.5 }
-                                        \startTextSpanTwo
 
                                         \revert VanishingStaff.Stem.stemlet-length
                                         b'32
                                         ]
-                                        (
                                         \(
 
                                         \times 4/5
@@ -1151,225 +1081,152 @@
                                             \startTextSpanOne
 
                                             cs''32
-                                            )
 
                                             c''32
-                                            (
+                                            \)
 
                                             cqs''32
+                                            \(
 
                                             \revert VanishingStaff.Stem.stemlet-length
                                             dqs''32
-                                            \fff
-                                            )
+                                            \mp
                                             \)
                                             ]
                                             \revert-noteheads
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 6]
-                                            \half-harmonic
-                                            \clef "treble"
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            g'32
-                                            \f
-                                            \stopTextSpanOne
-                                            \stopTextSpanTwo
-                                            [
-                                            (
-                                            - \tweak staff-padding 7
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \diamond-notehead-markup \hspace #0.5 }
-                                            \startTextSpanOne
-                                            - \tweak staff-padding 9
-                                            - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright "quasi gridato" \hspace #0.5 }
-                                            \startTextSpanTwo
-                                            \(
-                                            \<
-
-                                            af'32
-
-                                            a'32
-
-                                            bf'32
-                                            )
-
-                                            af'32
-                                            (
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            bf'32
-                                            ]
-
-                                        }
-
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 6]
+                                        \clef "treble"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        b'32
+                                        g'32
+                                        \ff
+                                        \stopTextSpanOne
                                         [
+                                        - \tweak staff-padding 9
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "quasi gridato" \hspace #0.5 }
+                                        \startTextSpanTwo
+                                        \>
+
+                                        af'32
+
+                                        a'32
+
+                                        bf'32
+
+                                        af'32
+
+                                        bf'32
+
+                                        b'32
 
                                         c''32
 
                                         cqs''32
-                                        )
-                                        \)
 
-                                        \revert VanishingStaff.Stem.stemlet-length
                                         a'32
-                                        ]
-                                        (
-                                        \(
 
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
                                         bf'32
-                                        [
-
-                                        b'32
-
-                                        c''32
-                                        )
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        bf'32
+                                        b'32
                                         ]
-                                        (
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            c''32
-                                            [
-
-                                            cs''32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            d''32
-                                            ]
-
-                                        }
-
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 7]
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        dqs''32
-                                        )
-                                        \)
+                                        c''32
                                         [
 
-                                        b'32
-                                        (
-                                        \(
+                                        bf'32
 
                                         c''32
 
                                         cs''32
 
                                         d''32
-                                        )
 
+                                        dqs''32
+
+                                        b'32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
                                         c''32
-                                        (
+                                        ]
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 7]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cs''32
+                                        [
 
                                         d''32
 
-                                        \revert VanishingStaff.Stem.stemlet-length
+                                        c''32
+
+                                        d''32
+
                                         ef''32
+
+                                        e''32
+
+                                        eqs''32
+
+                                        cs''32
+
+                                        d''32
+
+                                        ef''32
+
+                                        e''32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d''32
                                         ]
-
-                                        \times 8/9
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            e''32
-                                            [
-
-                                            eqs''32
-                                            )
-                                            \)
-
-                                            cs''32
-                                            (
-                                            \(
-
-                                            d''32
-
-                                            ef''32
-
-                                            e''32
-                                            )
-
-                                            d''32
-                                            (
-
-                                            e''32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            f''32
-                                            ]
-
-                                        }
-
-                                        \times 4/5
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            fs''32
-                                            [
-
-                                            gqf''32
-                                            )
-                                            \)
-
-                                            ef''32
-                                            (
-                                            \(
-
-                                            e''32
-
-                                            f''32
-
-                                            fs''32
-                                            )
-
-                                            e''32
-                                            (
-
-                                            fs''32
-                                            \stopTextSpanOne
-                                            - \tweak staff-padding 7
-                                            - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \half-diamond-notehead-markup \hspace #0.5 }
-                                            \startTextSpanOne
-
-                                            g''32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            af''32
-                                            ]
-
-                                        }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        aqf''16
-                                        )
-                                        \)
+                                        e''32
                                         [
 
+                                        f''32
+
+                                        fs''32
+
+                                        gqf''32
+
+                                        ef''32
+
+                                        e''32
+
+                                        f''32
+
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        f''16
-                                        \fff
+                                        fs''32
                                         ]
-                                        \revert-noteheads
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        e''32
+                                        [
+
+                                        fs''32
+
+                                        g''32
+
+                                        af''32
+
+                                        aqf''32
+
+                                        f''32
+
+                                        fs''32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        g''32
+                                        \mf
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1425,7 +1282,6 @@
                                         e''1
                                         - \accent
                                         \fff
-                                        \stopTextSpanOne
                                         \stopTextSpanTwo
                                         - \tweak staff-padding 6
                                         - \abjad-solid-line-with-arrow
@@ -1697,15 +1553,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4

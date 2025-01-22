@@ -321,7 +321,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -457,7 +457,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [battuto voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -593,7 +593,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [bow voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -729,7 +729,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -865,7 +865,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -1001,7 +1001,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [front voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -1349,104 +1349,77 @@
                                         R1 * 1/4
                                         \stopStaff \startStaff
 
-                                        \times 8/11
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 6]
+                                        \all-color-music #"black"
+                                        cqs,4
+                                        \f
+                                        - \tweak stencil #abjad-flared-hairpin
+                                        \>
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
                                         {
 
-                                            \times 2/3
-                                            {
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 6]
-                                                \all-color-music #(universal-color "blue")
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                cqs,8
-                                                - \downbow
-                                                \p
-                                                [
-                                                (
-                                                - \tweak staff-padding 9
-                                                - \abjad-solid-line-with-arrow
-                                                - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                                \startTextSpan
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                eqf,16
-                                                ]
-
-                                            }
-
-                                            eqs,4
-                                            ~
-
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            eqs,16
+                                            cqs,16
                                             [
 
-                                            ef,16.
-                                            )
+                                            eqf,16
+                                            - \accent
+                                            \p
+                                            \stopTrillSpan
+
+                                            eqs,16
+                                            - \accent
+
+                                            ef,16
+                                            - \accent
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            dqs,16.
-                                            - \accent
-                                            - \upbow
+                                            dqs,16
+                                            - \scrape-circular-clockwise
                                             ]
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                f,16
-                                                - \downbow
-                                                \stopTextSpan
-                                                [
-                                                (
-                                                - \tweak staff-padding 9
-                                                - \abjad-solid-line-with-arrow
-                                                - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
-                                                \startTextSpan
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                eqs,32
-                                                ]
-
-                                            }
+                                            ~
 
                                         }
 
-                                        \times 8/9
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        dqs,8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        f,8
+                                        :32
+                                        \ff
+                                        ]
+                                        \tweak bound-details.right.padding # 1
+                                        \tweak staff-padding #3
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
+                                        \startTextSpan
+
+                                        \times 2/3
                                         {
 
-                                            g,16
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \times 5/6
-                                            {
-
-                                                e,4
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                cs,8
-                                                )
-
-                                            }
-
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            c16.
-                                            - \accent
-                                            - \upbow
+                                            eqs8
+                                            \mp
+                                            \stopTextSpan
                                             [
-                                            (
+
+                                            g16
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            bqs,16.
-                                            )
-                                            \stopTextSpan
+                                            e8.
+                                            :32
                                             ]
-                                            - \tweak bound-details.right.padding 1.25
-                                            - \tweak staff-padding 9
+                                            \tweak bound-details.right.padding # 1
+                                            \tweak staff-padding #3
                                             - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
+                                            - \tweak bound-details.left.text \markup \concat { \upright spz. \hspace #0.5 }
                                             \startTextSpan
 
                                         }
@@ -1577,182 +1550,136 @@
                                         \stopTextSpanOne
                                         \stopStaff \startStaff
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 9]
+                                        \all-color-music #"black"
+                                        cs,4
+                                        \f
+                                        - \tweak stencil #abjad-flared-hairpin
+                                        \>
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
                                         {
 
-                                            \times 2/3
-                                            {
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 9]
-                                                \all-color-music #(universal-color "blue")
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                d,16
-                                                - \downbow
-                                                \mp
-                                                [
-                                                (
-                                                - \tweak staff-padding 10.5
-                                                - \abjad-solid-line-with-arrow
-                                                - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                                \startTextSpan
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                dqf32
-                                                ]
-
-                                            }
-
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            e,16
+                                            cs,16
                                             [
 
-                                            ef,64
-                                            )
-
-                                            c32
+                                            c16
                                             - \accent
-                                            - \upbow
+                                            \p
+                                            \stopTrillSpan
 
-                                            b,64
-                                            - \downbow
-                                            (
+                                            bqs16
+                                            - \accent
 
-                                            bqf,16
-
-                                            cs8
+                                            d16
+                                            - \accent
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            cqs16
+                                            dqf16
+                                            - \scrape-circular-clockwise
                                             ]
+                                            ~
 
                                         }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        dqf8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        e8
+                                        :32
+                                        \ff
+                                        ]
+                                        \tweak bound-details.right.padding # 1
+                                        \tweak staff-padding #4
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
+                                        \startTextSpan
 
                                         \times 2/3
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            cs8
-                                            )
-                                            [
-
-                                            bqf,16
-                                            - \accent
-                                            - \upbow
-                                            (
-
-                                            dqf8
-                                            )
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            dqs,16
-                                            - \downbow
-                                            ]
-                                            (
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                ef,8
-                                                [
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                cqs16
-                                                ]
-
-                                            }
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            dqs,16
-                                            )
+                                            ef'8
+                                            \mp
                                             \stopTextSpan
                                             [
-                                            - \tweak staff-padding 10.5
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
-                                            \startTextSpan
 
-                                            ef,8
-                                            - \accent
-                                            - \upbow
+                                            c'16
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            e,16
-                                            - \downbow
+                                            b8.
+                                            :32
                                             ]
-                                            (
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 10]
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            cs16
-                                            [
-
-                                            eqs,16
-
-                                            f,8
-
-                                            eqs,16
-                                            )
-
-                                            f,16
-                                            - \accent
-                                            - \upbow
-                                            (
-
-                                            gqf,64
-                                            )
-
-                                            eqf,32
-                                            - \downbow
-                                            (
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            dqs,64
-                                            ]
-
-                                        }
-
-                                        ef,8
-                                        ~
-
-                                        ef,16..
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 9/16
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            d,8
-                                            )
-                                            [
-
-                                            dqf16
-                                            - \accent
-                                            - \upbow
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            cqs16
-                                            - \downbow
-                                            \stopTextSpan
-                                            ]
-                                            - \tweak bound-details.right.padding 1.25
-                                            - \tweak staff-padding 10.5
+                                            \tweak bound-details.right.padding # 1
+                                            \tweak staff-padding #3
                                             - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
+                                            - \tweak bound-details.left.text \markup \concat { \upright spz. \hspace #0.5 }
                                             \startTextSpan
+                                            ~
 
                                         }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 10]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        b8
+                                        :32
+                                        [
+
+                                        \half-harmonic
+                                        bqf16
+                                        \ff
+                                        \stopTextSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs'16
+                                        :32
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            cqs'16
+                                            - \accent
+                                            [
+
+                                            cs'8.
+                                            - \accent
+                                            \startTrillSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            bqf16
+                                            - \accent
+                                            - \scrape-circular-clockwise
+                                            \stopTrillSpan
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        bqf16
+                                        [
+
+                                        dqf'8
+                                        - \accent
+                                        \startTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        dqs'16
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+                                        ]
+                                        \revert-noteheads
 
                                         \tweak text #tuplet-number::calc-fraction-text
                                         \times 8/7
@@ -1767,7 +1694,6 @@
                                             :32
                                             - \accent
                                             \f
-                                            \stopTextSpan
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -1863,101 +1789,19 @@
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 14/15
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 12]
-                                            \all-color-music #(universal-color "blue")
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            eqf,16
-                                            - \downbow
-                                            \mf
-                                            \stopTextSpan
-                                            \stopTrillSpan
-                                            [
-                                            (
-                                            - \tweak staff-padding 8
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                            \startTextSpan
-
-                                            c16
-
-                                            bqs,32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            cqs32
-                                            )
-                                            ]
-
-                                            cs4
-                                            - \accent
-                                            - \upbow
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                dqs16
-                                                - \downbow
-                                                [
-                                                (
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                bqs,32
-                                                ]
-
-                                            }
-
-                                            bqf,4.
-                                            \stopTextSpan
-                                            - \tweak staff-padding 8
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
-                                            \startTextSpan
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            b,64
-                                            [
-
-                                            cqs32
-                                            )
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            cs64
-                                            - \accent
-                                            - \upbow
-                                            ]
-                                            (
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 7/12
-                                        {
-
-                                            d1
-                                            )
-
-                                            b,8
-                                            - \downbow
-                                            (
-
-                                            dqs4
-
-                                            ef8
-                                            )
-                                            \stopTextSpan
-                                            - \tweak bound-details.right.padding 1.25
-                                            - \tweak staff-padding 8
-                                            - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                            \startTextSpan
-
-                                        }
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 12]
+                                        \all-color-music #"black"
+                                        ef,1..
+                                        \ff
+                                        \stopTextSpan
+                                        \stopTrillSpan
+                                        \tweak bound-details.right.padding #1
+                                        \tweak staff-padding #3
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "molto gridato" \hspace #0.5 }
+                                        \startTextSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2021,7 +1865,7 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 14]
                                             \all-color-music #(universal-color "blue")
-                                            dqs,8
+                                            cqs,8
                                             - \downbow
                                             \mp
                                             (
@@ -2033,9 +1877,9 @@
                                             \times 2/3
                                             {
 
-                                                ef,2
+                                                dqs,2
 
-                                                eqs,4
+                                                ef,4
                                                 )
 
                                             }
@@ -2044,13 +1888,13 @@
                                             {
 
                                                 \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                dqf16
+                                                e,16
                                                 - \accent
                                                 - \upbow
                                                 [
 
                                                 \revert VanishingStaff.Stem.stemlet-length
-                                                cqs8
+                                                cs,8
                                                 - \downbow
                                                 ]
                                                 (
@@ -2066,222 +1910,356 @@
                                             \times 2/3
                                             {
 
-                                                cs8
+                                                eqs,8
 
-                                                fs,4
+                                                f,4
+                                                \stopTextSpan
+                                                - \tweak staff-padding 8.5
+                                                - \abjad-solid-line-with-arrow
+                                                - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
+                                                \startTextSpan
 
                                             }
 
-                                            f,4
+                                            eqs,4
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            dqs,16
+                                            f,16
                                             [
                                             ~
 
-                                            dqs,64
+                                            f,64
                                             )
 
-                                            cqs32.
+                                            gqf,32.
                                             - \accent
                                             - \upbow
                                             (
 
-                                            a,16
+                                            eqf,16
                                             )
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            g,16
+                                            dqs,16
                                             - \downbow
-                                            ]
-                                            (
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 15]
-                                            d4.
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            aqs,16
-                                            [
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            ef,16
-                                            )
-                                            ]
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \times 5/6
-                                            {
-
-                                                fs,2
-                                                - \accent
-                                                - \upbow
-
-                                                e,4
-                                                - \downbow
-                                                (
-
-                                            }
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
-                                        {
-
-                                            \times 2/3
-                                            {
-
-                                                bqs,4
-
-                                                aqf,2
-
-                                            }
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            f,8
-                                            [
-
-                                            cs16
-                                            )
-
-                                            ef,32
-                                            - \accent
-                                            - \upbow
                                             \stopTextSpan
-                                            (
-                                            - \tweak staff-padding 8.5
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
-                                            \startTextSpan
-
-                                            bqf,32
-                                            )
-
-                                            d32
-                                            - \downbow
-                                            (
-
-                                            aqf,16
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            bqf,32
-                                            )
                                             ]
+                                            - \tweak bound-details.right.padding 1.25
+                                            - \tweak staff-padding 8.5
+                                            - \abjad-dashed-line-with-hook
+                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
+                                            \startTextSpan
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 16]
+                                        % [cello voice measure 15]
+                                        \all-color-music #"black"
+                                        \half-harmonic
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        f,16
-                                        - \accent
-                                        - \upbow
+                                        ef,16
+                                        \mf
+                                        \stopTextSpan
                                         [
-
-                                        ef,32
-                                        - \downbow
                                         (
 
-                                        bqs,32
-                                        ~
+                                        b,16
 
-                                        bqs,32
+                                        g16
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        cqs32
+                                        ef'16
+                                        )
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        ef'16
+                                        [
+                                        (
+
+                                        g16
+
+                                        b,16
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        ef,16
+                                        )
+                                        ]
+                                        \revert-noteheads
+
+                                        ef,4
+                                        \sfp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #6
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanOne
+                                        \startTrillSpan
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            d16
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
+                                            \stopTrillSpan
+                                            [
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #6
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+
+                                            dqf16
+
+                                            cqs16
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            eqf,8.
+                                            \sfp
+                                            ]
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c8
+                                        \mf
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanOne
+                                        [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #8
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "gridato"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "teso"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #6
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanOne
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        bqs,8
                                         ]
 
                                         \times 2/3
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            f,16
+                                            cqs16
+                                            \p
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanTwo
                                             [
+                                            (
+                                            \<
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #6
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+
+                                            cs16
+
+                                            dqs16
+
+                                            bqs,16
+
+                                            bqf,16
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            cqs32
-                                            )
+                                            b,16
                                             ]
 
                                         }
 
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        g,32
-                                        - \accent
-                                        - \upbow
-                                        [
-                                        (
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
 
-                                        e,32
-                                        )
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 16]
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            cqs32
+                                            [
+
+                                            cs32
+
+                                            d32
+                                            \f
+                                            )
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            b,8
+                                            \p
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #6
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+                                            ~
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        b,16
+                                        [
+
+                                        dqs16
+                                        \ff
+
+                                        ef,16
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        ef,16
-                                        - \downbow
+                                        dqs16
                                         ]
-                                        (
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/5
+                                        \times 2/3
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            bqf,32
+                                            ef,8.
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             [
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #6
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "N"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpanOne
+
+                                            eqs,8
+                                            \pp
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            f,32
+                                            dqf16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpanOne
                                             ]
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                dqf16
-                                                )
-                                                [
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                cqs32
-                                                - \accent
-                                                - \upbow
-                                                ]
-
-                                            }
-
-                                            dqs,8
-                                            - \downbow
-                                            (
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                g,64
-                                                [
-
-                                                bqf,32.
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                cs32
-                                                )
-                                                \stopTextSpan
-                                                ]
-                                                - \tweak bound-details.right.padding 1.25
-                                                - \tweak staff-padding 8.5
-                                                - \abjad-dashed-line-with-hook
-                                                - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                                \startTextSpan
-
-                                            }
 
                                         }
 
@@ -2298,7 +2276,6 @@
                                             :32
                                             - \accent
                                             \f
-                                            \stopTextSpan
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -2552,7 +2529,7 @@
                                         r8
                                         \ff
                                         ]
-                                        \bar "||"
+                                        \bar "|"
 
                                     }
 
@@ -2688,7 +2665,7 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 20]
                                         r1
-                                        \bar "||"
+                                        \bar "|"
 
                                     }
 
@@ -2828,7 +2805,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [back voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 
@@ -2964,7 +2941,7 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 20]
                                 r1
-                                \bar "||"
+                                \bar "|"
 
                             }
 

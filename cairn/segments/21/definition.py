@@ -38,171 +38,266 @@ maker = evans.SegmentMaker(
     name_staves=True,
     fermata_measures=cairn.fermata_measures_21,
     commands=[
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.RehearsalMark(number=21),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
         ## Cello
         evans.attach(
             "cello voice",
             abjad.Clef("bass"),
             selector=lambda _: abjad.select.leaf(_, 0),
         ),
-        evans.attach(
-            "string voice",
-            abjad.LilyPondLiteral(r"\stopStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "string voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.StaffSymbol.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "string voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Dots.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "string voice",
-            abjad.LilyPondLiteral(r"\startStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "change voice",
-            abjad.LilyPondLiteral(r"\stopStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "change voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.StaffSymbol.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "change voice",
-            abjad.LilyPondLiteral(r"\startStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "change voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Rest.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "change voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Dots.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "left voice",
-            abjad.LilyPondLiteral(r"\stopStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "left voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.StaffSymbol.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "left voice",
-            abjad.LilyPondLiteral(r"\startStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "left voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Rest.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "left voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Dots.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "right voice",
-            abjad.LilyPondLiteral(r"\stopStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "right voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.StaffSymbol.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "right voice",
-            abjad.LilyPondLiteral(r"\startStaff", site="before"),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "right voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Rest.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        evans.attach(
-            "right voice",
-            abjad.LilyPondLiteral(
-                r"\override Staff.Dots.transparent = ##t", site="before"
-            ),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
+        # evans.attach(
+        #     "string voice",
+        #     abjad.LilyPondLiteral(r"\stopStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "string voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.StaffSymbol.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "string voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Dots.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "string voice",
+        #     abjad.LilyPondLiteral(r"\startStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "change voice",
+        #     abjad.LilyPondLiteral(r"\stopStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "change voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.StaffSymbol.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "change voice",
+        #     abjad.LilyPondLiteral(r"\startStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "change voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Rest.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "change voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Dots.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "left voice",
+        #     abjad.LilyPondLiteral(r"\stopStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "left voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.StaffSymbol.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "left voice",
+        #     abjad.LilyPondLiteral(r"\startStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "left voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Rest.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "left voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Dots.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "right voice",
+        #     abjad.LilyPondLiteral(r"\stopStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "right voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.StaffSymbol.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "right voice",
+        #     abjad.LilyPondLiteral(r"\startStaff", site="before"),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "right voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Rest.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
+        # evans.attach(
+        #     "right voice",
+        #     abjad.LilyPondLiteral(
+        #         r"\override Staff.Dots.transparent = ##t", site="before"
+        #     ),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
         #### MUSIC
+        # evans.MusicCommand(
+        #     ("cello voice", [0, 1, 2, 3, 4]),
+        #     evans.talea(
+        #         [6, 5, 1, 1, 4, 1, 7, 1, 1, 1, 8],
+        #         32,
+        #         extra_counts=[0, 1, 0, 2],
+        #         preprocessor=evans.make_preprocessor(quarters=True),
+        #     ),
+        #     evans.PitchHandler(
+        #         [
+        #             ["bf,", "bf,"], ["a,", "bf,"],
+        #             ["bf,", "bf,"], ["a,", "bf,"],
+        #             ["bf,", "bf,"],
+        #             ["btqf,", "bf,"],
+        #             ["a,", "bf,"],
+        #             ["bf,", "bf,"], ["bqf,", "bf,"], ["bf,", "bf,"],
+        #             ["a,", "bf,"],
+        #         ],
+        #         allow_chord_duplicates=True,
+        #     ),
+        #     evans.force_accidentals,
+        #     abjad.Dynamic("ff"),
+        #     abjad.StartHairpin("--"),
+        #     evans.Attachment(
+        #         abjad.StopHairpin(),
+        #         selector=lambda _: abjad.select.leaf(_, -1),
+        #     ),
+        #     evans.Attachment(
+        #         abjad.bundle(
+        #             abjad.StartTextSpan(
+        #                 left_text=abjad.Markup(r'\markup \upright { \fraction 1 2 P }'),
+        #                 style=r"dashed-line-with-hook",
+        #                 command=r"\startTextSpanOne",
+        #             ),
+        #             r"- \tweak staff-padding 6",
+        #         ),
+        #         selector=lambda _: abjad.select.leaf(_, 0),
+        #     ),
+        #     evans.Attachment(
+        #         abjad.StopTextSpan(command=r"\stopTextSpanOne",),
+        #         selector=lambda _: abjad.select.leaf(_, -1),
+        #     ),
+        # ),
         evans.MusicCommand(
             ("cello voice", [0, 1, 2, 3, 4]),
-            evans.talea(
-                [6, 5, 1, 1, 4, 1, 7, 1, 1, 1, 8],
-                32,
-                extra_counts=[0, 1, 0, 2],
-                preprocessor=evans.make_preprocessor(quarters=True),
-            ),
-            evans.PitchHandler(
-                [
-                    ["bf,", "bf,"], ["a,", "bf,"],
-                    ["bf,", "bf,"], ["a,", "bf,"],
-                    ["bf,", "bf,"],
-                    ["btqf,", "bf,"],
-                    ["a,", "bf,"],
-                    ["bf,", "bf,"], ["bqf,", "bf,"], ["bf,", "bf,"],
-                    ["a,", "bf,"],
-                ],
-                allow_chord_duplicates=True,
-            ),
-            evans.force_accidentals,
-            abjad.Dynamic("ff"),
-            abjad.StartHairpin("--"),
+            evans.note(),
             evans.Attachment(
-                abjad.StopHairpin(),
+                evans.AfterGraceContainer("e16"),
                 selector=lambda _: abjad.select.leaf(_, -1),
             ),
+            evans.PitchHandler(evans.Sequence.range(-13, 13)),
+            abjad.glissando,
+            abjad.Dynamic("f"),
             evans.Attachment(
                 abjad.bundle(
                     abjad.StartTextSpan(
-                        left_text=abjad.Markup(r'\markup \upright { \fraction 1 2 P }'),
-                        style=r"dashed-line-with-hook",
+                        left_text=abjad.Markup(r'\markup \upright { \fraction 1 2 gridato }'),
+                        style=r"solid-line-with-arrow",
                         command=r"\startTextSpanOne",
                     ),
-                    r"- \tweak staff-padding 6",
+                    r"- \tweak staff-padding 3",
                 ),
                 selector=lambda _: abjad.select.leaf(_, 0),
             ),
             evans.Attachment(
                 abjad.StopTextSpan(command=r"\stopTextSpanOne",),
-                selector=lambda _: abjad.select.leaf(_, -1),
+                selector=lambda _: abjad.select.leaf(_, 1),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r'\markup \upright "molto gridato"'),
+                        style=r"solid-line-with-arrow",
+                        command=r"\startTextSpanOne",
+                    ),
+                    r"- \tweak staff-padding 3",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 1),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(command=r"\stopTextSpanOne",),
+                selector=lambda _: abjad.select.leaf(_, 2),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r'\markup \upright { flauntando }'),
+                        style=r"solid-line-with-arrow",
+                        command=r"\startTextSpanOne",
+                    ),
+                    r"- \tweak staff-padding 3",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 2),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(command=r"\stopTextSpanOne",),
+                selector=lambda _: abjad.select.leaf(_, 3),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r'\markup \upright { teso }'),
+                        style=r"solid-line-with-arrow",
+                        command=r"\startTextSpanOne",
+                    ),
+                    r"- \tweak staff-padding 3",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 3),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(command=r"\stopTextSpanOne",),
+                selector=lambda _: abjad.select.leaf(_, 4),
+            ),
+            evans.Attachment(
+                abjad.bundle(
+                    abjad.StartTextSpan(
+                        left_text=abjad.Markup(r'\markup \upright "molto gridato"'),
+                        style=r"dashed-line-with-hook",
+                        command=r"\startTextSpanOne",
+                    ),
+                    r"- \tweak staff-padding 3",
+                ),
+                selector=lambda _: abjad.select.leaf(_, 4),
+            ),
+            evans.Attachment(
+                abjad.StopTextSpan(command=r"\stopTextSpanOne",),
+                selector=lambda _: abjad.select.leaf(_, 6),
+            ),
+            evans.Attachment(
+                abjad.Glissando(),
+                selector=lambda _: abjad.select.leaf(_, 4),
             ),
         ),
         #### Cleanup

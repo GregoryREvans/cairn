@@ -13,6 +13,7 @@
 \include "evans-chart-markups.ily"
 \include "evans-spanners.ily"
 
+
 afterGraceFraction = #(cons 15 16)
 
 string-contact-clef-markup = \markup {
@@ -264,12 +265,12 @@ dashedStaffSymbolLines =
             \fontsize #-3
 			\line{
                 \vspace #1.3
-                n y c t i v o e \hspace #1.75 i n t e r l u d e \hspace #1.75 II \hspace #1.6
+                n y c t i v o e \hspace #1.75 i n t e r l u d e \hspace #1.75
 			}
             \override #'(font-name . "Bell MT Italic")
             \fontsize #-3
             \line {
-                u n a c c o m p a n i e d \hspace #1.75 c o n c e r t o \hspace #1.75 f o r \hspace #1.75
+                f o r \hspace #1.75
                 v i o l o n c e l l o
             }
     }
@@ -298,6 +299,7 @@ dashedStaffSymbolLines =
         \type Engraver_group
         \consists Axis_group_engraver
 		\consists Bar_number_engraver
+        \consists Caesura_engraver
         %{ \consists Time_signature_engraver %}
 		\consists Mark_engraver % for section labels. Any errors?
 		%{ \consists Metronome_mark_engraver %}
@@ -420,6 +422,8 @@ dashedStaffSymbolLines =
 		pedalSustainStyle = #'mixed
 		barNumberFormatter = #oval-bar-numbers
 		tupletFullLength = ##t
+        %{ caesuraType = #'((breath . spacer) (scripts . (outsidecomma)))
+        caesuraTypeTransform = #(at-bar-line-substitute-caesura-type '((scripts . (fermata)))) %}
 		%{ tupletFullLengthNote = ##t % makes grace notes stand out %}
 		%{ subdivideBeams = ##t % just trying this out %}
 

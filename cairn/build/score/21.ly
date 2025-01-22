@@ -67,14 +67,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -203,15 +199,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -252,15 +243,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -356,329 +342,82 @@
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
                                         \clef "bass"
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <bf,! bf,!>8.
-                                        \ff
-                                        [
-                                        - \tweak staff-padding 6
-                                        - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright { \fraction 1 2 P } \hspace #0.5 }
+                                        b,1
+                                        \f
+                                        - \tweak staff-padding 3
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright { \fraction 1 2 gridato } \hspace #0.5 }
                                         \startTextSpanOne
-                                        - \tweak stencil #constante-hairpin
-                                        \<
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a,! bf,!>16
-                                        ]
-                                        ~
-
-                                        \times 8/9
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a, bf,>16.
-                                            [
-
-                                            <bf,! bf,!>32
-
-                                            <a,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <bf,! bf,!>8
-                                            ]
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <btqf,! bf,!>32
-                                        [
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a,! bf,!>8..
-                                        ]
-
-                                        \times 4/5
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <bf,! bf,!>32
-                                            [
-
-                                            <bf,! bqf,!>32
-
-                                            <bf,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <a,! bf,!>8..
-                                            ]
-                                            ~
-
-                                        }
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <a, bf,>32
-                                        [
+                                        c2.
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 3
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright "molto gridato" \hspace #0.5 }
+                                        \startTextSpanOne
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                        <bf,! bf,!>8.
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 3]
+                                        cs2
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 3
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright { flauntando } \hspace #0.5 }
+                                        \startTextSpanOne
+                                          %! abjad.glissando(7)
+                                        \glissando
 
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a,! bf,!>32
-                                        ]
-                                        ~
-
-                                        \times 8/9
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a, bf,>8
-                                            [
-
-                                            <bf,! bf,!>32
-
-                                            <a,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <bf,! bf,!>16.
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <bf, bf,>32
-                                        [
-
-                                        <btqf,! bf,!>32
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a,! bf,!>8.
-                                        ]
-                                        ~
-
-                                        \times 4/5
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 3]
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a, bf,>32
-                                            [
-
-                                            <bf,! bf,!>32
-
-                                            <bf,! bqf,!>32
-
-                                            <bf,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <a,! bf,!>8.
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <a, bf,>16
-                                        [
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <bf,! bf,!>8.
-                                        ]
-
-                                        \times 8/9
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 4]
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a,! bf,!>8
-                                            [
-                                            ~
-
-                                            <a, bf,>32
-
-                                            <bf,! bf,!>32
-
-                                            <a,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <bf,! bf,!>16
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <bf, bf,>16
-                                        [
-
-                                        <btqf,! bf,!>32
-
-                                        <a,! bf,!>8
-                                        ~
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a, bf,>32
-                                        ]
-                                        ~
-
-                                        \times 4/5
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a, bf,>16
-                                            [
-
-                                            <bf,! bf,!>32
-
-                                            <bf,! bqf,!>32
-
-                                            <bf,! bf,!>32
-
-                                            <a,! bf,!>8
-                                            ~
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <a, bf,>32
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <a, bf,>16.
-                                        [
-
-                                        <bf,! bf,!>8
-                                        ~
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <bf, bf,>32
-                                        ]
-                                        ~
-
-                                        \times 8/9
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <bf, bf,>32
-                                            [
-
-                                            <a,! bf,!>8
-                                            ~
-
-                                            <a, bf,>32
-
-                                            <bf,! bf,!>32
-
-                                            <a,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <bf,! bf,!>32
-                                            ]
-                                            ~
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <bf, bf,>16.
-                                        [
-
-                                        <btqf,! bf,!>32
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a,! bf,!>8
-                                        ]
-                                        ~
-
-                                        \times 4/5
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a, bf,>16.
-                                            [
-
-                                            <bf,! bf,!>32
-
-                                            <bf,! bqf,!>32
-
-                                            <bf,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <a,! bf,!>8
-                                            ]
-                                            ~
-
-                                        }
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 4]
+                                        d1..
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 3
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright { teso } \hspace #0.5 }
+                                        \startTextSpanOne
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <a, bf,>8
-                                        [
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <bf,! bf,!>8
-                                        ]
-                                        ~
-
-                                        \times 8/9
+                                        \afterGrace
+                                        ef1
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 3
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "molto gridato" \hspace #0.5 }
+                                        \startTextSpanOne
+                                        \glissando
                                         {
 
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <bf, bf,>16
+                                            \start-single-grace
+                                            \once \override Accidental.transparent = ##t
+                                            \once \override Beam.positions = #'(6 . 6)
+                                            \once \override Beam.transparent = ##t
+                                            \once \override Flag.transparent = ##t
+                                            \once \override NoteHead.transparent = ##t
+                                            \once \override Stem.stencil = ##f
+                                            \tweak X-extent #'(0 . 0)
+                                            e16
                                             [
 
-                                            <a,! bf,!>8
-                                            ~
-
-                                            <a, bf,>32
-
-                                            <bf,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <a,! bf,!>32
-                                            ]
-
-                                        }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <bf,! bf,!>8
-                                        [
-
-                                        <btqf,! bf,!>32
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        <a,! bf,!>16.
-                                        ]
-                                        ~
-
-                                        \times 4/5
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            <a, bf,>8
-                                            [
-
-                                            <bf,! bf,!>32
-
-                                            <bf,! bqf,!>32
-
-                                            <bf,! bf,!>32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            <a,! bf,!>16.
-                                            \!
+                                            e!16
                                             \stopTextSpanOne
                                             ]
+                                            \stop-single-grace
 
                                         }
+
 
                                     }
 
@@ -790,15 +529,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS

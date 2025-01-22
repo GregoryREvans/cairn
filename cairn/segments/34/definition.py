@@ -38,6 +38,11 @@ maker = evans.SegmentMaker(
     name_staves=True,
     fermata_measures=cairn.fermata_measures_34,
     commands=[
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.RehearsalMark(number=34),
+        #     selector=lambda _: abjad.select.leaf(_, 0),
+        # ),
         ## Cello
         evans.attach(
             "cello voice",
@@ -162,144 +167,120 @@ maker = evans.SegmentMaker(
             selector=lambda _: abjad.select.leaf(_, 0),
         ),
         #### MUSIC
+        evans.MusicCommand(
+            ("cello voice", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]),
+            evans.tuplet(
+                [
+                (1, 1, 1, 1),
+                (1, 1, 1, 1, 1, 1, 1),
+                (1, 1, 1, 1, 1),
+                (1, 1, 1, 1, 1, 1, 1, 1, 1),
+                (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+                (1, 1, 1, 1, 1),
+                (1, 1, 1, 1, 1, 1, 1),
+                (2, 1, 1, 2, 3, 2, 1, 1, 2, 3, 1, 2),
+                (1, 2, 2, 2, 2, 2),
+                (1, 1, 1, 1, 1),
+                (2, 2, 2, 1),
+                (1, 1),
+                (1, 1, 1, 1, 1, 1, 1),
+                (1, 1, 1, 1),
+                (1, 1, 1, 1, 1, 1, 1),
+                (1, 1, 1, 1, 1),
+                (1, 1, 1, 1),
+                (1, 1, 1, 1, 1, 1, 1, 1, 1),
+                ],
+                rewrite=-1,
+            ),
+            evans.PitchHandler(
+                [
+                    "f", "fqs", "fs", "fqs",
+                    "a,", "aqf,", "af,", "aqf,", "aqs,", "as,", "aqs,",
+                    ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"],
+                    "f", "fqs", "f", "fs", "f", "fqs", "f", "fs", "f",
+                    ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"],
+                    "a,", "aqf,", "af,", "aqf,", "af,",
+                    "e", "eqf", "e", "eqs", "e", "eqf", "e",
+                    "a,", "aqf,", "af,", "aqf,", "aqs,", "as,", "aqs,", "a,", "aqf,", "af,", "aqf,", "aqs,",
+                    ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"],
+                    "d", "dqs", "d", "ds", "d",
+                    ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"],
+                    "a,", "aqf,",
+                    "e", "eqf", "e", "eqs", "e", "e", "eqf",
+                    "f", "fqs", "fs", "fqs",
+                    "a,", "aqf,", "af,", "aqf,", "aqs,", "as,", "aqs,",
+                    ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"],
+                    "f", "fqs", "f", "fs",
+                    ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"], ["bf,", "e"], ["b,", "ef"],
+                ]
+            ),
+            abjad.Dynamic("ff"),
+        ),
+        evans.MusicCommand(
+            ("temporary voice", [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]),
+            evans.tuplet(
+                [
+                (1, 1, 1, 1, 1),
+                (3, 2, 1, 1, 2, 3, 1, 2, 2, 1),
+                (1, 1, 1, 1, 1, 1),
+                (1, 2, 1, 2, 2, 1, 1, 2, 3, 2, 1),
+                (1, 1, 1),
+                (1, 1, 1),
+                (3, 1, 1, 1),
+                (1, 1, 1, 3, 1, 2, 2, 1, 3),
+                (1, 2, 2, 1),
+                (1, 1, 1, 1),
+                (3, 2, 2, 2, 2, 2, 2, 2, 2, 2),
+                (1, 1, 1),
+                (2, 2, 2, 2, 1),
+                (1, 1, 1, 1, 1),
+                (3, 2, 1, 1, 2, 3, 1, 2, 2, 1),
+                (1, 1, 1, 1, 1, 1),
+                (1, 2, 1, 2, 2, 1, 1, 2, 3, 2, 1),
+                (1, 1, 1),
+                ],
+                rewrite=-1,
+            ),
+            evans.PitchHandler(
+                [
+                    ["c,", "gs,"], "d'", ["c,", "gs,"], "d'", ["c,", "gs,"],
+                    "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"],
+                    "f,", "a", "f,", "a", "f,", "a",
+                    ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"],
+                    "f,", "a", "f,",
+                    "c,", ["fs", "ef'"], "c,",
+                    ["c,", "gs,"], "d'", ["c,", "gs,"], "d'",
+                    "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,",
+                    "f,", "a", "f,", "a",
+                    ["e,", "g,"], "b", ["e,", "g,"], "b",
+                    "f,", "a", "f,", "a", "f,", "a", "f,", "a", "f,", "a",
+                    "c,", ["fs", "ef'"], "c,",
+                    ["c,", "gs,"], "d'", ["c,", "gs,"], "d'", ["c,", "gs,"],
+                    ["c,", "gs,"], "d'", ["c,", "gs,"], "d'", ["c,", "gs,"],
+                    "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"], "c,", ["fs", "ef'"],
+                    "f,", "a", "f,", "a", "f,", "a",
+                    ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"], "b", ["e,", "g,"],
+                    "f,", "a", "f,",
+                ]
+            ),
+            abjad.LilyPondLiteral(r"\startStaff", site="before"),
+            evans.Attachment(
+                abjad.LilyPondLiteral(r"\stopStaff", site="after"),
+                selector=lambda _: abjad.select.leaf(_, -1),
+            ),
+            abjad.Clef("bass"),
+        ),
         #### Cleanup
-        # evans.call(
-        #     "score",
-        #     evans.SegmentMaker.beam_score_without_splitting,
-        #     lambda _: abjad.select.components(_, abjad.Score),
-        # ),
-        # evans.call(
-        #     "violin voice",
-        #     rmakers.unbeam,
-        #     evans.select_measures([_ for _ in range(2, 8)]),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     cairn.lib.mark_60,
-        #     lambda _: abjad.select.leaf(_, 0),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     cairn.lib.met_60,
-        #     lambda _: abjad.select.leaf(_, 0),
-        # ),
-        #### Fermati
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-        #     ),
-        #     evans.select_measures([1], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #     ),
-        #     evans.select_measures([8], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-        #     ),
-        #     evans.select_measures([14], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
-        #     ),
-        #     evans.select_measures([18], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #     ),
-        #     evans.select_measures([42], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #     ),
-        #     evans.select_measures([47], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #     ),
-        #     evans.select_measures([80], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ulongfermata"',
-        #     ),
-        #     evans.select_measures([83], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ushortfermata"',
-        #     ),
-        #     evans.select_measures([85], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-        #     ),
-        #     evans.select_measures([89], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uveryshortfermata"',
-        #     ),
-        #     evans.select_measures([99], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.ufermata"',
-        #     ),
-        #     evans.select_measures([103], leaf=1),
-        #     direction=abjad.UP,
-        # ),
-        ####
-        # evans.attach(
-        #     "violin voice",
-        #     abjad.Markup(r"\colophon"),
-        #     lambda _: abjad.select.leaf(_, -3),
-        #     direction=abjad.DOWN,
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.BarLine("|."),
-        #     evans.select_measures([165], leaf=1),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.Markup(
-        #         r'\markup \lower #9 \with-dimensions-from \null \musicglyph #"scripts.uverylongfermata"',
-        #     ),
-        #     evans.select_measures([165], leaf=1),
-        #     direction=abjad.UP,
-        # ),
+        evans.call(
+            "score",
+            lambda _: evans.SegmentMaker.beam_score_without_splitting(_, better_tuplets=True),
+            lambda _: abjad.select.components(_, abjad.Score),
+        ),
+        evans.attach(
+            "Global Context",
+            cairn.lib.met_117,
+            lambda _: abjad.select.leaf(_, 0),
+        ),
     ],
     score_template=cairn.score,
     transpose_from_sounding_pitch=False,

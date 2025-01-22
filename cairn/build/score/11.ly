@@ -109,14 +109,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -356,15 +352,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -442,15 +433,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -621,54 +607,27 @@
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
                                         \clef "bass"
-                                        <c, af, e c'>4
+                                        <c af e' c''>4
                                         \p
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.padding 0.5
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.stencil-align-dir-y #center
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak staff-padding 10
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \abjad-solid-line-with-arrow
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-left-text "P"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-right-text "T"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        \startTextSpanTwo
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <c' af' e'' c'''>4
-                                        \mf
+                                        g'4
+                                        \mp
+                                        ^ \markup \upright {ditta simile}
                                         \>
                                         ~
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <c' af' e'' c'''>16
+                                        g'16
                                         [
                                           %! abjad.glissando(7)
                                         \glissando
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        <d, bf, fs d'>8.
-                                        \p
+                                        d8.
+                                        \pp
                                         ]
                                         \<
                                           %! abjad.glissando(7)
@@ -677,13 +636,15 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
-                                        <c' af' e'' c'''>4.
-                                        \f
+                                        g'4.
+                                        \mf
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \harmonicsOff
 
-                                        <d, bf, fs d'>8
+                                        \half-harmonic
+                                        d8
                                         \p
                                         \<
                                         ~
@@ -691,234 +652,174 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
-                                        <d, bf, fs d'>4
+                                        d4
                                         ~
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        <d, bf, fs d'>16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.text_spanner()
-                                        \stopTextSpanTwo
+                                        d16
                                         [
                                           %! abjad.glissando(7)
                                         \glissando
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        <f, cs a f'>8
-                                        \mf
+                                        f8
+                                        \mp
                                         ]
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <d, bf, fs d'>2
-                                        \p
+                                        d2
+                                        \pp
                                         \<
                                         ~
 
-                                        <d, bf, fs d'>16
+                                        d16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <c' af' e'' c'''>2
-                                        \f
+                                        g'2
+                                        \mf
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \revert-noteheads
 
-                                        <d, bf, fs d'>4
+                                        \harmonicsOn
+                                        d4
                                         \p
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.padding 0.5
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.stencil-align-dir-y #center
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak staff-padding 10
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \abjad-solid-line-with-arrow
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-left-text "N"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-right-text "P"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        \startTextSpanTwo
                                         \<
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        <d, bf, fs d'>16
+                                        d16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <c' af' e'' c'''>4.
-                                        \mf
+                                        g'4.
+                                        \mp
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <a f' cs'' a''>4
-                                        \p
+                                        e'4
+                                        \pp
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <c' af' e'' c'''>4
-                                        \f
+                                        g'4
+                                        \mf
                                         \>
                                         ~
 
-                                        <c' af' e'' c'''>16
+                                        g'16
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \harmonicsOff
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        <a f' cs'' a''>8.
+                                        \half-harmonic
+                                        e'8.
                                         \p
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <c' af' e'' c'''>4
-                                        \mf
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.text_spanner()
-                                        \stopTextSpanTwo
+                                        g'4
+                                        \mp
                                         \>
                                         ~
 
-                                        <c' af' e'' c'''>16
+                                        g'16
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
-                                        <c' af' e'' c'''>16
+                                        g'16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <a f' cs'' a''>4..
-                                        \p
+                                        e'4..
+                                        \pp
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <c' af' e'' c'''>8
-                                        \f
-                                        \>
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        <a f' cs'' a''>2
-                                        \p
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.padding 0.5
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.stencil-align-dir-y #center
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak staff-padding 10
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \abjad-solid-line-with-arrow
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-left-text "T"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-right-text "N"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        \startTextSpanTwo
-                                        \<
-                                        ~
-
-                                        <a f' cs'' a''>16
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        <c' af' e'' c'''>2
+                                        g'8
                                         \mf
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <d, bf, fs d'>16
+                                        e'2
                                         \p
+                                        \<
+                                        ~
+
+                                        e'16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g'2
+                                        \mp
+                                        \>
+                                          %! abjad.glissando(7)
+                                        \glissando
+                                        \revert-noteheads
+
+                                        \harmonicsOn
+                                        d16
+                                        \pp
                                         \<
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        <d, bf, fs d'>4
+                                        d4
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <f, cs a f'>4.
-                                        \f
+                                        f4.
+                                        \mf
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <af, e c' af'>4
+                                        af4
                                         \p
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
+                                        \harmonicsOff
 
-                                        <b, g ef' b'>8
-                                        \mf
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.text_spanner()
-                                        \stopTextSpanTwo
+                                        \half-harmonic
+                                        b8
+                                        \mp
                                         \>
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        <b, g ef' b'>8.
+                                        b8.
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <af, e c' af'>8.
-                                        \p
+                                        af8.
+                                        \pp
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <b, g ef' b'>4.
-                                        \f
+                                        b4.
+                                        \mf
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
@@ -926,175 +827,115 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
-                                        <d bf fs' d''>4..
+                                        d'4..
                                         \p
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.padding 0.5
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.stencil-align-dir-y #center
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak staff-padding 10
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \abjad-solid-line-with-arrow
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-left-text "P"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-right-text "T"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        \startTextSpanTwo
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <b, g ef' b'>8
-                                        \mf
+                                        b8
+                                        \mp
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <af, e c' af'>2
-                                        \p
+                                        af2
+                                        \pp
                                         \<
                                         ~
 
-                                        <af, e c' af'>16
+                                        af16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <b, g ef' b'>4.
-                                        \f
+                                        b4.
+                                        \mf
                                         \>
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        <b, g ef' b'>8
+                                        b8
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <af, e c' af'>4
+                                        af4
                                         \p
                                         \<
                                         ~
 
-                                        <af, e c' af'>16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.text_spanner()
-                                        \stopTextSpanTwo
+                                        af16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <b, g ef' b'>4
-                                        \mf
+                                        b4
+                                        \mp
                                         \>
                                         ~
 
-                                        <b, g ef' b'>16
+                                        b16
                                         ~
+                                        \revert-noteheads
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
-                                        <b, g ef' b'>16
+                                        \harmonicsOn
+                                        b16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <d bf fs' d''>4
-                                        \p
+                                        d'4
+                                        \pp
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <f cs' a' f''>4
-                                        \f
-                                        \>
-                                        ~
-
-                                        <f cs' a' f''>16
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        <af e' c'' af''>8.
-                                        \p
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.padding 0.5
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak bound-details.right.stencil-align-dir-y #center
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \tweak staff-padding 10
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \abjad-solid-line-with-arrow
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-left-text "N"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        - \baca-text-spanner-right-text "P"
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.text_spanner()
-                                        \startTextSpanTwo
-                                        \<
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        <f cs' a' f''>8.
+                                        f'4
                                         \mf
                                         \>
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 12]
-                                        <f cs' a' f''>8.
+                                        f'16
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <af e' c'' af''>4..
+                                        c8.
                                         \p
                                         \<
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <f cs' a' f''>8
-                                        \f
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(3)
-                                          %! baca.text_spanner()
-                                        \stopTextSpanTwo
+                                        f'8.
+                                        \mp
+                                        \>
+                                        ~
+                                        \harmonicsOff
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 12]
+                                        \half-harmonic
+                                        f'8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c4..
+                                        \pp
+                                        \<
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f'8
+                                        \mf
                                         \>
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        <af e' c'' af''>2
+                                        c2
                                         \p
-                                        \harmonicsOff
+                                        \revert-noteheads
 
                                     }
 
@@ -1281,15 +1122,10 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
                                 \all-color-music #(x11-color "firebrick")
-                                \override Staff.Dots.transparent = ##f
-                                \override Staff.Rest.transparent = ##f
-                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'32
                                 [

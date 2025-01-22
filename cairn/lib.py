@@ -75,6 +75,7 @@ met_91 = abjad.MetronomeMark((1, 4), 91)
 met_78 = abjad.MetronomeMark((1, 4), 78)
 
 met_65 = abjad.MetronomeMark((1, 4), 65)
+met_32 = abjad.MetronomeMark((1, 4), 32)
 
 met_52 = abjad.MetronomeMark((1, 4), 52)
 
@@ -87,6 +88,7 @@ met_60_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 60)  # for 
 met_52_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 52)
 
 met_65_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 65)
+met_32_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 32)
 
 met_78_mark = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 78)
 
@@ -132,6 +134,19 @@ mark_65 = abjad.LilyPondLiteral(
         r"  \override #'(font-size . 3)",  # parts
         r"  \concat {",
         f"      {met_65_mark.string[8:]}",
+        r"  }",
+        r"}",
+    ],
+    site="after",
+)
+mark_32 = abjad.LilyPondLiteral(
+    [
+        r"^ \markup {",
+        r"  \raise #6 \with-dimensions-from \null",
+        # r"  \override #'(font-size . 5.5)", # score
+        r"  \override #'(font-size . 3)",  # parts
+        r"  \concat {",
+        f"      {met_32_mark.string[8:]}",
         r"  }",
         r"}",
     ],

@@ -75,14 +75,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -217,15 +213,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -268,15 +259,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -376,34 +362,263 @@
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
                                         \clef "bass"
-                                        c'1.
-                                        ~
+                                        c8
+                                        (
+
+                                        <
+                                            c
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >4
+                                        )
+
+                                        cs8
+                                        (
+
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >4
+                                        )
+
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \pitchedTrill
+                                        b,2.
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan fs
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
-                                        c'2.
-                                        ~
+                                        c8
+                                        \stopTrillSpan
+                                        (
 
-                                        c'2
-                                        ~
+                                        <
+                                            c
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >4
+                                        )
+
+                                        cs8
+                                        (
+
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >4
+                                        )
+
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \pitchedTrill
+                                        b,2
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan fs
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
-                                        c'2..
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c16
+                                        \stopTrillSpan
+                                        [
+                                        (
+
+                                        <
+                                            c
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >8
+                                        )
+
+                                        cs16
+                                        (
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >8
+                                        )
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        b,16
+                                        [
+                                        (
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <
+                                            b,
+                                            \tweak NoteHead.style #'harmonic
+                                            fs
+                                        >8
+                                        )
+                                        ]
+
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \pitchedTrill
+                                        d4
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan fs
+
+                                        d16
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        c'2.
-                                        ~
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c16
+                                        [
+                                        (
+
+                                        <
+                                            c
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >8
+                                        )
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs16
+                                        ]
+                                        (
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >8
+                                        )
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b,16
+                                        ]
+                                        (
+
+                                        <
+                                            b,
+                                            \tweak NoteHead.style #'harmonic
+                                            e
+                                        >8
+                                        )
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cs16
+                                        [
+                                        (
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >8
+                                        )
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        c'1
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c32
+                                        [
+                                        (
+
+                                        <
+                                            c
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >16
+                                        )
+
+                                        cs32
+                                        (
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >16
+                                        )
+                                        ]
+
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \pitchedTrill
+                                        b,2.
+                                        - \tweak staff-padding 8.5
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright "non percussion" \hspace #0.5 }
+                                        \startTextSpanTwo
+                                        ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan e
+
+                                        b,16
+                                        \stopTextSpanTwo
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        \stopTrillSpan
+                                        - \tweak bound-details.right.padding 1.25
+                                        - \tweak staff-padding 8.5
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "finger percussion" \hspace #0.5 }
+                                        \startTextSpanTwo
 
                                     }
 
@@ -519,15 +734,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS

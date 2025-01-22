@@ -232,14 +232,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -776,15 +772,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -961,15 +952,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1428,26 +1414,17 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        \staff-line-count 1
-                                        \all-color-music #black
-                                        \clef "percussion"
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        \pp
-                                        [
+                                        \all-color-music #"black"
+                                        bqf,2.
+                                        \ff
                                         - \tweak bound-details.right.padding 1.25
                                         - \tweak staff-padding 3
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright OB \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
                                         \startTextSpanOne
+                                        ~
 
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        c'8
-                                        ]
-
-                                        c'2
-
-                                        c'4.
+                                        bqf,4.
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1485,18 +1462,17 @@
                                         - \abjad-dashed-line-with-hook
                                         - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
                                         \startTextSpanOne
-                                          %! abjad.glissando(7)
-                                        \glissando
+                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
-                                        g,8
+                                        fs,4
                                         :32
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        af,2
+                                        g,2
                                         :32
                                         \stopTextSpanOne
                                         - \tweak bound-details.right.padding 1.25
@@ -1507,16 +1483,17 @@
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        c8
-                                        :32
-                                        \f
-                                        \>
-                                        ~
-
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        c4.
+                                        af,8
+                                        :32
+                                        \f
+                                        \>
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c4
                                         :32
                                           %! abjad.glissando(7)
                                         \glissando
@@ -1532,40 +1509,22 @@
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        fs4
-                                        :32
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        :32
-                                        [
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        cs'8
+                                        fs2
                                         :32
                                         \p
-                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        \staff-line-count 1
-                                        \all-color-music #black
-                                        \clef "percussion"
-                                        c'4.
-                                        \mp
+                                        \all-color-music #"black"
+                                        bf,2..
+                                        \ff
                                         \stopTextSpanOne
                                         - \tweak bound-details.right.padding 1.25
                                         - \tweak staff-padding 3
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright OB \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
                                         \startTextSpanOne
-
-                                        c'2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1579,24 +1538,17 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        \staff-line-count 1
-                                        \all-color-music #black
-                                        \clef "percussion"
-                                        c'8
-                                        \mf
+                                        \all-color-music #"black"
+                                        a,2.
+                                        \ff
                                         - \tweak bound-details.right.padding 1.25
                                         - \tweak staff-padding 3
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright OB \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
                                         \startTextSpanOne
+                                        ~
 
-                                        c'4
-
-                                        c'8
-
-                                        c'2
-
-                                        c'4
+                                        a,2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -1614,7 +1566,7 @@
                                         \staff-line-count 5
                                         \all-color-music #(universal-color "bluegreen")
                                         \clef "bass"
-                                        cs'4
+                                        cs'2
                                         :32
                                         \p
                                         - \tweak staff-padding 7
@@ -1630,6 +1582,9 @@
                                           %! abjad.glissando(7)
                                         \glissando
 
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 13]
                                         fs4
                                         :32
                                         \stopTextSpanOne
@@ -1641,9 +1596,6 @@
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 13]
                                         ef8
                                         :32
                                           %! abjad.glissando(7)
@@ -1651,30 +1603,31 @@
 
                                         c2
                                         :32
+                                        \f
                                         \stopTextSpanOne
                                         - \tweak bound-details.right.padding 1.25
                                         - \tweak staff-padding 7
                                         - \abjad-dashed-line-with-hook
                                         - \tweak bound-details.left.text \markup \concat { \upright spz. \hspace #0.5 }
                                         \startTextSpanOne
+                                        \>
                                           %! abjad.glissando(7)
                                         \glissando
-
-                                        af,4
-                                        :32
-                                        \f
-                                        \>
-                                        ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 14]
-                                        af,4
+                                        af,2
                                         :32
                                           %! abjad.glissando(7)
                                         \glissando
 
                                         g,8
+                                        :32
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs,4
                                         :32
                                         \stopTextSpanOne
                                         - \tweak bound-details.right.padding 1.25
@@ -1685,17 +1638,7 @@
                                           %! abjad.glissando(7)
                                         \glissando
 
-                                        fs,4
-                                        :32
-                                          %! abjad.glissando(7)
-                                        \glissando
-
                                         e,8
-                                        :32
-                                          %! abjad.glissando(7)
-                                        \glissando
-
-                                        d,4
                                         :32
                                         \p
 
@@ -2010,7 +1953,7 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 21]
                                         \staff-line-count 4
-                                        \all-color-music #black)
+                                        \all-color-music #"black"
                                         \clef "percussion"
                                         g2
                                         \ff
@@ -2097,27 +2040,17 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 24]
-                                        \staff-line-count 1
-                                        \all-color-music #black
-                                        \clef "percussion"
-                                        c'4
-                                        \pp
+                                        \staff-line-count 5
+                                        \all-color-music #"black"
+                                        \clef "bass"
+                                        atqf,1
+                                        \ff
                                         \stopTextSpanOne
                                         - \tweak bound-details.right.padding 1.25
                                         - \tweak staff-padding 3
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright OB \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
                                         \startTextSpanOne
-
-                                        c'2
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        [
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        c'8
-                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2131,23 +2064,13 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 26]
-                                        \staff-line-count 1
-                                        \all-color-music #black
-                                        \clef "percussion"
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c'8
-                                        [
+                                        fs,2
+                                        \fff
                                         - \tweak bound-details.right.padding 1.25
                                         - \tweak staff-padding 3
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright OB \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
                                         \startTextSpanOne
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        c'8
-                                        ]
-
-                                        c'4
 
                                     }
 
@@ -2531,15 +2454,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS

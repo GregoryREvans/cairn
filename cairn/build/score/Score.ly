@@ -45,6 +45,13 @@
             \include "30.ly"
             \include "31.ly"
             \include "32.ly"
+            \include "33.ly"
+            \include "34.ly"
+            \include "35.ly"
+            \include "36.ly"
+            \include "37.ly"
+            \include "38.ly"
+            \include "39.ly"
     	}
     >>
 %{ \midi{} %}

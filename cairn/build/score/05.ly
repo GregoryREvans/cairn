@@ -256,14 +256,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -836,15 +832,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1033,15 +1024,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1425,214 +1411,559 @@
                                     \context Voice = "cello voice"
                                     {
 
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 1]
+                                        \all-color-music #"black"
+                                          %! applying staff names and clefs
+                                        \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
+                                          %! applying staff names and clefs
+                                        \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
+                                        \clef "bass"
+                                        dqs,4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                        \stopTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            dqs,16
+                                            [
+
+                                            f,16
+                                            - \scrape-circular-clockwise
+                                            \stopTrillSpan
+
+                                            eqs16
+                                            - \scrape-circular-clockwise
+
+                                            g,16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            e,16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        e,8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs,8
+                                        - \accent
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                        \stopTrillSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            c,8
+                                            - \accent
+                                            [
+
+                                            bqs,16
+                                            - \scrape-circular-clockwise
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            d,8.
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 2]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d,8
+                                        [
+
+                                        dqf,16
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        e,16
+                                        - \scrape-circular-clockwise
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            ef,16
+                                            - \scrape-circular-clockwise
+                                            [
+
+                                            c,8.
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            b,16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        b,16
+                                        [
+
+                                        bqf,8
+                                        - \accent
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs,16
+                                        - \accent
+                                        ]
+
                                         \times 2/3
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 1]
-                                            \staff-line-count 5
-                                            \all-color-music #(universal-color "blue")
-                                              %! applying staff names and clefs
-                                            \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
-                                              %! applying staff names and clefs
-                                            \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
-                                            \clef "treble"
-                                            dqs'1
-                                            - \downbow
-                                            \pp
-                                            \stopTextSpanOne
-                                            (
-                                            - \tweak staff-padding 8
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                            \startTextSpan
-
-                                            f'8
-
-                                            eqs''4
-
-                                            g''8
-                                            )
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 2]
-                                            e''2
-                                            - \accent
-                                            - \upbow
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            cs''8
-                                            - \downbow
-                                            [
-                                            (
-
-                                            c''8
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                bqs'8
-                                                )
-                                                [
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                d''16
-                                                - \accent
-                                                - \upbow
-                                                ]
-
-                                            }
-
-                                        }
-
-                                        \times 8/11
-                                        {
-
-                                            \times 2/3
-                                            {
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 3]
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                dqf''8
-                                                - \downbow
-                                                [
-                                                (
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                e'16
-                                                ]
-
-                                            }
-
-                                            ef'4
+                                            % [cello voice measure 3]
+                                            cqs,4
                                             ~
+                                            \startTrillSpan
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            ef'16
+                                            cqs,16
                                             [
 
-                                            c'16.
-                                            )
-
-                                            b16.
-                                            - \accent
-                                            - \upbow
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                bqf16
-                                                - \downbow
-                                                \stopTextSpan
-                                                [
-                                                (
-                                                - \tweak staff-padding 8
-                                                - \abjad-solid-line-with-arrow
-                                                - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
-                                                \startTextSpan
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                cs'32
-                                                ]
-
-                                            }
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            cs,16
+                                            :32
+                                            \stopTrillSpan
+                                            ]
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 7/9
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        bqf,16
+                                        :32
+                                        [
+
+                                        dqf,16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        dqs,8
+                                        ]
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 4]
-                                            cqs'4
-                                            )
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            dqs,16
+                                            [
 
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \times 5/6
-                                            {
+                                            ef,8
+                                            :32
+                                            \stopTrillSpan
 
-                                                cs'1
-                                                - \accent
-                                                - \upbow
-
-                                                bqf2
-                                                - \downbow
-                                                (
-
-                                            }
-
-                                            dqf'4.
-
-                                            dqs'4.
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            cqs,8
+                                            :32
+                                            ]
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        dqs,16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                        [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        ef,8.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 2/3
                                         {
 
-                                            \times 2/3
-                                            {
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            ef,8
+                                            [
 
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 5]
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                ef'8
-                                                )
-                                                [
+                                            e,16
+                                            :32
+                                            \stopTrillSpan
 
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                cqs''16
-                                                - \accent
-                                                - \upbow
-                                                ]
+                                            cs,16
+                                            - \scrape-circular-clockwise
 
-                                            }
-
-                                            dqs''8
-                                            - \downbow
-                                            (
-
-                                            ef'32
-
-                                            e'16
-                                            )
-
-                                            cs''32
-                                            - \accent
-                                            - \upbow
+                                            eqs,16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "XP"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            eqs'8
-                                            - \downbow
+                                            f,16
                                             ]
-                                            (
+                                            ~
+                                            \startTrillSpan
 
-                                            f'4
+                                        }
 
-                                            eqs'8
-                                            )
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        f,8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        eqs,8
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            f,8
+                                            - \accent
+                                            [
+
+                                            gqf,16
+                                            - \accent
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            eqf,8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mp
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        eqf,8.
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        dqs,16
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            ef,16
+                                            - \scrape-circular-clockwise
+                                            [
+
+                                            d,16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+
+                                            dqf,8.
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
                                             \stopTextSpan
-                                            - \tweak bound-details.right.padding 1.25
-                                            - \tweak staff-padding 8
-                                            - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
                                             \startTextSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            cqs,16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 5]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cqs,16
+                                        [
+
+                                        eqf,8
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        c,16
+                                        - \accent
+                                        ]
+
+                                        bqs,4
+                                        - \accent
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cqs,16
+                                        :32
+                                        [
+
+                                        cs,16
+                                        :32
+
+                                        dqs,16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        bqs,16
+                                        ]
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            bqs,8
+                                            [
+
+                                            bqf,8
+                                            :32
+                                            \stopTrillSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            b,8
+                                            :32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(3)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                            ]
 
                                         }
 
@@ -1643,12 +1974,12 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 6]
                                             \all-color-music #(universal-color "bluegreen")
+                                            \clef "treble"
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             fs'16
                                             :32
                                             - \accent
                                             \ff
-                                            \stopTextSpan
                                             [
                                               %! abjad.glissando(7)
                                             - \abjad-zero-padding-glissando
@@ -1811,7 +2142,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        \all-color-music #black)
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         g32
@@ -1986,7 +2317,7 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
                                         \staff-line-count 4
-                                        \all-color-music #black)
+                                        \all-color-music #"black"
                                         \clef "percussion"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         g16
@@ -2106,7 +2437,7 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 11]
                                             \staff-line-count 4
-                                            \all-color-music #black)
+                                            \all-color-music #"black"
                                             \clef "percussion"
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             g16
@@ -2188,7 +2519,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 13]
-                                        \all-color-music #black)
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         g32
@@ -2578,7 +2909,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 16]
-                                        \all-color-music #black
+                                        \all-color-music #"black"
                                         c'1
                                         - \scrape-circular-clockwise
                                         \mp
@@ -2680,7 +3011,7 @@
                                         % [cello voice measure 18]
                                         \all-color-music #(universal-color "blue")
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        f'8
+                                        cqs'8
                                         :32
                                         \pp
                                         \stopTextSpan
@@ -2692,31 +3023,31 @@
                                         \startTextSpan
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        gqf'8
+                                        cs'8
                                         :32
                                         ]
 
-                                        eqf'4
+                                        d'4
                                         :32
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        dqs'8
+                                        b8
                                         :32
                                         [
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        ef'8
+                                        dqs'8
                                         :32
                                         ]
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        d'32
+                                        ef'32
                                         [
 
-                                        dqf'16
+                                        dqs'16
                                         :32
 
-                                        cqs'32
+                                        ef'32
                                         \stopTextSpan
                                         - \tweak staff-padding 8
                                         - \abjad-solid-line-with-arrow
@@ -2724,23 +3055,23 @@
                                         \startTextSpan
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        eqf'8
+                                        eqs'8
                                         :32
                                         ]
                                         ~
 
-                                        eqf'4
+                                        eqs'4
                                         :32
                                         ~
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        eqf'8
+                                        eqs'8
                                         :32
                                         [
                                         ~
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        eqf'32.
+                                        eqs'32.
                                         :32
                                         ]
 
@@ -2748,16 +3079,16 @@
                                         \times 21/32
                                         {
 
-                                            c'4
+                                            dqf'4
                                             :32
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            bqs'8
+                                            cqs'8
                                             :32
                                             [
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            cqs'8
+                                            cs'8
                                             :32
                                             \stopTextSpan
                                             ]
@@ -2918,7 +3249,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 20]
-                                        \all-color-music #black)
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
                                         g32
@@ -3024,7 +3355,7 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 22]
                                             \staff-line-count 4
-                                            \all-color-music #black)
+                                            \all-color-music #"black"
                                             \clef "percussion"
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             g16
@@ -3093,372 +3424,1102 @@
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 16/15
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 23]
+                                        \all-color-music #"black"
+                                        \clef "bass"
+                                        fs,4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                        \stopTextSpanOne
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
                                         {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 23]
-                                            \staff-line-count 5
-                                            \all-color-music #(universal-color "blue")
-                                            \clef "treble"
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            cs'16
-                                            :32
-                                            \pp
-                                            \stopTextSpanOne
+                                            fs,16
                                             [
-                                            - \tweak staff-padding 8
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                            \startTextSpan
+
+                                            f16
+                                            - \scrape-circular-clockwise
+                                            \stopTrillSpan
 
                                             dqs'16
-                                            :32
+                                            - \scrape-circular-clockwise
 
-                                            bqs32
-                                            :32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            bqf32
-                                            :32
-                                            ]
-
-                                            b4
-                                            :32
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                cqs'16
-                                                :32
-                                                [
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                cs'32
-                                                ]
-
-                                            }
-
-                                            d'4.
-                                            :32
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            b64
-                                            [
-
-                                            dqs'32
-                                            :32
+                                            cqs'16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            ef'64
+                                            a16
                                             ]
+                                            ~
+                                            \startTrillSpan
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 5/6
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        a8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        g8
+                                        - \accent
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                        \stopTrillSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
+
+                                        \times 2/3
                                         {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 24]
-                                            dqs'1
-                                            :32
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            d8
+                                            - \accent
+                                            [
 
-                                            ef'8
-                                            :32
+                                            aqs16
+                                            - \scrape-circular-clockwise
 
-                                            eqs'4
-                                            :32
-
-                                            dqf'8
-                                            :32
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            ef8.
+                                            ]
+                                            ~
+                                            \startTrillSpan
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 25]
-                                        cqs'8
-                                        :32
+                                        % [cello voice measure 24]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        ef8
+                                        [
 
-                                        \times 2/3
+                                        fs16
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        e16
+                                        - \scrape-circular-clockwise
+                                        ]
+
+                                        \times 4/5
                                         {
-
-                                            cs'2
-                                            :32
-
-                                            fs'4
-                                            :32
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            f'16
-                                            :32
-                                            [
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            dqs'8
-                                            :32
-                                            ]
-
-                                        }
-
-                                        \times 2/3
-                                        {
-
-                                            \times 2/3
-                                            {
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 26]
-                                                cqs'4
-                                                :32
-
-                                                a2
-                                                :32
-
-                                            }
-
-                                            g'2
-                                            :32
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            d'8
-                                            :32
-                                            [
-                                            ~
-
-                                            d'32
-
-                                            aqs16.
-                                            :32
-
-                                            ef'8
-                                            :32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            fs'8
-                                            :32
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 10/9
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 27]
-                                            e'4.
-                                            :32
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
                                             bqs16
-                                            :32
+                                            - \scrape-circular-clockwise
                                             [
 
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            aqf16
-                                            :32
-                                            ]
-
-                                            \tweak text #tuplet-number::calc-fraction-text
-                                            \times 5/6
-                                            {
-
-                                                f'2
-                                                :32
-
-                                                cs'4
-                                                :32
-
-                                            }
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/7
-                                        {
-
-                                            \times 2/3
-                                            {
-
-                                                  %! COMMENT_MEASURE_NUMBERS
-                                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                                % [cello voice measure 28]
-                                                ef'2
-                                                :32
-
-                                                bqf1
-                                                :32
-
-                                            }
-
-                                            d'4
-                                            :32
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            aqf8
-                                            :32
-                                            [
-
-                                            bqf16
-                                            :32
-
-                                            f'16
-                                            :32
-
-                                            ef'16
-                                            :32
-
-                                            bqs8
-                                            :32
+                                            aqf8.
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \ff
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
                                             \stopTextSpan
-                                            - \tweak staff-padding 8
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
                                             - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright T \hspace #0.5 }
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
                                             \startTextSpan
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            cqs'16
+                                            f16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        f16
+                                        [
+
+                                        cs'8
+                                        - \accent
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        ef16
+                                        - \accent
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            bqf4
+                                            ~
+                                            \startTrillSpan
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            bqf16
+                                            [
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            d'16
                                             :32
+                                            \stopTrillSpan
                                             ]
 
                                         }
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 7/12
-                                        {
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        aqf16
+                                        :32
+                                        [
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 29]
-                                            f'2
-                                            :32
+                                        bqf16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
 
-                                            cqs'4
-                                            :32
-
-                                            g'2
-                                            :32
-
-                                            e'4
-                                            :32
-
-                                            \times 2/3
-                                            {
-
-                                                ef'2
-                                                :32
-
-                                                bqf4
-                                                :32
-
-                                            }
-
-                                            f'4
-                                            :32
-
-                                            dqf'4
-                                            :32
-
-                                            cqs'2
-                                            :32
-
-                                        }
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        f8
+                                        ]
+                                        ~
+                                        \startTrillSpan
 
                                         \times 4/5
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 30]
+                                            % [cello voice measure 25]
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            dqs'8
-                                            :32
+                                            f16
                                             [
 
+                                            ef8
+                                            :32
+                                            \stopTrillSpan
+
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            g'8
+                                            bqs8
                                             :32
                                             ]
 
-                                            \times 2/3
-                                            {
+                                        }
 
-                                                bqf4
-                                                :32
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cqs'16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \pp
+                                        [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
 
-                                                cs'8
-                                                :32
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        f8.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
 
-                                            }
+                                        \times 2/3
+                                        {
 
-                                            dqs'2
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            f8
+                                            [
+
+                                            cqs'16
+                                            :32
+                                            \stopTrillSpan
+
+                                            g16
+                                            - \scrape-circular-clockwise
+
+                                            e16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "XP"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            ef16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 26]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        ef8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        bqf8
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            f8
+                                            - \accent
+                                            [
+
+                                            dqf'16
+                                            - \accent
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            cqs'8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mp
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cqs'8.
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        dqs16
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            g16
+                                            - \scrape-circular-clockwise
+                                            [
+
+                                            bqf16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+
+                                            cs'8.
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            dqs16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 27]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        dqs16
+                                        [
+
+                                        ef8
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        c'16
+                                        - \accent
+                                        ]
+
+                                        b4
+                                        - \accent
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \p
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \<
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cqs'16
+                                        :32
+                                        [
+
+                                        c'16
+                                        :32
+
+                                        dqf'16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d'16
+                                        ]
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            d'8
+                                            [
+
+                                            b8
+                                            :32
+                                            \stopTrillSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            bf8
+                                            :32
+                                            ]
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        bqs16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \f
+                                        [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        dqf'8.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 28]
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            dqf'8
+                                            [
+
+                                            c'16
+                                            :32
+                                            \stopTrillSpan
+
+                                            bqs16
+                                            - \scrape-circular-clockwise
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            dqs16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "N"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        eqf8.
+                                        - \scrape-circular-clockwise
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d'16
+                                        ]
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            d'16
+                                            [
+
+                                            eqf8
+                                            - \accent
+                                            \stopTrillSpan
+
+                                            e16
+                                            - \accent
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            cs'8
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cs'8.
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        c'16
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            dqf'16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            [
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+
+                                            eqf16
+                                            - \scrape-circular-clockwise
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            d'8.
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        dqf'8
+                                        - \scrape-circular-clockwise
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        eqs8
+                                        - \accent
+                                        ]
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 29]
+                                            fqs16
+                                            - \accent
+
+                                            e4
+                                            ~
+                                            \startTrillSpan
+
+                                            e16
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        fqs16
+                                        :32
+                                        \stopTrillSpan
+                                        [
+
+                                        fs16
+                                        :32
+
+                                        ef16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \ff
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "XP"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d'16
+                                        ]
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            d'8
+                                            [
+
+                                            eqf8
+                                            :32
+                                            \stopTrillSpan
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            b16
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \pp
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        b16
+                                        [
+
+                                        dqs16
+                                        :32
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs'8
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            cs'8.
+                                            [
+
+                                            bf16
+                                            :32
+                                            \stopTrillSpan
+
+                                            a16
                                             :32
 
-                                            \times 2/3
-                                            {
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            cqs'16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mp
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
 
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                ef'16
-                                                :32
-                                                [
+                                        }
 
-                                                c'8.
-                                                :32
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cs'8.
+                                        - \scrape-circular-clockwise
+                                        [
 
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                b8
-                                                :32
-                                                ]
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        eqf16
+                                        ]
+                                        ~
+                                        \startTrillSpan
 
-                                            }
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            eqf16
+                                            [
+
+                                            eqs8
+                                            - \scrape-circular-clockwise
+                                            \stopTrillSpan
+
+                                            b16
+                                            - \accent
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            dqs16
+                                            ]
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 30]
+                                        dqs4
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            cqs'16
+                                            - \accent
+                                            \stopTrillSpan
+                                            [
+
+                                            cs'16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \mf
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
+
+                                            eqs16
+                                            - \scrape-circular-clockwise
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            ef8.
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c'8
+                                        - \scrape-circular-clockwise
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b8
+                                        - \scrape-circular-clockwise
+                                        ]
+
+                                        \times 4/5
+                                        {
+
+                                            dqs16
+                                            - \accent
+
+                                            ef4
+                                            ~
+                                            \startTrillSpan
 
                                         }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 31]
-                                        cqs'4
-                                        :32
-                                        ~
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        ef16
+                                        [
 
-                                        cqs'8
+                                        fqs16
+                                        - \accent
+                                        \stopTrillSpan
+
+                                        gqf16
                                         :32
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 6/5
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs'16
+                                        :32
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+
+                                        \times 2/3
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            c'8
+                                            eqs8.
                                             :32
                                             [
-                                            ~
 
-                                            c'32
+                                            dqs8
                                             :32
-
-                                            dqf'16.
-                                            :32
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            d'16
-                                            :32
+                                            f16
                                             ]
+                                            ~
+                                            \startTrillSpan
 
                                         }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        f16
+                                        [
+
+                                        gqf16
+                                        :32
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        ef8
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+                                        ~
+                                        \startTrillSpan
 
                                         \times 4/5
                                         {
@@ -3467,46 +4528,49 @@
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 32]
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            b16
-                                            :32
+                                            ef8.
                                             [
 
-                                            bf64
-
-                                            bqs16.
+                                            d'16
                                             :32
+                                            \stopTrillSpan
 
-                                            dqf'64
-
-                                            c'16
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            eqs16
                                             :32
-
-                                            bqs16
-                                            :32
-
-                                            dqs'16
-                                            :32
-
-                                            eqf'8
-                                            :32
-
-                                            \times 2/3
-                                            {
-
-                                                \override VanishingStaff.Stem.stemlet-length = 0.75
-                                                d'32
-                                                [
-
-                                                eqf'32
-
-                                                \revert VanishingStaff.Stem.stemlet-length
-                                                e'8
-                                                :32
-                                                ]
-
-                                            }
+                                            ]
 
                                         }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        cs'16
+                                        - \scrape-circular-clockwise
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        [
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \tweak staff-padding #7.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "XP"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        bf8.
+                                        - \scrape-circular-clockwise
+                                        ]
 
                                         \times 2/3
                                         {
@@ -3514,25 +4578,122 @@
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 33]
-                                            cs'1
-                                            :32
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            b8
+                                            - \scrape-circular-clockwise
+                                            [
 
-                                            c'8
-                                            :32
+                                            dqf'8
+                                            - \accent
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \f
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \>
 
-                                            dqf'4
-                                            :32
+                                            eqf16
+                                            - \accent
 
-                                            eqf'8
-                                            :32
-                                            \stopTextSpan
-                                            - \tweak bound-details.right.padding 1.25
-                                            - \tweak staff-padding 8
-                                            - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
-                                            \startTextSpan
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            d'16
+                                            ]
+                                            ~
+                                            \startTrillSpan
 
                                         }
+
+                                        d'4
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            c'16
+                                            - \scrape-circular-clockwise
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \p
+                                            \stopTrillSpan
+                                            [
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.hairpin()
+                                            \<
+
+                                            cqs'16
+                                            - \scrape-circular-clockwise
+
+                                            ef16
+                                            - \scrape-circular-clockwise
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            bqf8
+                                              %! SPANNER_STOP
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \stopTextSpan
+                                            ]
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.padding 0.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \tweak bound-details.right.stencil-align-dir-y #center
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \tweak staff-padding #7.5
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \abjad-solid-line-with-arrow
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-left-text "P"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            - \baca-text-spanner-right-text "T"
+                                              %! SPANNER_START
+                                              %! baca.PiecewiseCommand._call(2)
+                                              %! baca.text_spanner()
+                                            \startTextSpan
+                                            ~
+                                            \startTrillSpan
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        bqf16
+                                        [
+
+                                        cs'8
+                                        - \scrape-circular-clockwise
+                                        \stopTrillSpan
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        e16
+                                        - \scrape-circular-clockwise
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \ff
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpan
+                                        ]
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.hairpin()
+                                        \>
 
                                     }
 
@@ -3940,15 +5101,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS

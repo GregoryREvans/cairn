@@ -301,3 +301,52 @@ lines = [
 morse_tuplets = [evans.Sequence(line).string_to_morse_tuplets() for line in lines]
 
 morse_durations = [evans.Sequence(line).string_to_morse_durations() for line in lines]
+
+# def material_sequence(
+#     materials=[0, 1, 2],
+#     rotations=[0, 0],
+#     extra_counts=[0, 1, 2, 3],
+#     preprocessor=None,
+# ):
+#     def returned_function(divisions, state=state, previous_state=previous_state):
+#         time_signatures = [_ for _ in divisions]
+#         if preprocessor is not None:
+#             durations = [abjad.Duration(_.pair) for _ in divisions]
+#             divisions = preprocessor(durations)
+#         cyc_materials = evans.CyclicList(materials, forget=False)
+#         cyc_rotations = evans.CyclicList(rotations, forget=False)
+#         container = abjad.Container()
+#         for division in divisions:
+#             current_mat = cyc_materials(r=1)[0]
+#             if current_mat == 0:
+#                 nested_music = evans.make_rtm(
+#                     cairn.rtms.rotate(cyc_rotations(r=1)[0]),
+#                     rewrite=-1,
+#                     treat_tuplets=True,
+#                 )([division])
+#             elif current_mat == 1:
+#                 nested_music = evans.tuplet(
+#                     cairn.morse_tuplets[cyc_rotations(r=1)[0]],
+#                     rewrite=-1,
+#                     treat_tuplets=True,
+#                 )([division])
+#             elif current_mat == 2:
+#                 nested_music = evans.talea(
+#                     cairn.morse_durations[cyc_rotations(r=1)[0]].rotate(cyc_rotations(r=1)[0]),
+#                     32,
+#                     extra_counts=extra_counts,
+#                     rewrite=-1,
+#                     treat_tuplets=True,
+#                 )([division])
+#             elif current_mat == 3:
+#                 nested_music = evans.make_tied_notes()([division])
+#             for component in nested_music:
+#                 if isinstance(component, list):
+#                     container.extend(component)
+#                 else:
+#                     container.append(component)
+#         music = abjad.mutate.eject_contents(container)
+#
+#         return music
+#
+#     return returned_function

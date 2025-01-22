@@ -12,8 +12,6 @@
                   %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
-                \tweak padding 5
-                ^ \boxed-markup-upright "6.F" 2
 
                   %! COMMENT_MEASURE_NUMBERS
                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -43,14 +41,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -125,29 +119,24 @@
                     \tag #'voice4
                     {
 
-                        \context VanishingChangeStaff = "right staff"
+                        \context VanishingChangeStaff = "left staff"
                         {
 
-                            \context Voice = "right voice"
+                            \context Voice = "left voice"
                             {
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
+                                % [left voice measure 1]
                                   %! applying staff names and clefs
-                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
+                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
-                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
+                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 2]
+                                % [left voice measure 2]
                                 r2.
 
                             }
@@ -159,29 +148,24 @@
                     \tag #'voice5
                     {
 
-                        \context VanishingChangeStaff = "left staff"
+                        \context VanishingChangeStaff = "right staff"
                         {
 
-                            \context Voice = "left voice"
+                            \context Voice = "right voice"
                             {
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
+                                % [right voice measure 1]
                                   %! applying staff names and clefs
-                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
+                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
-                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
+                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 2]
+                                % [right voice measure 2]
                                 r2.
 
                             }
@@ -209,137 +193,137 @@
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "davanti" }
                                 \once \override Beam.positions = #'(5 . 5)
-                                c'16 * 48/176
+                                a,16 * 48/176
                                 ^ \p
                                 - \markup pizz.
                                 ^ [
                                 ^ \<
 
                                 \once \change Staff = "back staff"
-                                c'16 * 48/88
+                                a,16 * 48/88
 
                                 \once \change Staff = "front staff"
-                                c'16 * 144/22
-
-                                \once \change Staff = "front staff"
-                                \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                b,16 * 144/22
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                a16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                g16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                a16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                g16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                b16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                a16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                g16 * 48/176
+
+                                \once \change Staff = "front staff"
+                                \tweak NoteHead.style #'cross
+                                e16 * 48/176
 
                                 \once \change Staff = "back staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/44
+                                f16 * 48/44
 
                                 \once \change Staff = "front staff"
-                                c'16 * 336/88
+                                d16 * 336/88
 
                                 \once \change Staff = "front staff"
-                                c'16 * 48/44
-
-                                \once \change Staff = "front staff"
-                                \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                e16 * 48/44
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                f16 * 48/176
+
+                                \once \change Staff = "front staff"
+                                \tweak NoteHead.style #'cross
+                                c16 * 48/176
 
                                 \once \change Staff = "cello staff"
                                 \tweak NoteHead.style #'cross
                                 b,16 * 48/22
 
                                 \once \change Staff = "back staff"
-                                c'16 * 48/176
+                                a,16 * 48/176
 
                                 \once \change Staff = "cello staff"
                                 c16 * 144/88
                                 _ \stopped
 
                                 \once \change Staff = "front staff"
-                                c'16 * 48/44
+                                d16 * 48/44
 
                                 \once \change Staff = "cello staff"
                                 e16 * 48/176
                                 - \markup (simile)
 
                                 \once \change Staff = "front staff"
-                                c'16 * 48/88
+                                b,16 * 48/88
 
                                 \once \change Staff = "back staff"
-                                c'16 * 144/88
+                                d16 * 144/88
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                b,16 * 48/176
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [front voice measure 2]
                                 \once \change Staff = "back staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                e16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                c16 * 48/176
 
                                 \once \change Staff = "back staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                f16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                d16 * 48/176
 
                                 \once \change Staff = "back staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                g16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                e16 * 48/176
 
                                 \once \change Staff = "back staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                b16 * 48/176
 
                                 \once \change Staff = "front staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 48/176
+                                f16 * 48/176
 
-                                \once \change Staff = "front staff"
-                                c'16 * 624/88
+                                \once \change Staff = "cello staff"
+                                a,16 * 624/88
                                 ^ \ff
 
-                                \once \change Staff = "front staff"
-                                c'16 * 240/88
+                                \once \change Staff = "cello staff"
+                                a,16 * 240/88
                                 ]
 
                             }
@@ -357,7 +341,7 @@
                             \tag #'voice7
                             {
 
-                                \context Staff = "cello staff"
+                                \context VanishingStaff = "cello staff"
                                 {
 
                                     \context Voice = "cello voice"
@@ -759,15 +743,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1.
 
                                   %! COMMENT_MEASURE_NUMBERS

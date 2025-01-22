@@ -333,14 +333,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1075,15 +1071,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1326,15 +1317,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -1829,282 +1815,1293 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
+                                        \staff-line-count 4
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
                                         \clef "bass"
-                                        c'1
-                                        ~
+                                        \clef "percussion"
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        g32
+                                        \ff
+                                        [
+                                        - \tweak bound-details.right.padding 1.25
+                                        - \tweak staff-padding 6.5
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "behind bridge on wrapping" \hspace #0.5 }
+                                        \startTextSpanOne
+
+                                        b32
+
+                                        d'32
+
+                                        f'32
+
+                                        d'32
+
+                                        b32
+
+                                        g32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b32
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d'32
+                                        [
+
+                                        f'32
+
+                                        d'32
+
+                                        b32
+
+                                        g32
+
+                                        b32
+
+                                        d'32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        f'32
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d'32
+                                        [
+
+                                        b32
+
+                                        g32
+
+                                        b32
+
+                                        d'32
+
+                                        f'32
+
+                                        d'32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b32
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        g32
+                                        [
+
+                                        b32
+
+                                        d'32
+
+                                        f'32
+
+                                        d'32
+
+                                        b32
+
+                                        g32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b32
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 2]
-                                        c'2.
-                                        ~
+                                        \staff-line-count 5
+                                        \clef "bass"
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c32
+                                        \mp
+                                        \stopTextSpanOne
+                                        \stopTextSpanTwo
+                                        [
+                                        (
+                                        \<
 
-                                        c'2
+                                        <
+                                            c
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >16
+                                        )
+
+                                        cs32
+                                        (
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <
+                                            cs
+                                            \tweak NoteHead.style #'harmonic
+                                            af
+                                        >16
+                                        )
+                                        ]
+
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \pitchedTrill
+                                        b,1
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan e
+
+                                        b,16
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        \stopTrillSpan
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 3]
-                                        c'1.
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        bf,32
+                                        [
+                                        (
+
+                                        <
+                                            bf,
+                                            \tweak NoteHead.style #'harmonic
+                                            cs
+                                        >16
+                                        )
+
+                                        a,32
+                                        (
+
+                                        <
+                                            a,
+                                            \tweak NoteHead.style #'harmonic
+                                            d
+                                        >16
+                                        )
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        bf,32
+                                        ]
+                                        (
+
+                                        <
+                                            bf,
+                                            \tweak NoteHead.style #'harmonic
+                                            f
+                                        >16
+                                        )
+
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \pitchedTrill
+                                        g,1
+                                        - \tweak staff-padding 8.5
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright "non percussion" \hspace #0.5 }
+                                        \startTextSpanTwo
                                         ~
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        - \tweak TrillPitchHead.stencil #(lambda (grob) (grob-interpret-markup grob #{ \markup \musicglyph #"noteheads.s0harmonic" #}))
+                                          %! SPANNER_START
+                                          %! baca._do_spanner_indicator_command(1)
+                                          %! baca.trill_spanner()
+                                        \startTrillSpan b,
+
+                                        g,8..
+                                        \f
+                                        \stopTextSpanTwo
+                                          %! SPANNER_STOP
+                                          %! baca._do_spanner_indicator_command(2)
+                                          %! baca.trill_spanner()
+                                        \stopTrillSpan
+                                        \stopTrillSpan
+                                        - \tweak bound-details.right.padding 1.25
+                                        - \tweak staff-padding 8.5
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "finger percussion" \hspace #0.5 }
+                                        \startTextSpanTwo
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        c'2.
-                                        ~
+                                        \staff-line-count 4
+                                        \clef "percussion"
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        g32
+                                        \ff
+                                        [
+                                        - \tweak bound-details.right.padding 1.25
+                                        - \tweak staff-padding 6.5
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "behind bridge on wrapping" \hspace #0.5 }
+                                        \startTextSpanOne
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 5]
-                                        c'2.
-                                        ~
+                                        b32
 
-                                        c'2
-                                        ~
+                                        d'32
+
+                                        f'32
+
+                                        d'32
+
+                                        b32
+
+                                        g32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b32
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d'32
+                                        [
+
+                                        f'32
+
+                                        d'32
+
+                                        b32
+
+                                        g32
+
+                                        b32
+
+                                        d'32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        f'32
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d'32
+                                        [
+
+                                        b32
+
+                                        g32
+
+                                        b32
+
+                                        d'32
+
+                                        f'32
+
+                                        d'32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        b32
+                                        ]
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 10/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 5]
+                                            \staff-line-count 5
+                                            \clef "bass"
+                                            fs4.
+                                            \f
+                                            \stopTextSpanOne
+                                            \stopTextSpanTwo
+
+                                            ftqs4.
+
+                                            fs4.
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 6]
-                                        c'1.
-                                        ~
+                                        cs,1.
+                                        \f
+                                        - \tweak staff-padding 3
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright "gridato" \hspace #0.5 }
+                                        \startTextSpanOne
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 7]
-                                        c'2.
-                                        ~
+                                        ef,2.
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 3
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright "flautando" \hspace #0.5 }
+                                        \startTextSpanOne
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        c'1
-                                        ~
+                                        d,1
+                                        \stopTextSpanOne
+                                        - \tweak bound-details.right.padding 1.25
+                                        - \tweak staff-padding 3
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright "molto gridato" \hspace #0.5 }
+                                        \startTextSpanOne
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
-                                        c'2.
-                                        ~
+                                        \staff-line-count 5
+                                        \clef "bass"
+                                        fs4
+                                        \ff
+                                        \stopTextSpanOne
+
+                                        ftqs4
+
+                                        g4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 10]
-                                        c'2
-                                        ~
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        ftqs8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        fs8
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        ftqs8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        g8
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
-                                        c'1..
+                                        \half-harmonic
+                                        <c, a, fs ef'>4
+                                        \mp
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                        \<
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c,4
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        c,16
+                                        [
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        cs,8.
+                                        ]
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g,4.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs,4..
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d,8
+                                        [
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        ef,16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 12]
-                                        c'1
-                                        ~
+                                        ef,2
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        e,2
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 13]
-                                        c'2
+                                        d,4
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        d,16
+                                        [
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        af,8.
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 14]
-                                        c'1..
+                                        af,8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g,4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b,4
                                         ~
+
+                                        b,16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs,8.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        cs4.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        ef4..
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 15]
-                                        c'1
+                                        a,8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        bf,2
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                        ~
+
+                                        bf,16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        d4
+                                        ~
+
+                                        d16
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 16]
-                                        c'2.
+                                        d8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        a,4
+                                        ~
+
+                                        a,16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        e4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 17]
-                                        c'1.
+                                        e8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c4
+                                        ~
+
+                                        c16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        cs8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f4.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        bf4
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 18]
-                                        c'2.
+                                        bf8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        ef8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        cs4..
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 19]
-                                        c'1
+                                        cs8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g2
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        af4
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        af16
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                        [
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        e16
+                                        ]
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 20]
-                                        c'2.
+                                        e4
                                         ~
 
-                                        c'2
+                                        e16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b,4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        e,4
+                                        ~
+
+                                        e,16
+                                        \f
+                                        \>
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs,8.
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c,8.
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 21]
-                                        c'2.
-                                        ~
+                                        c,8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        cs,4..
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f,8
+                                          %! abjad.glissando(7)
+                                        \glissando
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 22]
-                                        c'1
+                                        c,2
+                                        ~
+
+                                        c,16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g,4..
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 23]
-                                        c'2.
+                                        g,16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f,4
                                         ~
 
-                                        c'2
+                                        f,16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b,4.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c4
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        e4
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 24]
-                                        c'1.
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        e16
+                                        [
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        a8.
+                                        ]
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        af4.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs4..
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        cs4
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                        ~
+
+                                        cs16
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 25]
-                                        c'1..
+                                        cs4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f2
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c4
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "T"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
+                                        ~
+
+                                        c16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g4.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b16
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 26]
-                                        c'1
+                                        b4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        bf8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs4.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b8.
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 27]
-                                        c'2.
+                                        b4
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        e8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        fs4.
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.padding 0.5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak bound-details.right.stencil-align-dir-y #center
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \tweak staff-padding 5
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \abjad-solid-line-with-arrow
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-left-text "N"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        - \baca-text-spanner-right-text "P"
+                                          %! SPANNER_START
+                                          %! baca.PiecewiseCommand._call(2)
+                                          %! baca.text_spanner()
+                                        \startTextSpanTwo
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 28]
-                                        c'2
+                                        fs8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        c'4
+                                        ~
+
+                                        c'16
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 29]
-                                        c'1
+                                        c'8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b4
+                                        ~
+
+                                        b16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        g4.
+                                          %! SPANNER_STOP
+                                          %! baca.PiecewiseCommand._call(3)
+                                          %! baca.text_spanner()
+                                        \stopTextSpanTwo
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        d8
                                         ~
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 30]
-                                        c'2.
+                                        d8
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        a4
                                         ~
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 31]
-                                        c'2
-                                        ~
+                                        a16
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        b8.
+                                          %! abjad.glissando(7)
+                                        \glissando
+
+                                        f8
+                                        \p
+                                        \revert-noteheads
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 31]
+                                            e4
+                                            \fff
+
+                                            eqs4
+
+                                            e4
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 32]
-                                        c'1..
+                                        a,2
+
+                                        aqs,4
                                         ~
+
+                                        aqs,4
+
+                                        as,4
+                                        ~
+
+                                        as,4
+
+                                        aqs,4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 33]
-                                        c'1
-                                        ~
+                                        <b, ef>2
+
+                                        <bf, e>2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 34]
-                                        c'2.
+                                        d2.
                                         ~
 
-                                        c'2
-                                        ~
+                                        d2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 35]
-                                        c'1.
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <b, ef>8.
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <bf, e>16
+                                        ]
                                         ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <bf, e>8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <b, ef>8
+                                        ]
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <b, ef>16
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <bf, e>8.
+                                        ]
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <b, ef>8.
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <bf, e>16
+                                        ]
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <bf, e>8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <b, ef>8
+                                        ]
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <b, ef>16
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <bf, e>8.
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 36]
-                                        c'2.
+                                        a,4
                                         ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        a,8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        aqs,8
+                                        ]
+                                        ~
+
+                                        aqs,4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 37]
-                                        c'2.
-                                        ~
+                                        e4
 
-                                        c'2
-                                        ~
+                                        eqf4
+
+                                        e4
+
+                                        eqs4
+
+                                        e4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 38]
-                                        c'1.
-                                        ~
+                                        a,4
+
+                                        aqs,4
+
+                                        a,4
+
+                                        aqs,4
+
+                                        as,4
+
+                                        aqs,4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 39]
-                                        c'2.
-                                        ~
+                                        <b, ef>4
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [cello voice measure 40]
-                                        c'1
-                                        ~
+                                        <bf, e>4
+
+                                        <b, ef>4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [cello voice measure 40]
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            d8
+                                            [
+
+                                            dqs8
+
+                                            d8
+
+                                            ds8
+
+                                            d8
+
+                                            dqs8
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            d8
+                                            ]
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 41]
-                                        c'2.
-                                        ~
+                                        <b, ef>4
+
+                                        <bf, e>4
+
+                                        <b, ef>4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 42]
-                                        c'2
-                                        ~
+                                        a,4
+
+                                        aqf,4
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 43]
-                                        c'1..
+                                        e4
+
+                                        eqf4
+
+                                        e4
+
+                                        eqs4
+
+                                        e4
+
+                                        e4
+
+                                        eqf4
 
                                     }
 
@@ -2128,6 +3125,7 @@
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
+                                        \stopStaff
                                         r1
 
                                           %! COMMENT_MEASURE_NUMBERS
@@ -2150,9 +3148,18 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 5]
-                                        r1
+                                        \startStaff
+                                        \clef "bass"
+                                        <c, a,>4
 
-                                        r4
+                                        ef'4
+
+                                        <c, a,>4
+
+                                        ef'4
+
+                                        <c, a,>4
+                                        \stopStaff
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2169,15 +3176,60 @@
                                         % [temporary voice measure 8]
                                         r1
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 9]
-                                        r2.
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 6/7
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 10]
-                                        r2
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 9]
+                                            \startStaff
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <c, a,>16
+                                            [
+
+                                            ef'16
+
+                                            <c, a,>8.
+
+                                            r16
+
+                                            ef'16
+
+                                            <c, a,>16
+
+                                            ef'8
+
+                                            <c, a,>16
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            ef'8.
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 10]
+                                            <c, a,>8
+
+                                            ef'4
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <c, a,>8
+                                            [
+
+                                            ef'8
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <c, a,>8
+                                            ]
+                                            \stopStaff
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
@@ -2283,74 +3335,311 @@
                                         % [temporary voice measure 30]
                                         r2.
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 31]
-                                        r2
+                                        \times 4/5
+                                        {
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 32]
-                                        r1..
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 31]
+                                            \startStaff
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <c, gs,>8
+                                            [
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 33]
-                                        r1
+                                            d'8
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 34]
-                                        r1
+                                            <c, gs,>8
 
-                                        r4
+                                            d'8
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <c, gs,>8
+                                            ]
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 7/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 32]
+                                            c,4.
+
+                                            <fs ef'>4
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            c,8
+                                            [
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <fs ef'>8
+                                            ]
+
+                                            c,4
+
+                                            <fs ef'>4.
+
+                                            c,8
+
+                                            <fs ef'>4
+
+                                            c,4
+
+                                            <fs ef'>8
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 33]
+                                            f,4
+
+                                            a4
+
+                                            f,4
+
+                                            a4
+
+                                            f,4
+
+                                            a4
+
+                                        }
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/9
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 34]
+                                            <e, g,>8
+
+                                            b4
+
+                                            <e, g,>8
+
+                                            b4
+
+                                            <e, g,>4
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            b8
+                                            [
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <e, g,>8
+                                            ]
+
+                                            b4
+
+                                            <e, g,>4.
+
+                                            b4
+
+                                            <e, g,>8
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 35]
-                                        r1.
+                                        f,2
+
+                                        a4
+                                        ~
+
+                                        a4
+
+                                        f,2
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 36]
-                                        r2.
+                                        c,4
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 37]
-                                        r1
+                                        <fs ef'>4
 
-                                        r4
+                                        c,4
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 38]
-                                        r1.
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 5/6
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 37]
+                                            <c, gs,>2.
+
+                                            d'4
+
+                                            <c, gs,>4
+
+                                            d'4
+
+                                        }
+
+                                        \times 4/5
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 38]
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            c,8
+                                            [
+
+                                            <fs ef'>8
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            c,8
+                                            ]
+
+                                            <fs ef'>4.
+
+                                            c,8
+
+                                            <fs ef'>4
+
+                                            c,4
+
+                                            <fs ef'>8
+
+                                            c,4.
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 39]
-                                        r2.
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        f,8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        a8
+                                        ]
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        a8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        f,8
+                                        ]
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        f,8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        a8
+                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 40]
-                                        r1
+                                        <e, g,>4
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 41]
-                                        r2.
+                                        b4
 
-                                          %! COMMENT_MEASURE_NUMBERS
-                                          %! evans.SegmentMaker.comment_measure_numbers()
-                                        % [temporary voice measure 42]
-                                        r2
+                                        <e, g,>4
+
+                                        b4
+
+                                        \tweak text #tuplet-number::calc-fraction-text
+                                        \times 8/7
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 41]
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            f,16.
+                                            [
+
+                                            a16
+
+                                            f,16
+
+                                            a16
+
+                                            f,16
+
+                                            a16
+
+                                            f,16
+
+                                            a16
+
+                                            f,16
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            a16
+                                            ]
+
+                                        }
+
+                                        \times 2/3
+                                        {
+
+                                              %! COMMENT_MEASURE_NUMBERS
+                                              %! evans.SegmentMaker.comment_measure_numbers()
+                                            % [temporary voice measure 42]
+                                            c,4
+
+                                            <fs ef'>4
+
+                                            c,4
+
+                                        }
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [temporary voice measure 43]
-                                        r1..
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <c, gs,>8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d'8
+                                        ]
+                                        ~
+
+                                        d'4
+
+                                        <c, gs,>4
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <c, gs,>8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d'8
+                                        ]
+                                        ~
+
+                                        d'4
+
+                                        <c, gs,>4
+                                        ~
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <c, gs,>8
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        d'8
+                                        ]
+                                        \stopStaff
 
                                     }
 
@@ -2620,15 +3909,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -2683,106 +3967,1439 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 11]
-                                r1..
+                                \all-color-music #(x11-color "firebrick")
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                [
+                                (
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 12]
-                                r1
+                                d'16
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+                                (
+
+                                f'16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    g16
+                                    [
+                                    (
+
+                                    b16
+                                    )
+
+                                    d'16
+                                    (
+
+                                    b16
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    g16
+                                    )
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                [
+                                (
+
+                                b16
+
+                                d'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+                                (
+
+                                b4
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                )
+                                [
+
+                                f'16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 12]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    g16
+                                    )
+                                    [
+
+                                    g16
+                                    (
+
+                                    b16
+
+                                    d'16
+
+                                    f'16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                )
+                                [
+
+                                d'16
+                                (
+
+                                f'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                ]
+                                (
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                )
+                                [
+
+                                f'16
+                                (
+
+                                d'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                ]
+                                (
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    d'16
+                                    )
+                                    [
+
+                                    g16
+                                    (
+
+                                    b16
+
+                                    d'16
+                                    )
+
+                                    d'16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 13]
-                                r2
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                )
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 14]
-                                r1..
+                                f'16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                )
+                                [
+
+                                f'16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 14]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    g16
+                                    )
+                                    [
+
+                                    g16
+                                    (
+
+                                    b16
+
+                                    d'16
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    f'16
+                                    )
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+                                (
+
+                                g16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b8
+                                [
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+                                (
+
+                                b16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+                                    (
+
+                                    g16
+                                    )
+
+                                    g16
+                                    (
+
+                                    b16
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                )
+                                [
+
+                                b16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                f'4
+                                (
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 15]
-                                r1
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 16]
-                                r2.
+                                b16
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 17]
-                                r1.
+                                g16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                ]
+                                (
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+
+                                    d'16
+
+                                    f'16
+                                    )
+
+                                    b16
+                                    (
+
+                                    d'16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+                                (
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 16]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    d'16
+                                    [
+
+                                    f'16
+                                    )
+
+                                    g16
+                                    (
+
+                                    b16
+
+                                    d'16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    g16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+
+                                d'16
+                                )
+
+                                g16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 17]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    f'16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    b16
+                                    )
+
+                                    g16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                )
+                                [
+
+                                b16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g8
+                                [
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b8
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    f'16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    b16
+
+                                    g16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    g16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+
+                                d'16
+
+                                f'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+                                (
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 18]
-                                r2.
+                                f'4
+                                )
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                [
+                                (
+
+                                b16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    d'16
+                                    [
+                                    (
+
+                                    f'16
+                                    )
+
+                                    d'16
+                                    (
+
+                                    b16
+                                    )
+
+                                    f'16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 19]
-                                r1
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                )
+                                [
+
+                                f'16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                [
+                                (
+
+                                b16
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    f'16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    b16
+
+                                    g16
+                                    )
+
+                                    g16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+
+                                f'16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 20]
-                                r1
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+                                (
 
-                                r4
+                                d'16
+                                )
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 21]
-                                r2.
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    f'16
+                                    )
+
+                                    f'16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                )
+                                [
+
+                                b16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 21]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    g16
+                                    [
+                                    (
+
+                                    b16
+
+                                    d'16
+
+                                    f'16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    g16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+
+                                d'16
+
+                                f'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                ]
+                                (
+
+                                d'4
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 22]
-                                r1
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 23]
-                                r1
+                                g16
+                                )
 
-                                r4
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+                                    (
+
+                                    g16
+                                    )
+
+                                    b16
+                                    (
+
+                                    d'16
+                                    )
+
+                                    f'16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    )
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+                                (
+
+                                d'16
+
+                                f'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+                                (
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+
+                                f'16
+                                )
+
+                                g16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 23]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    d'16
+                                    )
+                                    [
+
+                                    b16
+                                    (
+
+                                    d'16
+
+                                    f'16
+                                    )
+
+                                    b16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                )
+                                [
+
+                                b16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                [
+                                (
+
+                                d'16
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    f'16
+                                    [
+                                    (
+
+                                    d'16
+                                    )
+
+                                    f'16
+                                    (
+
+                                    d'16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    g16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 24]
-                                r1.
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                )
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 25]
-                                r1..
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                ]
+                                (
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+
+                                b16
+                                )
+
+                                f'16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+
+                                    g16
+                                    )
+
+                                    g16
+                                    (
+
+                                    b16
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+
+                                f'4
+                                )
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                [
+                                (
+
+                                d'16
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 25]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    g16
+                                    [
+                                    (
+
+                                    b16
+                                    )
+
+                                    d'16
+                                    (
+
+                                    f'16
+                                    )
+
+                                    d'16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                )
+                                [
+
+                                d'16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+                                (
+
+                                d'16
+
+                                f'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+                                (
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+
+                                    g16
+                                    )
+
+                                    d'16
+                                    (
+
+                                    b16
+
+                                    g16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    ]
+                                    (
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+
+                                g16
+                                )
+
+                                g16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+
+                                f'16
+                                )
+
+                                f'16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+
+                                    g16
+                                    )
+
+                                    g16
+                                    (
+
+                                    b16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+                                    (
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 26]
-                                r1
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                )
+                                [
+
+                                b16
+                                (
+
+                                d'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+                                (
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                )
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                ]
+                                (
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                )
+                                [
+
+                                f'16
+                                (
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                b16
+                                ]
+
+                                \times 4/5
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    g16
+                                    )
+                                    [
+
+                                    f'16
+                                    (
+
+                                    d'16
+
+                                    b16
+                                    )
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    g16
+                                    ]
+                                    (
+
+                                }
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 27]
-                                r2.
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 28]
-                                r2
+                                d'16
+
+                                f'16
+                                )
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                ]
+                                (
+
+                                d'4
+                                )
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                [
+                                (
+
+                                b16
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 28]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    f'16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    b16
+
+                                    g16
+                                    )
+
+                                    f'16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    d'16
+                                    )
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'16
+                                [
+                                (
+
+                                d'16
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 29]
-                                r1
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                g16
+                                [
+                                (
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [change voice measure 30]
-                                r2.
+                                b16
+
+                                d'16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'16
+                                )
+                                ]
+
+                                \times 2/3
+                                {
+
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    f'16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    b16
+
+                                    g16
+                                    )
+
+                                    g16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                [
+
+                                f'16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                g16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                b16
+                                [
+                                (
+
+                                d'16
+                                )
+
+                                b16
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \times 4/5
+                                {
+
+                                      %! COMMENT_MEASURE_NUMBERS
+                                      %! evans.SegmentMaker.comment_measure_numbers()
+                                    % [change voice measure 30]
+                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                    b16
+                                    [
+                                    (
+
+                                    d'16
+
+                                    f'16
+                                    )
+
+                                    g16
+                                    (
+
+                                    \revert VanishingChangeStaff.Stem.stemlet-length
+                                    b16
+                                    ]
+
+                                }
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'16
+                                )
+                                [
+
+                                g16
+                                (
+
+                                b16
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'16
+                                )
+                                ]
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+                                (
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                )
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()

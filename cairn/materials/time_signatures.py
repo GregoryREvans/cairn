@@ -648,11 +648,11 @@ reduced_signatures_38 = evans.reduce_fermata_measures(
 cyc_signatures_39 = evans.CyclicList(
     series_1.rotate(19).flatten(depth=-1), forget=False
 )
-signatures_39 = cyc_signatures_39(r=36)
+signatures_39 = cyc_signatures_39(r=37)
 
 signatures_39.append(abjad.TimeSignature((1, 4)))  # for ending skip
 
-fermata_measures_39 = []
+fermata_measures_39 = [36]
 
 reduced_signatures_39 = evans.reduce_fermata_measures(
     signatures_39, fermata_measures_39

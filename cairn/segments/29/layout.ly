@@ -22,9 +22,11 @@
             \break
             \evans-lbsd #60 #'(8 15)
             \evans-system-X-offset #4
-            \evans-new-spacing-section #1 #35
+            \evans-new-spacing-section #1 #24
             s1 * 3/4
-            \noBreak
+            \break
+            \evans-lbsd #110 #'(8 15)
+            \evans-system-X-offset #4
             \evans-new-spacing-section #1 #35
             s1 * 3/2
             \noBreak

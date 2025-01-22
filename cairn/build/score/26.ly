@@ -12,8 +12,6 @@
                   %! scaling time signatures
                 \time 5/4
                 s1 * 5/4
-                \tweak padding 5
-                ^ \boxed-markup-upright "6.A: que se piedra en la noche sin canto de los peces" 2
 
                   %! COMMENT_MEASURE_NUMBERS
                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -266,13 +264,10 @@
                                 % [front voice measure 1]
                                 \my-hack-slash
                                 \once \change Staff = "front staff"
-                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Davanti" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "davanti" }
-                                \startStaff
-                                \stopStaff
                                 \once \override Beam.positions = #'(5 . 5)
                                 c'16 * 1776/784
                                 ^ \p
@@ -571,12 +566,12 @@
                                 \once \change Staff = "cello staff"
                                 a'16 * 7696/1568
 
-                                \once \change Staff = "back staff"
-                                c'16 * 1776/784
+                                \once \change Staff = "cello staff"
+                                bf16 * 1776/784
 
-                                \once \change Staff = "front staff"
+                                \once \change Staff = "cello staff"
                                 \tweak NoteHead.style #'cross
-                                c'16 * 1776/784
+                                b'16 * 1776/784
                                 ^ \pp
                                 ]
 
@@ -604,13 +599,10 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
-                                        \override Staff.StaffSymbol.transparent = ##f
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
-                                        \startStaff
-                                        \stopStaff
                                         \clef "bass"
                                         \tweak Accidental.stencil ##f
                                         \tweak X-extent #'(0 . 0)
@@ -1422,13 +1414,10 @@
                                 % [back voice measure 1]
                                 \override Staff.Rest.stencil = ##f
                                 \override Staff.Dots.stencil = ##f
-                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Dietro" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "dietro" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4

@@ -130,14 +130,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -440,15 +436,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -547,15 +538,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -762,7 +748,7 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 1]
-                                        \all-color-music #black
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                           %! applying staff names and clefs
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
@@ -776,10 +762,10 @@
                                         \f
                                         - \tweak staff-padding 7
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright clt. \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 clt.} \hspace #0.5 }
                                         \startTextSpanOne
-                                        - \tweak staff-padding 9
-                                        - \abjad-dashed-line-with-hook
+                                        - \tweak staff-padding 9.5
+                                        - \abjad-solid-line-with-arrow
                                         - \tweak bound-details.left.text \markup \concat { \upright XP \hspace #0.5 }
                                         \startTextSpanTwo
                                         \>
@@ -842,47 +828,49 @@
                                         :32
                                         - \espressivo
                                         \p
+                                        \stopTextSpanTwo
+                                        - \tweak staff-padding 9.5
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 P} \hspace #0.5 }
+                                        \startTextSpanTwo
                                         \harmonicsOff
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 4]
-                                        \all-color-music #(universal-color "redpurple")
+                                        \clef "bass"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16.
+                                        <bf,! bf,!>8.
+                                        \ff
                                         \stopTextSpanOne
                                         \stopTextSpanTwo
                                         [
-
-                                        \clef "bass"
-                                        a,32
-                                        - \scrape-circular-clockwise
-                                        \mf
+                                        - \tweak staff-padding 6
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright { \fraction 1 2 P } \hspace #0.5 }
+                                        \startTextSpanOne
                                         - \tweak stencil #constante-hairpin
                                         \<
 
-                                        a,32
-                                        - \scrape-circular-clockwise
-
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16.
+                                        <a,! bf,!>16
                                         ]
+                                        ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
+                                        \times 8/9
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            bf,32
-                                            - \scrape-circular-clockwise
+                                            <a, bf,>16.
                                             [
 
-                                            r16.
+                                            <bf,! bf,!>32
+
+                                            <a,! bf,!>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            bf,16
-                                            - \scrape-circular-clockwise
-                                            \!
+                                            <bf,! bf,!>8
+                                            \stopTextSpanOne
                                             ]
 
                                         }
@@ -890,21 +878,22 @@
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 5]
-                                        \all-color-music #black
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                         \clef "tenor"
                                         <fs' b'>4
                                         :32
                                         - \accent
                                         - \espressivo
+                                        \!
                                         \f
                                         - \tweak staff-padding 7
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright clt. \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 clt.} \hspace #0.5 }
                                         \startTextSpanOne
-                                        - \tweak staff-padding 9
-                                        - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright XP \hspace #0.5 }
+                                        - \tweak staff-padding 9.5
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright MP \hspace #0.5 }
                                         \startTextSpanTwo
                                         \>
 
@@ -978,48 +967,49 @@
                                         :32
                                         - \espressivo
                                         \p
+                                        \stopTextSpanTwo
+                                        - \tweak staff-padding 9.5
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright N \hspace #0.5 }
+                                        \startTextSpanTwo
                                         \harmonicsOff
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 8]
-                                        \all-color-music #(universal-color "redpurple")
+                                        \clef "bass"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16.
+                                        <a,! a,!>8.
+                                        \ff
                                         \stopTextSpanOne
                                         \stopTextSpanTwo
                                         [
-
-                                        \clef "bass"
-                                        bf,32
-                                        - \scrape-circular-clockwise
-                                        \f
+                                        - \tweak staff-padding 6
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright { \fraction 1 2 P } \hspace #0.5 }
+                                        \startTextSpanOne
                                         - \tweak stencil #constante-hairpin
                                         \<
 
-                                        bf,32
-                                        - \scrape-circular-clockwise
-
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16.
+                                        <gs,! a,!>16
                                         ]
+                                        ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
+                                        \times 8/9
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            bf,32
-                                            - \scrape-circular-clockwise
+                                            <gs, a,>16.
                                             [
 
-                                            r16.
+                                            <a,! a,!>32
+
+                                            <gs,! a,!>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            bf,16
-                                            - \scrape-circular-clockwise
+                                            <a,! a,!>8
                                             ]
-                                            ~
 
                                         }
 
@@ -1027,137 +1017,123 @@
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 9]
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        bf,16
+                                        <aqf,! a,!>32
                                         [
 
-                                        b,16
-                                        - \scrape-circular-clockwise
-
-                                        b,16
-                                        - \scrape-circular-clockwise
-
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
+                                        <gs,! a,!>8..
                                         ]
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <a,! a,!>32
+                                            [
+
+                                            <a,! btqf,!>32
+
+                                            <a,! a,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <gs,! a,!>8..
+                                            ]
+                                            ~
+
+                                        }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
+                                        <gs, a,>32
                                         [
 
-                                        b,32
-                                        - \scrape-circular-clockwise
-
-                                        b,32
-                                        - \scrape-circular-clockwise
-                                        ~
-
-                                        b,16
-
-                                        c32
-                                        - \scrape-circular-clockwise
+                                        <a,! a,!>8.
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r32
+                                        <gs,! a,!>32
                                         ]
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
-
-                                        c32
-                                        - \scrape-circular-clockwise
-
-                                        c32
-                                        - \scrape-circular-clockwise
                                         ~
 
-                                        c16
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        r16
-                                        ]
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
+                                        \times 8/9
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 10]
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            r8
+                                            <gs, a,>8
                                             [
 
-                                            r32
+                                            <a,! a,!>32
+
+                                            <gs,! a,!>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            e,32
-                                            - \scrape-circular-clockwise
+                                            <a,! a,!>16.
                                             ]
+                                            ~
 
                                         }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r8.
+                                        <a, a,>32
                                         [
+
+                                        <aqf,! a,!>32
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        e,16
-                                        - \scrape-circular-clockwise
+                                        <gs,! a,!>8.
                                         ]
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        e,32
-                                        - \scrape-circular-clockwise
-                                        [
-
-                                        e,32
-                                        - \scrape-circular-clockwise
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        r8.
-                                        ]
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r32
-                                        [
-
-                                        ef32
-                                        - \scrape-circular-clockwise
-
-                                        ef32
-                                        - \scrape-circular-clockwise
-
-                                        f,32
-                                        - \scrape-circular-clockwise
                                         ~
 
-                                        f,16
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <gs, a,>32
+                                            [
+
+                                            <a,! a,!>32
+
+                                            <a,! btqf,!>32
+
+                                            <a,! a,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <gs,! a,!>8.
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <gs, a,>16
+                                        [
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
-                                        \!
+                                        <a,! a,!>8.
+                                        \stopTextSpanOne
                                         ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 11]
-                                        \all-color-music #black
+                                        \all-color-music #"black"
                                         \harmonicsOn
                                         \clef "tenor"
                                         <fs' b'>4
                                         :32
                                         - \accent
                                         - \espressivo
+                                        \!
                                         \f
+                                        - \tweak staff-padding 11
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 P} \hspace #0.5 }
+                                        \startTextSpanTwo
                                         - \tweak staff-padding 7
                                         - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright clt. \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 clt.} \hspace #0.5 }
                                         \startTextSpanOne
-                                        - \tweak staff-padding 9
-                                        - \abjad-dashed-line-with-hook
-                                        - \tweak bound-details.left.text \markup \concat { \upright XP \hspace #0.5 }
-                                        \startTextSpanTwo
                                         \>
 
                                         <fs' b'>4
@@ -1176,294 +1152,291 @@
                                         :32
                                         - \espressivo
                                         \p
+                                        \stopTextSpanTwo
+                                        - \tweak staff-padding 11
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 T} \hspace #0.5 }
+                                        \startTextSpanTwo
                                         \harmonicsOff
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 12]
-                                        \all-color-music #(universal-color "redpurple")
+                                        \clef "bass"
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16.
+                                        <g,! g,!>8.
+                                        \ff
                                         \stopTextSpanOne
                                         \stopTextSpanTwo
                                         [
-
-                                        \clef "bass"
-                                        f,32
-                                        - \scrape-circular-clockwise
-                                        \ff
+                                        - \tweak staff-padding 6
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright { \fraction 1 2 P } \hspace #0.5 }
+                                        \startTextSpanOne
                                         - \tweak stencil #constante-hairpin
                                         \<
 
-                                        f,32
-                                        - \scrape-circular-clockwise
-
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16.
+                                        <fs,! g,!>16
                                         ]
+                                        ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \times 8/9
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            f,32
-                                            - \scrape-circular-clockwise
+                                            <fs, g,>16.
                                             [
 
-                                            r16.
+                                            <g,! g,!>32
 
-                                            f,16.
-                                            - \scrape-circular-clockwise
-
-                                            f,32
-                                            - \scrape-circular-clockwise
-
-                                            d,32
-                                            - \scrape-circular-clockwise
-
-                                            r16.
-
-                                            d,32
-                                            - \scrape-circular-clockwise
+                                            <fs,! g,!>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            d,32
-                                            - \scrape-circular-clockwise
+                                            <g,! g,!>8
+                                            ]
+
+                                        }
+
+                                        <ftqs,! g,!>32
+
+                                        <fs,! g,!>8..
+
+                                        \times 2/3
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <g,! g,!>32
+                                            [
+
+                                            <g,! atqf,!>32
+
+                                            <g,! g,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <fs,! g,!>16.
                                             ]
                                             ~
 
                                         }
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        d,16
-                                        [
-
-                                        d,32
-                                        - \scrape-circular-clockwise
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        r32
-                                        ]
 
                                           %! COMMENT_MEASURE_NUMBERS
                                           %! evans.SegmentMaker.comment_measure_numbers()
                                         % [cello voice measure 13]
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
+                                        <fs, g,>8
                                         [
-
-                                        aqs,32
-                                        - \scrape-circular-clockwise
-
-                                        aqs,32
-                                        - \scrape-circular-clockwise
                                         ~
 
-                                        aqs,16
+                                        <fs, g,>32
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
+                                        <g,! g,!>16.
                                         ]
+                                        ~
 
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r8
-                                        [
-
-                                        r32
-
-                                        aqs,32
-                                        - \scrape-circular-clockwise
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        r16
-                                        ]
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
+                                        \times 8/9
                                         {
 
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            r32
+                                            <g, g,>16.
                                             [
 
-                                            bqf,32
-                                            - \scrape-circular-clockwise
+                                            <f,! g,!>8
+                                            ~
 
-                                            bqf,32
-                                            - \scrape-circular-clockwise
-
-                                            bf,32
-                                            - \scrape-circular-clockwise
+                                            <f, g,>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            r16
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            r8
-                                            [
-
-                                            r32
-
-                                            bf,32
-                                            - \scrape-circular-clockwise
-
-                                            bf,32
-                                            - \scrape-circular-clockwise
-
-                                            bf,16.
-                                            - \scrape-circular-clockwise
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            r16
+                                            <g,! g,!>32
                                             ]
 
                                         }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r32
+                                        <fs,! g,!>32
                                         [
 
-                                        bf,16.
-                                        - \scrape-circular-clockwise
+                                        <g,! g,!>8
 
-                                        bf,32
-                                        - \scrape-circular-clockwise
+                                        <e,! g,!>32
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16.
+                                        <eqf,! g,!>16
                                         ]
+                                        ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
+                                        \times 4/5
                                         {
 
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 14]
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            b,32
-                                            - \scrape-circular-clockwise
+                                            <eqf, g,>8
                                             [
+                                            ~
 
-                                            b,16.
-                                            - \scrape-circular-clockwise
+                                            <eqf, g,>32
 
-                                            r8..
+                                            <g,! g,!>32
 
-                                            b,32
-                                            - \scrape-circular-clockwise
+                                            <g,! atqf,!>32
 
-                                            b,32
-                                            - \scrape-circular-clockwise
+                                            <g,! g,!>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            c,32
-                                            - \scrape-circular-clockwise
+                                            <e,! g,!>16
                                             ]
                                             ~
 
                                         }
 
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        c,8
+                                        <e, g,>8.
                                         [
 
-                                        c,16
-                                        - \scrape-circular-clockwise
-
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
-                                        ]
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
-
-                                        c,32
-                                        - \scrape-circular-clockwise
-
-                                        cs,32
-                                        - \scrape-circular-clockwise
-                                        ~
-
-                                        cs,16
-
-                                        cs,32
-                                        - \scrape-circular-clockwise
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        r32
-                                        ]
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        r16
-                                        [
-
-                                        cs,32
-                                        - \scrape-circular-clockwise
-
-                                        r32
-
-                                        r16
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        cs,16
-                                        - \scrape-circular-clockwise
+                                        <ef,! g,!>16
                                         ]
                                         ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 12/11
+                                        \times 8/9
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <ef, g,>8
+                                            [
+
+                                            <g,! g,!>8
+                                            ~
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <g, g,>32
+                                            ]
+
+                                        }
+
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 14]
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <fs,! g,!>32
+                                        [
+
+                                        <g,! g,!>32
+
+                                        <fs,! g,!>8
+
+                                        <g,! g,!>32
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <ftqs,! g,!>32
+                                        ]
+                                        ~
+
+                                        \times 4/5
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <ftqs, g,>8.
+                                            [
+
+                                            <fs,! g,!>32
+
+                                            <g,! g,!>32
+
+                                            <g,! atqf,!>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <g,! g,!>32
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <g, g,>8..
+                                        [
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <fs,! g,!>32
+                                        ]
+                                        ~
+
+                                        \times 8/9
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <fs, g,>8
+                                            [
+                                            ~
+
+                                            <fs, g,>32
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <g,! g,!>8
+                                            ]
+                                            ~
+
+                                        }
+
+                                        \override VanishingStaff.Stem.stemlet-length = 0.75
+                                        <g, g,>32
+                                        [
+
+                                        <f,! g,!>32
+
+                                        <g,! g,!>32
+
+                                        <fs,! g,!>8
+
+                                        \revert VanishingStaff.Stem.stemlet-length
+                                        <g,! g,!>32
+                                        ]
+
+                                        \times 4/5
                                         {
 
                                               %! COMMENT_MEASURE_NUMBERS
                                               %! evans.SegmentMaker.comment_measure_numbers()
                                             % [cello voice measure 15]
                                             \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            cs,32
+                                            <e,! g,!>8..
                                             [
 
-                                            f,32
-                                            - \scrape-circular-clockwise
+                                            <eqf,! g,!>32
 
-                                            r16.
-
-                                            f,16.
-                                            - \scrape-circular-clockwise
-
-                                            r16.
-
-                                            e,32
-                                            - \scrape-circular-clockwise
-
-                                            r8..
+                                            <g,! g,!>32
 
                                             \revert VanishingStaff.Stem.stemlet-length
-                                            e,16.
-                                            - \scrape-circular-clockwise
+                                            <g,! atqf,!>32
                                             ]
 
                                         }
 
+                                        <g,! g,!>4
+
+                                        \times 8/9
+                                        {
+
+                                            \override VanishingStaff.Stem.stemlet-length = 0.75
+                                            <e,! g,!>8.
+                                            [
+
+                                            \revert VanishingStaff.Stem.stemlet-length
+                                            <ef,! g,!>16.
+                                            ]
+                                            ~
+
+                                        }
+
                                         \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        e,32
-                                        - \scrape-circular-clockwise
+                                        <ef, g,>16
                                         [
 
-                                        e,32
-                                        - \scrape-circular-clockwise
+                                        <g,! g,!>32
 
                                         \revert VanishingStaff.Stem.stemlet-length
-                                        r16
-                                        \!
+                                        <fs,! g,!>32
+                                        \stopTextSpanOne
                                         ]
 
                                     }
@@ -1692,15 +1665,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS

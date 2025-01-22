@@ -697,6 +697,7 @@
                   %! scaling time signatures
                 \time 6/4
                 s1 * 3/2
+                \barline-short-fermata
 
             }
 
@@ -718,14 +719,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 b,1
                                   %! abjad.glissando(7)
                                 - \abjad-zero-padding-glissando
@@ -4874,15 +4871,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##f
-                                \override Staff.Rest.transparent = ##f
-                                \override Staff.StaffSymbol.transparent = ##f
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4
@@ -4906,7967 +4898,1507 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 5]
                                 \override Staff.TupletBracket.direction = #down
-                                g8
+                                g2.
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \f
-                                  %! baca.bcps(5)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(5)
-                                - \upbow
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 6]
-                                g4
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 7]
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1..
+                                - \baca-full-upbow
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 8]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 9]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2
+                                - \baca-full-downbow
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 10]
+                                <g b>1..
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 11]
+                                <g b>1
+                                - \baca-full-upbow
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 10]
-                                    <g b>4..
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4..
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \p
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 11]
-                                    <g b>4
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 12]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <g b>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>16.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \f
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>16.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #9 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <g b>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 12]
+                                <g b>2.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 13]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
+                                <g b>1.
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 14]
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2.
+                                - \baca-full-upbow
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 15]
-                                <g b>4
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 16]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2.
+                                - \baca-full-downbow
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 17]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 18]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <g b>8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \f
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <g b>8
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 5/6
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 19]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \pp
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 20]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <g b>8.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #9 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <g b>8.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \ff
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                <g b>2.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 21]
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 22]
-                                d'8
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 23]
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 24]
-                                d'4
-
-                                d'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 25]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 26]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <d' f'>16.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>16.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <d' f'>16.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 27]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <d' f'>8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>8
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \ff
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>8
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #1
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>8
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #1
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>8
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <d' f'>8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 28]
-                                    <d' f'>4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>4..
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <d' f'>4..
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \p
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 29]
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 30]
-                                f'8
-
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 31]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 32]
-                                f'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 33]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
+                                % [left voice measure 18]
+                                <g b>1
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 19]
+                                <g b>2.
+                                ~
+
+                                <g b>2
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 20]
+                                <g b>1.
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 21]
+                                d'1..
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 22]
+                                d'1
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 23]
+                                d'2.
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 24]
+                                d'2
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 25]
+                                <d' f'>1
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 26]
+                                <d' f'>2.
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 27]
+                                <d' f'>2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 28]
+                                <d' f'>1..
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 29]
+                                f'1
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 30]
+                                f'2.
+                                - \baca-full-upbow
+                                ~
+
+                                f'2
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 31]
+                                f'1.
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 32]
+                                f'2.
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 33]
+                                <d' f'>4
+                                - \baca-full-downbow
+
+                                <d' f'>2
+                                - \baca-full-upbow
 
                                 <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                <d' f'>4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 34]
                                 <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
                                 <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                 <d' f'>4
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
                                 <d' f'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                <d' f'>4
+                                - \baca-full-upbow
+
+                                <d' f'>4
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 35]
-                                <d' f'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                <d' f'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 36]
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
                                 <d' f'>4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 37]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 38]
-                                <d' f'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 39]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
+                                <d' f'>2
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 37]
+                                <d' f'>4
+                                - \baca-full-upbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2
+                                - \baca-full-downbow
 
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 38]
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 39]
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
-                                <d' f'>4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>4
+                                - \baca-full-upbow
+                                ~
+
+                                <d' f'>4
+
+                                <d' f'>4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                <d' f'>2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 40]
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2
+                                - \baca-full-upbow
 
                                 <d' f'>4
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \f
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 41]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'4
+                                - \baca-full-upbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'4
+                                - \baca-full-downbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 42]
+                                f'4
+                                - \baca-full-upbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
-                                \times 4/5
-                                {
+                                f'4
+                                - \baca-full-upbow
+                                ~
 
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 42]
-                                    f'4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                f'4
 
-                                    f'4..
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \p
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                f'4
+                                - \baca-full-downbow
 
-                                    f'4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                f'2
+                                - \baca-full-upbow
 
-                                    f'4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 43]
+                                f'4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                    f'4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                f'2
+                                - \baca-full-upbow
 
-                                }
+                                f'4
+                                - \baca-full-downbow
 
-                                \times 2/3
-                                {
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 44]
+                                f'2
+                                - \baca-full-upbow
 
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 43]
-                                    f'4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \f
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 44]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    f'16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'16.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #9 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    f'16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                f'4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 45]
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                f'4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 46]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                [
 
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
+                                \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \f
+                                ]
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
                                 ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 46]
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 47]
-                                f'8
-
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
                                 f'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
                                 ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                f'4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 48]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
+                                - \baca-full-downbow
                                 [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \f
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                ]
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 49]
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
                                 ~
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 50]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
                                 [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
+                                \ff
+                                ]
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 51]
-                                f'8
-
+                                % [left voice measure 50]
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
                                 ~
 
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 52]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
                                 [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \p
                                 ]
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 53]
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
+                                % [left voice measure 51]
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                [
 
-                                f'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
+                                ~
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
+                                \f
+                                ]
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 52]
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
                                 ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 53]
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                f'4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 54]
-                                f'8
-
-                                f'4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
                                 ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                f'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-upbow
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 55]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 f'8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
+                                [
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 f'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 56]
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                f'8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                f'8
+                                - \baca-full-downbow
+                                ]
 
                                 f'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 57]
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \pp
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                \<
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'2
+                                - \baca-full-upbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'4
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 58]
-                                f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'2
+                                - \baca-full-upbow
 
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 59]
-                                f'8
-
-                                f'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 60]
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                f'8
+                                f'2
+                                - \baca-full-upbow
+
+                                f'4
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
+                                \p
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                f'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
+                                ~
 
                                 f'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 f'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 61]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    f'8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \ff
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    f'8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 10/9
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 62]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    f'8.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'8.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \p
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    f'8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 63]
-                                    f'4.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    f'4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 64]
-                                f'8.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                % [left voice measure 61]
+                                f'4
+                                - \baca-full-upbow
 
-                                f'8.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                f'8.
+                                f'2
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
-                                f'8.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                f'4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 62]
+                                f'2
+                                - \baca-full-downbow
+
+                                f'4
+                                - \baca-full-upbow
+
+                                f'2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 63]
+                                f'4
+                                - \baca-full-upbow
+
+                                f'2
+                                - \baca-full-downbow
+
+                                f'4
+                                - \baca-full-upbow
+
+                                f'2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 64]
+                                f'4
+                                - \baca-full-upbow
+
+                                f'2
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 65]
                                 <d' f'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 <d' f'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                 <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 66]
                                 <d' f'>4
+                                - \baca-full-upbow
 
                                 <d' f'>4
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \f
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                \>
 
                                 <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
+                                ~
 
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                <d' f'>4
+                                - \baca-full-downbow
+
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 67]
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \pp
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                \<
+
+                                <d' f'>4
+                                - \baca-full-upbow
+
+                                <d' f'>4
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 68]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>4
+                                - \baca-full-upbow
 
                                 <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 69]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                <d' f'>2.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 70]
-                                <d' f'>8
-
-                                <d' f'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 71]
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
+                                <d' f'>1..
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
+                                \p
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                \<
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 72]
-                                <d' f'>8
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>1
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 73]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'2
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 74]
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                d'1..
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 75]
-                                d'8
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'1
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 76]
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'2.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 77]
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                <d' f'>1.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 78]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 79]
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>1
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 80]
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2.
+                                - \baca-full-upbow
+                                ~
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <d' f'>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <d' f'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <d' f'>2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 81]
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                d'2.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 82]
-                                d'8
-
-                                d'4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'1
+                                - \baca-full-upbow
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 83]
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'2.
+                                ~
 
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 84]
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'1.
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 85]
-                                b4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b1..
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 86]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b1
+                                - \baca-full-downbow
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 87]
+                                b2.
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 87]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    b16.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b16.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \ff
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b16.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    b16.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [left voice measure 88]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    b8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b8
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    b8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    b8
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \p
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #1
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 88]
+                                b2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 89]
-                                d'4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'1
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 90]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'2.
+                                - \baca-full-upbow
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 91]
-                                d'8
-
-                                d'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 92]
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                d'1..
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 93]
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b1
+                                - \baca-full-upbow
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 94]
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b2.
+                                ~
 
-                                b4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 95]
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 96]
-                                b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [left voice measure 97]
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
+                                b1.
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \f
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 96]
+                                b2.
 
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [left voice measure 97]
+                                g2.
+                                - \baca-full-upbow
+                                ~
 
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 98]
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-right-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                r8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
+                                g1.
+                                - \baca-full-downbow
                                 \revert Staff.TupletBracket.direction
 
                             }
@@ -12887,7547 +6419,1394 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##f
-                                \override Staff.Rest.transparent = ##f
-                                \override Staff.StaffSymbol.transparent = ##f
                                 \override Staff.TupletBracket.direction = #down
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
-                                g4
+                                g2.
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \f
-                                  %! baca.bcps(6)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(6)
-                                - \downbow
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 2]
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1.
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 3]
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 4]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 5]
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-downbow
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 6]
-                                g4
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 7]
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 7]
+                                g1..
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 8]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 9]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
+                                - \baca-full-downbow
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 10]
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1..
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 11]
-                                g8
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 12]
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-upbow
 
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 13]
+                                <g b>1.
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
+                                \pp
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 13]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    <g b>8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 14]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2.
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 15]
+                                <g b>1
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 16]
+                                <g b>2.
+                                - \baca-full-downbow
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 15]
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #9 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 5/6
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 16]
-                                    <g b>4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \f
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    <g b>4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                <g b>2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 17]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2.
+                                - \baca-full-upbow
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 18]
-                                <g b>8
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 19]
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2.
+                                - \baca-full-downbow
+                                ~
 
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 20]
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>1.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 21]
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>1..
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 22]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                <g b>1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 23]
-                                <g b>8
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 24]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 25]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>1
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 26]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                <g b>2.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 27]
-                                <g b>8
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 28]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
+                                <g b>1..
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 29]
-                                g4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 30]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-downbow
+                                ~
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 31]
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 32]
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 33]
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-upbow
+                                ~
 
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 34]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1.
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 35]
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 36]
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 37]
-                                b4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b2
+                                - \baca-full-upbow
 
                                 b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 38]
-                                b8
-
-                                b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 39]
                                 b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 40]
-                                b8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 41]
-                                b8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 42]
-                                b8
-
-                                b4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 43]
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                b8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \pp
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                b2
+                                - \baca-full-upbow
+
+                                b4
+                                - \baca-full-downbow
+
+                                b4
+                                - \baca-full-upbow
+                                ~
+
+                                b4
+
+                                b4
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 40]
+                                b2
+                                - \baca-full-upbow
+
+                                b4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                b4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 41]
+                                b2
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 42]
+                                b4
+                                - \baca-full-upbow
+
+                                b2
+                                - \baca-full-downbow
+
+                                b4
+                                - \baca-full-upbow
+
+                                b4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+                                ~
+
+                                b4
+
+                                b4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 43]
+                                b2
+                                - \baca-full-downbow
+
+                                b4
+                                - \baca-full-upbow
+
+                                b4
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 44]
                                 b4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                b4
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                b8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 45]
+                                g2
+                                - \baca-full-downbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                b8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g4
+                                - \baca-full-upbow
 
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 8/7
-                                {
+                                g2
+                                - \baca-full-downbow
 
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 45]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                g4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 46]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g4
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 47]
+                                g2
+                                - \baca-full-downbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g4
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g4
+                                - \baca-full-downbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 48]
+                                g4
+                                - \baca-full-upbow
 
-                                \times 4/5
-                                {
+                                g4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 47]
-                                    g4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                g4
+                                - \baca-full-upbow
+                                ~
 
-                                    g4
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \f
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \>
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
+                                g4
 
-                                    g4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #9 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 5/6
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 48]
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
+                                g4
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 49]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <g b>8
+                                - \baca-full-upbow
+                                ]
 
                                 <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 50]
-                                <g b>8
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
                                 ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <g b>8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <g b>8
+                                - \baca-full-upbow
+                                ]
+
+                                <g b>4
+                                - \baca-full-downbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <g b>8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <g b>8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 51]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <g b>8
+                                - \baca-full-upbow
                                 [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                <g b>4
+                                - \baca-full-upbow
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
-                                <g b>4
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <g b>8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <g b>8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                ]
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 52]
-                                <g b>8
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 53]
-                                <b d'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                <g b>8
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                <g b>8
+                                - \baca-full-downbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>4
+                                - \baca-full-upbow
 
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 54]
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <g b>8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \ff
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                [
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <g b>8
+                                - \baca-full-upbow
+                                ]
+                                ~
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                <g b>8
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <g b>8
+                                - \baca-full-downbow
+                                ]
+
+                                <g b>4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 53]
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                - \baca-full-downbow
+                                [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
 
                                 <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-upbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-downbow
+                                ]
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                [
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-upbow
+                                ]
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 54]
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                - \baca-full-downbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-upbow
+                                ]
+
+                                <b d'>4
+                                - \baca-full-downbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                ]
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-upbow
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 55]
                                 <b d'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
-                                <b d'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-downbow
+                                ]
                                 ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                <b d'>8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                <b d'>8
+                                - \baca-full-upbow
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 56]
+                                <b d'>4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 <b d'>8
+                                - \baca-full-upbow
                                 [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 57]
-                                d'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 d'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-upbow
+                                ]
 
                                 d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \p
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-downbow
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 58]
-                                d'4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-downbow
+                                ]
+
+                                d'4
+                                - \baca-full-upbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                [
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-upbow
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 59]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 d'8
+                                - \baca-full-downbow
                                 [
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 d'8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 d'4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 60]
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 d'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                d'4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+                                ~
 
                                 \override VanishingChangeStaff.Stem.stemlet-length = 0.75
                                 d'8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                 [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 \revert VanishingChangeStaff.Stem.stemlet-length
                                 d'8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                - \baca-full-upbow
                                 ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+
+                                d'4
+                                - \baca-full-downbow
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-downbow
+                                ]
+                                ~
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-upbow
+                                ]
+
+                                d'4
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
+                                d'8
+                                - \baca-full-upbow
+                                [
+
+                                \revert VanishingChangeStaff.Stem.stemlet-length
+                                d'8
+                                - \baca-full-downbow
+                                ]
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 61]
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <b d'>2
+                                - \baca-full-upbow
 
                                 <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
 
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <b d'>4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 62]
                                 <b d'>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 63]
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 64]
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 65]
-                                <b d'>4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 66]
-                                <b d'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \p
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                 <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <b d'>4
+                                - \baca-full-downbow
                                 ~
+
+                                <b d'>4
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 63]
+                                <b d'>2
+                                - \baca-full-downbow
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                <b d'>2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 64]
+                                <b d'>2
+                                - \baca-full-downbow
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 65]
+                                <b d'>2
+                                - \baca-full-downbow
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                <b d'>2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 66]
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                <b d'>2
+                                - \baca-full-downbow
+
+                                <b d'>4
+                                - \baca-full-upbow
+
+                                <b d'>2
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 67]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <b d'>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <b d'>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
                                 <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
+
+                                <b d'>2
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 68]
                                 <b d'>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
-                                <b d'>4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <b d'>2
+                                - \baca-full-downbow
 
                                 <b d'>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <b d'>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 69]
+                                <g b>2
+                                - \baca-full-downbow
+
                                 <g b>4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 70]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 71]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
+                                <g b>2
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 72]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \times 2/3
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 73]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    g8
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    g8
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 74]
-                                    g4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #4 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4..
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \p
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! SPANNER_START
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \<
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4..
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #5
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4..
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 75]
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 76]
-                                    \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    [
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #5 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #6 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #7 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g8.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #8 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    \revert VanishingChangeStaff.Stem.stemlet-length
-                                    g8.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    ]
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #9 #9
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 77]
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-                                ~
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 78]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 79]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 80]
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 81]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 82]
-                                <g b>4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \pp
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \p
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 83]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                % [right voice measure 71]
+                                <g b>4
+                                - \baca-full-upbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>2
+                                - \baca-full-downbow
 
                                 <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-upbow
 
                                 <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                - \baca-full-downbow
+                                ~
 
-                                <g b>4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>4
+
+                                <g b>4
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 84]
-                                <g b>4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                <g b>8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                <g b>4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 85]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #9 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #8 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #7 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
+                                % [right voice measure 72]
+                                <g b>2
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
-                                \ff
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
+                                \f
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #6 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
 
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>4
+                                - \baca-full-upbow
 
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                <g b>4
+                                - \baca-full-downbow
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 73]
+                                g2
+                                - \baca-full-upbow
 
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 74]
+                                g1..
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 75]
+                                g1
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 76]
+                                g2.
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \pp
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \<
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 77]
+                                <g b>1.
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 78]
+                                <g b>2.
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 79]
+                                <g b>1
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 80]
+                                <g b>2.
+                                - \baca-full-downbow
+                                ~
+
+                                <g b>2
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 81]
+                                <g b>2.
+                                - \baca-full-upbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 82]
+                                <g b>1
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \ff
+                                  %! SPANNER_START
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \>
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 83]
+                                <g b>2.
+                                - \baca-full-upbow
+                                ~
+
+                                <g b>2
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 84]
+                                <g b>1.
+                                - \baca-full-downbow
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 85]
+                                g1..
+                                - \baca-full-upbow
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 86]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                [
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #9
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 87]
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 88]
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 89]
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
+                                g1
+                                - \baca-full-downbow
                                   %! SPANNER_STOP
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \p
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
                                   %! SPANNER_START
                                   %! baca.PiecewiseCommand._call(2)
                                   %! baca.hairpin()
                                 \<
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
                                 ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 90]
-                                g8
-
-                                g4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 91]
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
+                                - \baca-full-upbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 92]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1..
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 93]
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! SPANNER_STOP
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \f
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! SPANNER_START
-                                  %! baca.PiecewiseCommand._call(2)
-                                  %! baca.hairpin()
-                                \>
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1
+                                - \baca-full-upbow
+                                ~
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 94]
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #1
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                ~
 
-                                g4.
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 95]
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #3
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g8
-                                  %! baca.bcps(8)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(8)
-                                - \downbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #0 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4.
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g1.
+                                - \baca-full-downbow
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 96]
-                                g8
-                                  %! baca.bcps(7)
-                                \tweak staff-padding #6
-                                  %! baca.bcps(7)
-                                - \upbow
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #5 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2.
+                                - \baca-full-upbow
 
-                                g4
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #4 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 97]
+                                g2.
+                                - \baca-full-downbow
+                                  %! SPANNER_STOP
+                                  %! baca.PiecewiseCommand._call(2)
+                                  %! baca.hairpin()
+                                \f
+                                ~
 
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #3 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
+                                g2
+                                ~
 
-                                \override VanishingChangeStaff.Stem.stemlet-length = 0.75
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                [
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #2 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \revert VanishingChangeStaff.Stem.stemlet-length
-                                g8
-                                  %! baca.bcps(3)
-                                \bacaStopTextSpanBCP
-                                ]
-                                  %! baca.bcps(2)
-                                \tweak staff-padding #4
-                                  %! baca.bcps(2)
-                                - \abjad-solid-line-with-arrow
-                                  %! baca.bcps(2)
-                                - \baca-bcp-spanner-left-text #1 #5
-                                  %! baca.bcps(2)
-                                \bacaStartTextSpanBCP
-
-                                \tweak text #tuplet-number::calc-fraction-text
-                                \times 5/6
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 97]
-                                    g4.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! SPANNER_STOP
-                                      %! baca.PiecewiseCommand._call(2)
-                                      %! baca.hairpin()
-                                    \pp
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(7)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(7)
-                                    - \upbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #3 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                }
-
-                                \times 4/5
-                                {
-
-                                      %! COMMENT_MEASURE_NUMBERS
-                                      %! evans.SegmentMaker.comment_measure_numbers()
-                                    % [right voice measure 98]
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(8)
-                                    \tweak staff-padding #6
-                                      %! baca.bcps(8)
-                                    - \downbow
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #0 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    g4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                      %! baca.bcps(2)
-                                    \tweak staff-padding #4
-                                      %! baca.bcps(2)
-                                    - \abjad-solid-line-with-arrow
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-left-text #1 #3
-                                      %! baca.bcps(2)
-                                    - \baca-bcp-spanner-right-text #2 #3
-                                      %! baca.bcps(2)
-                                    \bacaStartTextSpanBCP
-
-                                    r4.
-                                      %! baca.bcps(3)
-                                    \bacaStopTextSpanBCP
-                                    \revert Staff.TupletBracket.direction
-
-                                }
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 98]
+                                g1.
+                                \revert Staff.TupletBracket.direction
 
                             }
 
@@ -20992,7 +8371,6 @@
                                         \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 " " }
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
-                                        \stopStaff
                                         \clef "bass"
                                         r1
 
@@ -22599,15 +9977,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r1
 
                                 r4

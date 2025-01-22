@@ -46,14 +46,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -137,15 +133,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -171,15 +162,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -245,196 +231,39 @@
                                           %! applying staff names and clefs
                                         \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 " " }
                                         \clef "bass"
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        ef,16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
+                                        a,2
                                         \f
-                                        [
-                                        (
-                                        - \tweak staff-padding 6.5
+                                        - \tweak staff-padding 2
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \upright P \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
                                         \startTextSpanOne
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \>
+                                        ~
 
-                                        dqs,16
-
-                                        ef,16
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        dqs,16
-                                        )
-                                        ]
-
-                                        \override VanishingStaff.Stem.stemlet-length = 0.75
-                                        ef,16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \mp
-                                        [
-                                        (
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \<
-
-                                        e,16
-
-                                        eqf,16
-
-                                        \revert VanishingStaff.Stem.stemlet-length
-                                        ef,16
-                                          %! SPANNER_STOP
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \ff
-                                        )
+                                        a,4
                                         \stopTextSpanOne
-                                        ]
-                                        - \tweak staff-padding 6.5
+                                        - \tweak staff-padding 2
                                         - \abjad-solid-line-with-arrow
-                                        - \tweak bound-details.left.text \markup \concat { \upright N \hspace #0.5 }
+                                        - \tweak bound-details.left.text \markup \concat { \upright teso \hspace #0.5 }
                                         \startTextSpanOne
-                                          %! SPANNER_START
-                                          %! baca.PiecewiseCommand._call(2)
-                                          %! baca.hairpin()
-                                        \>
+                                        ~
 
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
-                                        {
+                                          %! COMMENT_MEASURE_NUMBERS
+                                          %! evans.SegmentMaker.comment_measure_numbers()
+                                        % [cello voice measure 2]
+                                        a,2
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 2
+                                        - \abjad-solid-line-with-arrow
+                                        - \tweak bound-details.left.text \markup \concat { \upright flautando \hspace #0.5 }
+                                        \startTextSpanOne
+                                        ~
 
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            eqf,16
-                                            [
-                                            (
-
-                                            ef,16
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            dqs,16
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                              %! COMMENT_MEASURE_NUMBERS
-                                              %! evans.SegmentMaker.comment_measure_numbers()
-                                            % [cello voice measure 2]
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            eqf,32
-                                            [
-
-                                            ef,32
-                                            )
-
-                                            eqf,32
-                                            (
-
-                                            ef,32
-
-                                            eqf,32
-                                            \stopTextSpanOne
-                                            - \tweak staff-padding 6.5
-                                            - \abjad-solid-line-with-arrow
-                                            - \tweak bound-details.left.text \markup \concat { \upright {\fraction 1 2 P} \hspace #0.5 }
-                                            \startTextSpanOne
-
-                                            ef,32
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            e,32
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            eqs,16
-                                            [
-
-                                            f,16
-                                            )
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            fqs,16
-                                              %! SPANNER_STOP
-                                              %! baca.PiecewiseCommand._call(2)
-                                              %! baca.hairpin()
-                                            \pp
-                                            ]
-                                            (
-                                              %! SPANNER_START
-                                              %! baca.PiecewiseCommand._call(2)
-                                              %! baca.hairpin()
-                                            \<
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 8/7
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            fs,32
-                                            [
-
-                                            fqs,32
-
-                                            gqf,32
-
-                                            g,32
-                                            )
-
-                                            gqf,32
-                                              %! SPANNER_STOP
-                                              %! baca.PiecewiseCommand._call(2)
-                                              %! baca.hairpin()
-                                            \f
-                                            (
-
-                                            fs,32
-                                            \stopTextSpanOne
-                                            - \tweak staff-padding 6.5
-                                            - \abjad-dashed-line-with-hook
-                                            - \tweak bound-details.left.text \markup \concat { \upright XP \hspace #0.5 }
-                                            \startTextSpanOne
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            gqf,32
-                                            ]
-
-                                        }
-
-                                        \tweak text #tuplet-number::calc-fraction-text
-                                        \times 4/3
-                                        {
-
-                                            \override VanishingStaff.Stem.stemlet-length = 0.75
-                                            fs,16
-                                            [
-
-                                            g,16
-
-                                            \revert VanishingStaff.Stem.stemlet-length
-                                            gqs,16
-                                            )
-                                            \stopTextSpanOne
-                                            ]
-
-                                        }
+                                        a,2
+                                        \stopTextSpanOne
+                                        - \tweak staff-padding 2
+                                        - \abjad-dashed-line-with-hook
+                                        - \tweak bound-details.left.text \markup \concat { \upright gridato \hspace #0.5 }
+                                        \startTextSpanOne
 
                                     }
 
@@ -516,15 +345,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r2.
 
                                   %! COMMENT_MEASURE_NUMBERS

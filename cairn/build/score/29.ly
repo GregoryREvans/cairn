@@ -74,14 +74,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [string voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "SCP" }
-                                \startStaff
-                                \stopStaff
                                 r2
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -134,7 +130,7 @@
                                 a4
                                 - \bendAfter #'6
                                 - \tongue #4
-                                \fp
+                                ^ \fp
                                 ^ \markup IV
                                 ^ \markup {sempre col legno battuto}
 
@@ -146,20 +142,20 @@
                                 f4
                                 - \bendAfter #'4
                                 - \tongue #4
-                                \fp
+                                ^ \fp
 
                                 r4
 
                                 d2
                                 - \bendAfter #'8
                                 - \tongue #4
-                                \fp
+                                ^ \fp
                                 ^ \markup III
 
                                 c''4
                                 - \bendAfter #'-7
                                 - \tongue #4
-                                \mf
+                                ^ \mf
                                 ^ \markup II
 
                                 r4
@@ -167,7 +163,7 @@
                                 a'4
                                 - \bendAfter #'-9
                                 - \tongue #4
-                                \f
+                                ^ \f
                                 ^ \markup I
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -178,7 +174,7 @@
                                 a4
                                 - \bendAfter #'6
                                 - \tongue #4
-                                \pp
+                                ^ \pp
                                 ^ \markup II
 
                                 \times 2/3
@@ -205,8 +201,8 @@
                                 a'4
                                 - \bendAfter #'-9
                                 - \tongue #4
-                                \mp
-                                \<
+                                ^ \mp
+                                ^ \<
 
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
@@ -219,7 +215,7 @@
                                 f4
                                 - \bendAfter #'4
                                 - \tongue #4
-                                \f
+                                ^ \f
 
                                 r4
 
@@ -228,11 +224,11 @@
                                 % [battuto voice measure 5]
                                 \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
                                 c32
-                                \sfp
+                                ^ \sfp
                                 ^ \markup IV
                                 ^ \markup {quasi gettato}
                                 [
-                                \<
+                                ^ \<
 
                                 e32
                                 ^ \markup III
@@ -281,74 +277,128 @@
                                 {
 
                                     \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                    f32
+                                    f64
                                     [
 
-                                    a32
+                                    a64
 
-                                    c'32
+                                    c'64
 
-                                    e'32
+                                    e'64
 
-                                    f'32
+                                    f'64
 
-                                    d'32
+                                    d'64
 
-                                    b32
+                                    b64
 
-                                    g32
+                                    g64
+
+                                    a64
+
+                                    c'64
+
+                                    e'64
+
+                                    g'64
+
+                                    a'64
+
+                                    f'64
+
+                                    d'64
+
+                                    b64
+
+                                    c64
 
                                     \revert VanishingBattutoStaff.Stem.stemlet-length
-                                    a32
+                                    e64
                                     ]
 
                                 }
 
                                 \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                c'32
+                                g64
                                 [
 
-                                e'32
+                                b64
 
-                                g'32
+                                c'64
 
-                                a'32
+                                a64
 
-                                f'32
+                                f64
 
-                                d'32
+                                d64
 
-                                b32
+                                d64
+
+                                f64
+
+                                a64
+
+                                c'64
+
+                                d'64
+
+                                b64
+
+                                g64
+
+                                e64
+
+                                f64
 
                                 \revert VanishingBattutoStaff.Stem.stemlet-length
-                                c32
+                                a64
                                 ]
 
                                 \times 4/5
                                 {
 
                                     \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                    e32
+                                    c'64
                                     [
 
-                                    g32
+                                    e'64
 
-                                    b32
+                                    f'64
 
-                                    c'32
+                                    d'64
 
-                                    a32
+                                    b64
 
-                                    f32
+                                    g64
 
-                                    d32
+                                    a64
 
-                                    d32
+                                    c'64
 
-                                    f32
+                                    e'64
+
+                                    g'64
+
+                                    a'64
+
+                                    f'64
+
+                                    d'64
+
+                                    b64
+
+                                    c64
+
+                                    e64
+
+                                    g64
+
+                                    b64
+
+                                    c'64
 
                                     \revert VanishingBattutoStaff.Stem.stemlet-length
-                                    a32
+                                    a64
                                     ]
 
                                 }
@@ -358,21 +408,35 @@
                                 {
 
                                     \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                    c'32
+                                    f64
                                     [
 
-                                    d'32
+                                    d64
 
-                                    b32
+                                    d64
 
-                                    g32
+                                    f64
 
-                                    e32
+                                    a64
 
-                                    f32
+                                    c'64
+
+                                    d'64
+
+                                    b64
+
+                                    g64
+
+                                    e64
+
+                                    f64
+
+                                    a64
+
+                                    c'64
 
                                     \revert VanishingBattutoStaff.Stem.stemlet-length
-                                    a32
+                                    e'64
                                     ]
 
                                 }
@@ -381,69 +445,119 @@
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [battuto voice measure 6]
                                 \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                c'32
+                                f'64
                                 [
 
-                                e'32
+                                d'64
 
-                                f'32
+                                b64
 
-                                d'32
+                                g64
 
-                                b32
+                                a64
 
-                                g32
+                                c'64
 
-                                a32
+                                e'64
+
+                                g'64
+
+                                a'64
+
+                                f'64
+
+                                d'64
+
+                                b64
+
+                                c64
+
+                                e64
+
+                                g64
 
                                 \revert VanishingBattutoStaff.Stem.stemlet-length
-                                c'32
+                                b64
                                 ]
 
                                 \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                e'32
+                                c'64
                                 [
 
-                                g'32
+                                a64
 
-                                a'32
+                                f64
 
-                                f'32
+                                d64
 
-                                d'32
+                                d64
 
-                                b32
+                                f64
 
-                                c32
+                                a64
+
+                                c'64
+
+                                d'64
+
+                                b64
+
+                                g64
+
+                                e64
+
+                                f64
+
+                                a64
+
+                                c'64
 
                                 \revert VanishingBattutoStaff.Stem.stemlet-length
-                                e32
+                                e'64
                                 ]
 
                                 \times 8/9
                                 {
 
                                     \override VanishingBattutoStaff.Stem.stemlet-length = 0.75
-                                    g32
+                                    f'64
                                     [
 
-                                    b32
+                                    d'64
 
-                                    c'32
+                                    b64
 
-                                    a32
+                                    g64
 
-                                    f32
+                                    a64
 
-                                    d32
+                                    c'64
 
-                                    d32
+                                    e'64
 
-                                    f32
+                                    g'64
+
+                                    a'64
+
+                                    f'64
+
+                                    d'64
+
+                                    b64
+
+                                    c64
+
+                                    e64
+
+                                    g64
+
+                                    b64
+
+                                    c'64
 
                                     \revert VanishingBattutoStaff.Stem.stemlet-length
-                                    a32
-                                    \ff
+                                    a64
+                                    ^ \ff
                                     ]
 
                                 }
@@ -506,60 +620,6 @@
                     \tag #'voice4
                     {
 
-                        \context VanishingChangeStaff = "right staff"
-                        {
-
-                            \context Voice = "right voice"
-                            {
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
-                                  %! applying staff names and clefs
-                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
-                                  %! applying staff names and clefs
-                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
-                                \startStaff
-                                \stopStaff
-                                r2
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 2]
-                                r1..
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 3]
-                                r1
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 4]
-                                r2.
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 5]
-                                r1.
-
-                                  %! COMMENT_MEASURE_NUMBERS
-                                  %! evans.SegmentMaker.comment_measure_numbers()
-                                % [right voice measure 6]
-                                r2.
-
-                            }
-
-                        }
-
-                    }
-
-                    \tag #'voice5
-                    {
-
                         \context VanishingChangeStaff = "left staff"
                         {
 
@@ -569,15 +629,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Sinestra" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "man sin" }
-                                \startStaff
-                                \stopStaff
                                 r2
 
                                   %! COMMENT_MEASURE_NUMBERS
@@ -603,6 +658,55 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [left voice measure 6]
+                                r2.
+
+                            }
+
+                        }
+
+                    }
+
+                    \tag #'voice5
+                    {
+
+                        \context VanishingChangeStaff = "right staff"
+                        {
+
+                            \context Voice = "right voice"
+                            {
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 1]
+                                  %! applying staff names and clefs
+                                \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Mano Destra" }
+                                  %! applying staff names and clefs
+                                \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "mn dst" }
+                                r2
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 2]
+                                r1..
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 3]
+                                r1
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 4]
+                                r2.
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 5]
+                                r1.
+
+                                  %! COMMENT_MEASURE_NUMBERS
+                                  %! evans.SegmentMaker.comment_measure_numbers()
+                                % [right voice measure 6]
                                 r2.
 
                             }
@@ -669,7 +773,7 @@
                             \tag #'voice7
                             {
 
-                                \context Staff = "cello staff"
+                                \context VanishingStaff = "cello staff"
                                 {
 
                                     \context Voice = "cello voice"
@@ -847,15 +951,10 @@
                                   %! COMMENT_MEASURE_NUMBERS
                                   %! evans.SegmentMaker.comment_measure_numbers()
                                 % [change voice measure 1]
-                                \override Staff.Dots.transparent = ##t
-                                \override Staff.Rest.transparent = ##t
-                                \override Staff.StaffSymbol.transparent = ##t
                                   %! applying staff names and clefs
                                 \set Staff.instrumentName = \markup \center-column { \hcenter-in #12 "Archi" }
                                   %! applying staff names and clefs
                                 \set Staff.shortInstrumentName = \markup \center-column { \hcenter-in #12 "archi" }
-                                \startStaff
-                                \stopStaff
                                 r2
 
                                   %! COMMENT_MEASURE_NUMBERS
